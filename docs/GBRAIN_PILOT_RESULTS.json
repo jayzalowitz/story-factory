@@ -5,7 +5,7 @@
   "engine": "local PGLite",
   "embedding": "disabled",
   "automatic_writeback": "off",
-  "native_assistant_activation": "not_tested",
+  "native_assistant_activation": "observed_session_scoped_stdio_in_both_hosts",
   "usage": "unknown",
   "records": [
     {
@@ -344,5 +344,535 @@
         "expired": true
       }
     }
-  ]
+  ],
+  "completion_pilot": {
+    "date": "2026-10-20",
+    "scope": "Fictional explicit decisions only; isolated local brains; no API keys, external embeddings, global config or persistent services.",
+    "native_inference_calls": {
+      "claude": 2,
+      "codex": 2,
+      "maximum_seconds_per_call": 90,
+      "additional_calls_after_cap": 0
+    },
+    "native": [
+      {
+        "host": "claude",
+        "phase": "recall",
+        "model_requested": "haiku",
+        "timeout_seconds": 90,
+        "returncode": 0,
+        "status": "returned",
+        "elapsed_seconds": 25.24,
+        "manuscript_unchanged": true,
+        "usage": {
+          "input_tokens": 17,
+          "cache_creation_input_tokens": 54289,
+          "cache_read_input_tokens": 160171,
+          "output_tokens": 561,
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 54289,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "",
+          "iterations": [],
+          "speed": "standard"
+        },
+        "usage_scope": "Provider-reported native result; resumed Codex fields are cumulative session aggregates, not independent new-call spend.",
+        "provider_reported_cost_usd": 0.08771035,
+        "provider_reported_model_usage": {
+          "claude-haiku-4-5-20251001": {
+            "inputTokens": 732,
+            "outputTokens": 620,
+            "cacheReadInputTokens": 160171,
+            "cacheCreationInputTokens": 54289,
+            "webSearchRequests": 0,
+            "costUSD": 0.08771035,
+            "contextWindow": 200000,
+            "maxOutputTokens": 32000
+          }
+        },
+        "operations": [
+          {
+            "tool": "mcp__gbrain__recall",
+            "status": "requested",
+            "arguments": {
+              "entity": "projects/native-claude-pilot",
+              "limit": 10
+            },
+            "error": null
+          }
+        ],
+        "assessment": {
+          "connection_and_tool_activation": "PASS",
+          "status_summary_fidelity": "FAIL",
+          "fixture_summary_fidelity": "FAIL",
+          "actual_workflow_next": "discover",
+          "reported_workflow_next": "premise",
+          "actual_recalled_fact_id": "1",
+          "actual_recalled_marker": "amber-orbit-7319",
+          "summary_problem": "The returned summary called discover complete despite discover:NEXT, omitted the marker and conflated the fictional memory fixture with manuscript canon."
+        }
+      },
+      {
+        "host": "claude",
+        "phase": "write",
+        "model_requested": "haiku",
+        "timeout_seconds": 90,
+        "returncode": 0,
+        "status": "returned",
+        "elapsed_seconds": 27.73,
+        "manuscript_unchanged": true,
+        "usage": {
+          "input_tokens": 32,
+          "cache_creation_input_tokens": 58852,
+          "cache_read_input_tokens": 340830,
+          "output_tokens": 796,
+          "server_tool_use": {
+            "web_search_requests": 0,
+            "web_fetch_requests": 0
+          },
+          "service_tier": "standard",
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 58852,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "inference_geo": "",
+          "iterations": [],
+          "speed": "standard"
+        },
+        "usage_scope": "Provider-reported native result; resumed Codex fields are cumulative session aggregates, not independent new-call spend.",
+        "provider_reported_cost_usd": 0.11212200000000001,
+        "provider_reported_model_usage": {
+          "claude-haiku-4-5-20251001": {
+            "inputTokens": 359,
+            "outputTokens": 823,
+            "cacheReadInputTokens": 340830,
+            "cacheCreationInputTokens": 58852,
+            "webSearchRequests": 0,
+            "costUSD": 0.11212200000000001,
+            "contextWindow": 200000,
+            "maxOutputTokens": 32000
+          }
+        },
+        "operations": [
+          {
+            "tool": "mcp__gbrain__recall",
+            "status": "requested",
+            "arguments": {
+              "entity": "projects/native-claude-pilot"
+            },
+            "error": null
+          },
+          {
+            "tool": "mcp__gbrain__remember",
+            "status": "requested",
+            "arguments": {
+              "entity": "projects/native-claude-pilot",
+              "fact": "Fictional pilot claude: approved amber-orbit-7319 bridge opens at dawn.",
+              "replaces": "1",
+              "provenance": "Explicit approved fictional D2 correction from pilot-completion/decisions.md on 2026-10-20; supersedes D1.",
+              "content_origin": "tool_output",
+              "kind": "fact"
+            },
+            "error": null
+          },
+          {
+            "tool": "mcp__gbrain__recall",
+            "status": "requested",
+            "arguments": {
+              "entity": "projects/native-claude-pilot",
+              "include_expired": false
+            },
+            "error": null
+          },
+          {
+            "tool": "mcp__gbrain__forget",
+            "status": "requested",
+            "arguments": {
+              "id": "3",
+              "reason": "Approved fictional D3 pilot cleanup"
+            },
+            "error": null
+          },
+          {
+            "tool": "mcp__gbrain__recall",
+            "status": "requested",
+            "arguments": {
+              "entity": "projects/native-claude-pilot",
+              "include_expired": false
+            },
+            "error": null
+          }
+        ],
+        "assessment": {
+          "native_tools_called": "PASS",
+          "approved_correction_and_empty_final_recall": "FAIL",
+          "actual_correction_status": "inserted_contested",
+          "proposal_ref": "tp1",
+          "old_fact_id": "1",
+          "new_fact_id": "3",
+          "new_content_origin": "tool_output",
+          "new_trust_tier": "external_untrusted",
+          "final_active_fact_ids": [
+            "1"
+          ],
+          "new_fact_withdrawal": "committed",
+          "summary_problem": "Final correctly reported D1 still active but called the test complete; acceptance required D1 supersession and empty final recall."
+        }
+      },
+      {
+        "host": "codex",
+        "phase": "recall",
+        "model_requested": "gpt-6-luna",
+        "timeout_seconds": 90,
+        "returncode": 0,
+        "status": "returned",
+        "elapsed_seconds": 22.97,
+        "manuscript_unchanged": true,
+        "usage": {
+          "input_tokens": 740366,
+          "cached_input_tokens": 616448,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5837,
+          "reasoning_output_tokens": 182
+        },
+        "usage_scope": "Provider-reported native result; resumed Codex fields are cumulative session aggregates, not independent new-call spend.",
+        "operations": [
+          {
+            "tool": "recall",
+            "status": "in_progress",
+            "arguments": {
+              "entity": "projects/native-codex-pilot",
+              "limit": 5
+            },
+            "error": null
+          },
+          {
+            "tool": "recall",
+            "status": "completed",
+            "arguments": {
+              "entity": "projects/native-codex-pilot",
+              "limit": 5
+            },
+            "error": null
+          }
+        ],
+        "assessment": {
+          "connection_and_recall": "PASS",
+          "status_summary_fidelity": "PASS",
+          "fixture_summary_fidelity": "PASS",
+          "actual_workflow_next": "discover",
+          "actual_recalled_fact_id": "2",
+          "marker": "amber-orbit-7319"
+        }
+      },
+      {
+        "host": "codex",
+        "phase": "write",
+        "model_requested": "gpt-6-luna",
+        "timeout_seconds": 90,
+        "returncode": 0,
+        "status": "returned",
+        "elapsed_seconds": 14.3,
+        "manuscript_unchanged": true,
+        "usage": {
+          "input_tokens": 1137773,
+          "cached_input_tokens": 1010304,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6304,
+          "reasoning_output_tokens": 238
+        },
+        "usage_scope": "Provider-reported native result; resumed Codex fields are cumulative session aggregates, not independent new-call spend.",
+        "operations": [
+          {
+            "tool": "recall",
+            "status": "in_progress",
+            "arguments": {
+              "entity": "projects/native-codex-pilot",
+              "limit": 10
+            },
+            "error": null
+          },
+          {
+            "tool": "recall",
+            "status": "completed",
+            "arguments": {
+              "entity": "projects/native-codex-pilot",
+              "limit": 10
+            },
+            "error": null
+          },
+          {
+            "tool": "remember",
+            "status": "in_progress",
+            "arguments": {
+              "fact": "Fictional pilot codex: approved amber-orbit-7319 bridge opens at dawn.",
+              "entity": "projects/native-codex-pilot",
+              "replaces": "2",
+              "provenance": "Explicit approved fictional D2 correction from pilot-completion/decisions.md on 2026-10-20; supersedes D1.",
+              "content_origin": "user_said"
+            },
+            "error": null
+          },
+          {
+            "tool": "remember",
+            "status": "failed",
+            "arguments": {
+              "fact": "Fictional pilot codex: approved amber-orbit-7319 bridge opens at dawn.",
+              "entity": "projects/native-codex-pilot",
+              "replaces": "2",
+              "provenance": "Explicit approved fictional D2 correction from pilot-completion/decisions.md on 2026-10-20; supersedes D1.",
+              "content_origin": "user_said"
+            },
+            "error": {
+              "message": "MCP tool call requires approval, but approval policy is never"
+            }
+          }
+        ],
+        "assessment": {
+          "native_write": "BLOCKED_BY_HOST_APPROVAL",
+          "server_mutation": "not attempted",
+          "reason": "MCP tool call requires approval, but approval policy is never",
+          "final_summary": "Accurately reported incomplete and did not proceed to correction readback or withdrawal."
+        }
+      }
+    ],
+    "shared_http": {
+      "transport": "MCP Streamable HTTP",
+      "bind": "127.0.0.1",
+      "owner_processes": 1,
+      "oauth_clients": 3,
+      "token_ttl_seconds": 600,
+      "dynamic_client_registration": false,
+      "records": [
+        {
+          "test": "invalid_token",
+          "result": {
+            "http_error": 401
+          }
+        },
+        {
+          "test": "simultaneous_write",
+          "client": "writer-a",
+          "result": {
+            "id": "1",
+            "status": "inserted",
+            "state": "committed"
+          }
+        },
+        {
+          "test": "simultaneous_write",
+          "client": "writer-b",
+          "result": {
+            "id": "2",
+            "status": "inserted",
+            "state": "committed"
+          }
+        },
+        {
+          "test": "recall_after_concurrent_writes",
+          "result": {
+            "total": 2,
+            "facts": [
+              {
+                "id": 2,
+                "fact": "Fictional approved shared test writer-b: copper-lantern-8246 gate stays closed.",
+                "entity_slug": "projects/shared-poc",
+                "trust_tier": "agent_written",
+                "origin": "mcp:remember:user_said"
+              },
+              {
+                "id": 1,
+                "fact": "Fictional approved shared test writer-a: copper-lantern-8246 gate stays closed.",
+                "entity_slug": "projects/shared-poc",
+                "trust_tier": "agent_written",
+                "origin": "mcp:remember:user_said"
+              }
+            ]
+          }
+        },
+        {
+          "test": "read_only_write_denied",
+          "result": {
+            "error": "insufficient_scope",
+            "code": "insufficient_scope",
+            "message": "Operation remember requires 'write' scope"
+          }
+        },
+        {
+          "test": "other_project_empty",
+          "result": {
+            "total": 0,
+            "facts": []
+          }
+        },
+        {
+          "test": "correct",
+          "result": {
+            "id": "3",
+            "status": "superseded",
+            "state": "committed",
+            "superseded_fact_id": "1",
+            "replaced_by_caller": true
+          }
+        },
+        {
+          "test": "recall_after_correct",
+          "result": {
+            "total": 2,
+            "facts": [
+              {
+                "id": 3,
+                "fact": "Fictional approved shared test writer-a: copper-lantern-8246 gate opens at dawn.",
+                "entity_slug": "projects/shared-poc",
+                "trust_tier": "agent_written",
+                "origin": "mcp:remember:user_said"
+              },
+              {
+                "id": 2,
+                "fact": "Fictional approved shared test writer-b: copper-lantern-8246 gate stays closed.",
+                "entity_slug": "projects/shared-poc",
+                "trust_tier": "agent_written",
+                "origin": "mcp:remember:user_said"
+              }
+            ]
+          }
+        },
+        {
+          "test": "withdraw_correction",
+          "result": {
+            "id": "3",
+            "state": "committed",
+            "expired": true
+          }
+        },
+        {
+          "test": "recall_after_withdraw",
+          "result": {
+            "total": 1,
+            "facts": [
+              {
+                "id": 2,
+                "fact": "Fictional approved shared test writer-b: copper-lantern-8246 gate stays closed.",
+                "entity_slug": "projects/shared-poc",
+                "trust_tier": "agent_written",
+                "origin": "mcp:remember:user_said"
+              }
+            ]
+          }
+        },
+        {
+          "test": "graceful_restart_recall",
+          "result": {
+            "total": 1,
+            "facts": [
+              {
+                "id": 2,
+                "fact": "Fictional approved shared test writer-b: copper-lantern-8246 gate stays closed.",
+                "entity_slug": "projects/shared-poc",
+                "trust_tier": "agent_written",
+                "origin": "mcp:remember:user_said"
+              }
+            ]
+          }
+        },
+        {
+          "test": "acknowledged_write_before_crash",
+          "result": {
+            "id": "4",
+            "status": "inserted",
+            "state": "committed"
+          }
+        },
+        {
+          "test": "abrupt_restart_recall",
+          "result": {
+            "total": 1,
+            "facts": [
+              {
+                "id": 4,
+                "fact": "Approved fictional acknowledged-recovery marker obsidian-fern-5207.",
+                "entity_slug": "projects/recovery-poc",
+                "trust_tier": "agent_written",
+                "origin": "mcp:remember:user_said"
+              }
+            ]
+          }
+        }
+      ],
+      "backup": {
+        "create_exit": 0,
+        "archive_mode": "0600",
+        "restore_exit": 0,
+        "restore_mode": "new-brain",
+        "restored_fact_id": "4",
+        "restored_marker": "obsidian-fern-5207",
+        "credentials_and_publication": "detached/revoked by upstream restore; original clients revoked after test",
+        "limits": "Same-machine isolated restore only; no off-host copy, original-brain disaster restore, interrupted in-flight transaction or production authorization claim."
+      },
+      "cleanup": {
+        "owner_stopped": true,
+        "port_closed": true,
+        "original_oauth_clients_revoked": true,
+        "fictional_test_archives": "retained privately for evidence",
+        "abandoned_pre_service_harness_database": {
+          "status": "offline_private_failure_evidence",
+          "server_ever_started": false,
+          "unrevoked_clients": 1,
+          "cleanup_error": "PGLite WASM initialization error errno 20",
+          "credential_logged_or_distributed": false,
+          "repair_attempted": false
+        }
+      },
+      "harness_failures": [
+        "Initial auth registration used unsupported --surface; removed before registration.",
+        "Second local recorder used duplicate name argument; fixed before any server start."
+      ],
+      "assertions_passed": true
+    },
+    "setup_migrations": {
+      "schema_version": 262,
+      "schema_status": "PGLite manages schema in-process",
+      "pending_fresh_install": [
+        {
+          "version": "0.11.0",
+          "headline": "GBrain Minions \u2014 durable background agents"
+        },
+        {
+          "version": "0.14.0",
+          "headline": "Shell jobs + autopilot cooperative handler + max_stalled default bump."
+        },
+        {
+          "version": "0.22.4",
+          "headline": "Frontmatter-guard ships \u2014 broken brain pages can't hide"
+        },
+        {
+          "version": "0.28.0",
+          "headline": "Takes ship \u2014 your brain finally captures what you BELIEVE, not just what's true"
+        },
+        {
+          "version": "0.53.0",
+          "headline": "Knowledge and shared skills belong to the same source-scoped content repository."
+        }
+      ],
+      "needs_action": 0,
+      "applied": false,
+      "reason": "The five entries are fresh-install host/background setup work, not missing SQL schema migrations. Broad apply walks real assistant host directories and can install or rewrite host integrations, beyond this isolated connection pilot; no global setup claimed."
+    },
+    "adapter_decision": {
+      "status": "deferred_after_observed_failures",
+      "default": "off",
+      "reasons": [
+        "Claude status/fixture summary fidelity failed.",
+        "Claude file-origin correction remained contested, so requested supersession/empty-recall acceptance failed.",
+        "Codex native write required host approval unavailable under chosen never policy."
+      ],
+      "next_scope": "A future adapter must preserve project-file authority, show source/trust/contested states, verify correction/withdrawal readback, fail closed on host approval and gracefully continue folder-only."
+    }
+  }
 }

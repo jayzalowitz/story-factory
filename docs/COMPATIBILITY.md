@@ -1,18 +1,32 @@
 # Compatibility: observed, not assumed
 
-Version 0.2.0-preview.1. This is a preview; native host and usability evidence is deliberately separate from file installation.
+Current preview: 0.2.0-preview.3. Initial creative/PDF evidence originated in preview.1; later bounded resume and memory probes are separate observations. File installation, process completion, editorial fidelity and human usability are different claims.
 
 | Path | Observed evidence | Remaining limit |
 |---|---|---|
-| macOS local Python 3.9 + Tectonic + Poppler | Actual original, short and adaptation PDF builds; source/import/delivery tests | Not a Windows print test |
-| Codex CLI 0.162.1, ChatGPT sign-in | Native installed-skill trial created a complete two-dramatic-page short, revised, built three physical pages and reported actual visual inspection; current sources/build reviewed separately | Short bounded trial, not full feature or beginner-human study |
-| Claude Code CLI 2.1.42, subscription sign-in | Login status observed, skill files installed | Writing trial timed out at 240 seconds; startup-only connection diagnostic succeeded and a project-settings discovery probe actually loaded story-draft. Empty settings-source diagnostic found no skills and made no model call. A later bounded Sonnet trial wrote/revised/built five pages but timed out and exceeded its brief. The cap checker rejected it. One named scope-repair resumed that draft and produced a current three-page PDF (273 source words), within the two-dramatic-page brief; the CLI still timed out before final return. Clean session completion/resumption journey remains unverified |
-| Claude Desktop / Codex graphical apps | Official account/folder guidance linked on site | No fresh GUI onboarding; three AI beginner simulations completed, explicitly not a human study |
-| Grok | Generic chat prompt path documented | No native installer or file-production integration validated |
-| GBrain local PGLite | Keyless CLI pilot save/recall/correct/withdraw and separate-brain routing; two concurrent reads succeeded | Native memory activation, shared-server concurrent writes, recovery and multi-user access unverified |
+| macOS Python 3.9+ with Tectonic and Poppler | Actual original, short, adaptation and 91-page new-feature PDF builds; source/import/selected-delivery tests | Not a Windows print test |
+| Codex CLI 0.162.1, ChatGPT sign-in | Native installed-skill trial created/revised/built a two-dramatic-page short (three physical pages); later existing-thread resume/status/MCP recall returned cleanly with correct next stage and exact fixture quote | Bounded shorts/probes, not a native full feature or human-beginner study |
+| Claude Code CLI 2.1.42, subscription sign-in | Discovery actually loaded story-draft; writing/revision/build occurred; later Haiku resumed the timed-out thread, invoked story-resume, ran status and actual MCP recall, and returned cleanly | Original creative trial timed out; the later clean return had incorrect stage/fixture summary. Reliable full creative completion and summary fidelity remain unproven |
+| Claude Desktop / Codex graphical apps | Official chosen-assistant account/folder guidance; three explicitly AI-simulated beginner journeys | No real participant study, fresh GUI signup or allowance-reset trial |
+| Grok | Generic manual chat prompt path | No native installer or file-production integration validated |
+| Optional GBrain local PGLite and loopback HTTP | CLI lifecycle; native recall both hosts; one shared-service owner with concurrent client writes, scoped auth, correction/withdrawal, restart, acknowledged-write crash recovery, backup/restore | Native Claude correction stayed contested; Codex native write was denied by approval policy. No automatic adapter, production multi-user service, off-host recovery or unavailable-connection assistant journey validated |
 
-Native Codex reported aggregated input 433,228 tokens, of which 374,400 were cached, and output 5,408 tokens for the bounded trial. These are provider-reported token counts, not a measured percentage of weekly allowance or a dollar cost. No native creative retries were run. Claude discovery reported 4 input tokens, 13,086 cache-creation, 12,651 cache-read and 184 output tokens; the timed-out writing run usage is unknown. Same-host subagent usage is not exposed here and remains unknown. No claim of zero model usage.
+## Actual native creative trials
 
-The code uses Python 3.9+ standard library for basic setup/import/export. PDF extraction needs pdftotext; PDF build/measurement needs make, Tectonic or latexmk/XeLaTeX, and pdfinfo. A tool on PATH does not establish account entitlement, command activation or usable capacity. Import extraction never certifies a complete read, especially for images/scanned pages.
+Codex completed its bounded short trial in 185.4 seconds. Provider-reported aggregate input 433,228 tokens included 374,400 cached; output 5,408 tokens. These are not a measured percentage of weekly allowance or a billed dollar cost. No native creative rerun was made.
 
-Native core trials used installed snapshots before the new setup/import/adaptation procedures were finalized. Current21-entry installation is mechanically tested; no claim that every new command has been invoked natively. Claude Sonnet trial output is retained privately as failure evidence, not marketed as a finished example. No further native model calls are planned in this bounded release run. The named scope repair was a targeted change after an observed failure, not a new generation or a rerun solely to change a verdict.
+Claude's initial writing trial timed out at 240 seconds. Startup-only connection diagnosis succeeded; project-settings discovery actually loaded story-draft. An empty-settings diagnostic found no skills and made no inference call. Discovery reported 4 input, 13,086 cache-creation, 12,651 cache-read and 184 output tokens.
+
+A bounded Sonnet writing trial produced five physical pages, exceeded the two-dramatic-page brief and timed out. The new physical-page cap rejected it. One named scope repair resumed the same draft and produced a current three-page PDF with 273 source words; the CLI again timed out before final return. Its writing-run usage is unknown. The draft is retained privately as failure evidence, not sold as a finished example.
+
+## Later bounded resume and memory probes
+
+Exactly two short calls per host, without new screenplay generation. Both actual manuscripts remained unchanged. Claude's first call returned in 25.24 seconds on Haiku 4.5 low effort, proving session/skill/tool activation; its final prose misreported the actual discover:NEXT status and conflated a separate memory fixture with canon. Codex's first call returned in 22.97 seconds on gpt-6-luna low effort and correctly reported both. The second calls exposed native write limitations. See [resume evidence](NATIVE_RESUME_PILOT.md) and [memory pilot/usage](GBRAIN_PILOT.md).
+
+Claude reported USD 0.08771035 and USD 0.112122 on the two follow-ups; those are CLI-reported model counters, not confirmed subscription charges. Codex follow-up token counters appear aggregate across the resumed thread and must not be added as fresh spend. Same-host subagent usage is not exposed and remains unknown. No zero-usage claim or measured feature-generation cost.
+
+## What installation proves
+
+Current 21-entry Claude/Codex layouts and source-independent export are mechanically tested. Native creative trials used earlier installed snapshots; later resume probes do not establish every new command was invoked natively. Subsequent resume/context instruction repairs have not been re-tested with new native inference.
+
+Basic setup/import/export uses Python 3.9+ standard library. Text PDF extraction needs pdftotext; PDF production needs make, Tectonic or latexmk/XeLaTeX, and pdfinfo. A tool on PATH does not prove account entitlement, discovery, available capacity or successful artistic work. Extraction does not certify a complete read, especially with images/scans.

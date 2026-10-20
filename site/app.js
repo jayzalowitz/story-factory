@@ -84,6 +84,28 @@
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, { once: true });
 
+  const fullRunRequest = document.querySelector('#full-run-request');
+  const runRequestBody = fullRunRequest.textContent.replace(/^\/story-run\s+/, '');
+  async function copyRunRequest(prefix) {
+    const request = prefix + 'story-run ' + runRequestBody;
+    fullRunRequest.textContent = request;
+    const status = document.querySelector('#run-copy-status');
+    try {
+      await navigator.clipboard.writeText(request);
+      status.textContent = 'Copied. Paste into your assistant after setup, then replace [your idea].';
+    } catch {
+      fullRunRequest.focus();
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(fullRunRequest);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      status.textContent = 'Copy was blocked. The request is selected; copy it manually and paste into your assistant.';
+    }
+  }
+  document.querySelector('#copy-run-claude').addEventListener('click', () => copyRunRequest('/'));
+  document.querySelector('#copy-run-codex').addEventListener('click', () => copyRunRequest('$'));
+
   const form = document.querySelector('#idea-form');
   const idea = document.querySelector('#idea');
   const error = document.querySelector('#idea-error');

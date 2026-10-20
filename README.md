@@ -1,29 +1,39 @@
 # Story Factory
 
-**Bring an idea or a screenplay. Leave with a stronger story and the materials you choose.**
+**Your idea. Your voice. A writing room that carries the work forward.**
 
-A writing room for you and your AI assistant: explore the idea, develop characters, build scenes, write the script, question what is weak, revise, and prepare it for other people to read. You stay the author. Your creative decisions govern.
+Story Factory helps you and your AI assistant develop an idea into a screenplay, revise what is weak, and prepare the materials you want to share. Start with a sentence, a finished script, or a book you want to adapt. You stay the author. Your creative decisions govern.
 
-**[Start here: the illustrated, step-by-step website](https://jayzalowitz.github.io/story-factory/)** — including help choosing an AI assistant and getting set up. No coding experience required.
+**[Visit the step-by-step website](https://jayzalowitz.github.io/story-factory/)** · **[Download Story Factory](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.3/story-factory-0.2.0-preview.3.zip)** · **[Read a finished screenplay](https://jayzalowitz.github.io/story-factory/examples/the-letter-to-the-father/screenplay.pdf)** · [View on GitHub](https://github.com/jayzalowitz/story-factory)
+
+No coding experience required. New to AI writing assistants? [Start with the beginner guide](docs/START_HERE.md).
 
 ## One command, the whole process
 
-After setup, type **`/story-run` in Claude Code** or **`$story-run` in Codex**, followed by your idea. You do not need to run the individual writing commands yourself.
+**`/story-run` in Claude Code · `$story-run` in Codex**
+
+After the short setup below, this is the only writing command you need. Add your idea and let the assistant coordinate the work:
+
+**Explore → research when needed → characters and outline → screenplay → review and revision → selected materials → inspected PDFs.**
 
 For the full kind of project shown by *The Letter to the Father*, paste:
 
-```text
-/story-run My idea is: [your idea]. Create a separate feature-film project and carry it from discovery and research where needed through characters, outline, complete screenplay, full-draft review, meaningful revisions, continuity and Bechdel checks, all 15 studio-package sections, all 16 pitches, and built, visually inspected PDFs with editable sources. Ask me one useful question at a time for important creative choices; handle the routine steps and save progress between sessions. Do not send or publish my work.
-```
+> /story-run My idea is: [your idea]. Create a separate feature-film project and carry it from discovery and research where needed through characters, outline, complete screenplay, full-draft review, meaningful revisions, continuity and Bechdel checks, all 15 studio-package sections, all 16 pitches, and built, visually inspected PDFs with editable sources. Ask me one useful question at a time for important creative choices; handle the routine steps and save progress between sessions. Do not send or publish my work.
 
 **Codex:** replace `/story-run` with `$story-run`. Ask for dry wit and restrained writing if you want those qualities from the example. The full selection produces **18 PDFs**: screenplay, assembled studio package, and sixteen pitches. You can request fewer materials in the same command.
 
-One command starts and coordinates the entire process; you still make creative choices. A feature can span several sessions or usage resets. Return with `story-resume`; missing tools and unfinished checks stay visible. The historical feature predates the command suite, so this is its extracted workflow, not a promise of identical writing or page counts.
+One command coordinates the process; you still make creative choices. A feature can span several sessions or usage resets. Reopen your story folder and use `/story-resume` (Claude) or `$story-resume` (Codex) to continue. Missing tools and unfinished checks stay visible. *The Letter to the Father* predates these commands: this is its extracted workflow, not a promise of identical writing or page counts.
+
+## A draft gets challenged, not just generated
+
+**Write → read the whole draft → find the consequential flaws → revise → recheck → package and inspect.** The assistant carries the loop and preserves your decisions. Reviews cite actual scenes and check character agency, continuity, relevant source fidelity and ending payoff. The **Bechdel assessment** asks whether two named women converse about something other than a man. It reports PASS, FAIL or UNCLEAR honestly; passing is required only if you choose that goal. A pass does not establish character depth or artistic quality. Revision rounds focus on consequential repairs and stop with remaining concerns recorded, rather than running endlessly.
+
+**Why a project folder matters:** even a leading AI model can consider only a limited amount of material at once. The screenplay, research, old drafts and conversation can grow beyond that space, even while the chat still appears on your screen. Story Factory saves the manuscript, story bible, sources, review findings and next action in files. The assistant reads what each stage needs, saves checkpoints and reloads relevant records across sessions. Full-draft reviews still cover the entire current draft, in tracked sections when needed. This makes progress recoverable; it does not give an AI unlimited memory. [How context and quality work](docs/CONTEXT_AND_QUALITY.md).
 
 ## Your first session
 
 1. Choose a writing assistant that can work with files: **Claude Code** or **Codex**. The website explains accounts, plans, apps, and opening a project folder. You only need one. Story Factory is free; your chosen AI service has its own usage limits and possible charges.
-2. [Download this project](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.2/story-factory-0.2.0-preview.2.zip) and unzip it. Open the resulting folder in your assistant.
+2. [Download this project](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.3/story-factory-0.2.0-preview.3.zip) and unzip it. Open the resulting folder in your assistant.
 3. Paste this message:
 
 > Set up Story Factory for my current assistant in this folder using its install.py. I am new to this: explain anything I must do in plain language. Check Python is available first. Install the project skills for my current assistant, then tell me how to reopen this folder if needed. Help me create a separate story project without overwriting anything. My starting idea is: [your idea]. Ask one useful question at a time. I will choose which final files I want. Do not publish or send my work.
@@ -42,7 +52,7 @@ You can stop at an idea, outline, draft, or revision. Every final document is op
 
 The assistant records your choices and builds only those PDFs. A full selection produces 18 PDFs: a screenplay, one assembled studio package, and 16 pitches. See [all the choices](docs/PACKAGE.md).
 
-The assistant carries the quality process even for a beginner: full-draft diagnosis, substantive repairs, source and continuity checks, aligned materials, and inspection of every final PDF page. You do not need to ask for specialist reviews. The process includes honest story review, continuity, character agency, a scene-evidenced Bechdel assessment, and checks of the actual PDFs. A passing test or an attractive document does not guarantee a great film. Dry wit and restrained writing are available creative choices, not a forced style for every story.
+You do not need to manage the reviews. The assistant reads the full draft, identifies consequential weaknesses, revises, checks continuity and character agency, and keeps the package faithful to the screenplay. It also records a Bechdel assessment using actual scenes and inspects every final PDF page. A passing test or an attractive document does not guarantee a great film. Your story chooses the tone; the example’s dry wit and restraint are available choices.
 
 ## Real stories and real choices
 
@@ -52,7 +62,11 @@ Most people can stay in one conversation. Optional helper teams for research and
 
 ## See what finished work looks like
 
-[The Letter to the Father](examples/the-letter-to-the-father/README.md) is the feature project from which this process was extracted: a measured 106-page screenplay, 45-page studio package, and 16 pitches. Its original brief and development critique are preserved as historical guidance. These are development examples; proposed casting, budgets, financing and awards language are illustrative. They are not confirmed attachments, research certification, or sales claims.
+<a href="https://jayzalowitz.github.io/story-factory/examples/the-ledger-room/screenplay.pdf"><img src="site/assets/ledger-room-screenplay.png" width="220" alt="Opening scene from the new Ledger Room screenplay"></a> <a href="https://jayzalowitz.github.io/story-factory/examples/the-ledger-room/studio-package.pdf"><img src="site/assets/ledger-room-package.png" width="220" alt="Cover of its complete studio package"></a>
+
+*Actual pages from the new feature demonstration. Select either page to open its PDF.*
+
+[The Letter to the Father](examples/the-letter-to-the-father/README.md) is the feature project from which this process was extracted: a measured [106-page screenplay](site/examples/the-letter-to-the-father/screenplay.pdf), [45-page studio package](site/examples/the-letter-to-the-father/studio-package.pdf), and 16 pitches. [Browse the example gallery](https://jayzalowitz.github.io/story-factory/#examples) to read the public PDFs. Its original brief and development critique are preserved as historical guidance. These are development examples; proposed casting, budgets, financing and awards language are illustrative. They are not confirmed attachments, research certification, or sales claims.
 
 The feature predates these commands. It shows the class of output the toolkit is designed to support, rather than proving one command recreates that quality. [The Night Window](examples/the-night-window/README.md) is a newly written short demonstration with a 10-page screenplay, a 17-page package, and sixteen one-page pitches, produced and checked on this agent host. New examples and [worked sessions](examples/WALKTHROUGH.md) show how to use the system.
 
@@ -66,4 +80,4 @@ Use the [full writing prompt](MASTER_PROMPT.md) or [short writing guide](WRITING
 
 The working pattern is inspired by [Garry Tan's gstack](https://github.com/garrytan/gstack): explore, challenge, build, review, verify, and hand off. This is an independent storytelling toolkit; gstack is not required. Story Factory never contacts talent, submits scripts, or publishes your work merely because you ask it to write.
 
-For maintainers: [compatibility and test evidence](docs/COMPATIBILITY.md) · [next-phase progress](docs/NEXT_PHASE.md).
+For maintainers: [compatibility and test evidence](docs/COMPATIBILITY.md) · [full conversation audit](docs/CHAT_GOALS_AUDIT.md) · [next-phase progress](docs/NEXT_PHASE.md).

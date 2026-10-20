@@ -36,7 +36,7 @@ class PublicSiteTests(unittest.TestCase):
                 else:
                     if value.startswith('https://'):
                         self.assertEqual(attribute, 'href', 'external navigation is allowed, remote assets are not')
-                        self.assertIn(value.split('/')[2], {'github.com', 'code.claude.com', 'learn.chatgpt.com', 'grok.com'})
+                        self.assertIn(value.split('/')[2], {'github.com', 'code.claude.com', 'learn.chatgpt.com', 'grok.com', 'developers.openai.com', 'platform.claude.com'})
                         continue
                     self.assertNotIn('://', value, 'remote assets are not allowed')
                     target = (SITE / value).resolve()
@@ -72,6 +72,7 @@ class PublicSiteTests(unittest.TestCase):
             'index.html', 'style.css', 'app.js', 'story-starter.txt', '.nojekyll',
             'assets/Tinos-Regular.ttf', 'assets/Tinos-Italic.ttf', 'assets/Arimo-Regular.ttf',
             'assets/LICENSE.txt', 'assets/favicon.svg',
+            'assets/ledger-room-screenplay.png', 'assets/ledger-room-package.png',
         }
         for stem in ['screenplay', 'studio-package', 'one-pager', 'actor-pitch', 'director-pitch',
                      'financier-pitch', 'distributor-pitch', 'producer-pitch', 'festival-pitch',

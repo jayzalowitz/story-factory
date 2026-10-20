@@ -23,6 +23,8 @@ A new project is created by the toolkit's story_factory/new_story.py. Existing p
 - [IMPORTING.md](IMPORTING.md): preserving and extracting supplied documents.
 - [ADAPTATION.md](ADAPTATION.md): non-screenplay source material, fidelity and cinematic transformation.
 
+- [CONTEXT.md](CONTEXT.md): finite context, durable checkpoints, whole-draft reading coverage and truthful resumption. Read at the start of a complete run and when resuming long work.
+
 ## Track work honestly
 
 On entry, inspect development/status.md and run workflow status if available. Stage commands may do exploratory work out of order when explicitly requested, but completion receipts advance only when their prerequisites and artifacts are valid. If accepted documents change, reopen the earliest changed stage with a concrete reason and revalidate preserved work in order. Do not discard writing just to make the tracker clean.

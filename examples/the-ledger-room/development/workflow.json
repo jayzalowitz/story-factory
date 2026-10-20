@@ -115,12 +115,12 @@
     },
     "handoff": {
       "files": {
-        "README.md": "dc89f22540601c25f0f5f977cbe8a6d2c679859167f428e3139c5219d694e9c5",
+        "README.md": "ffc921b1d0ebc26bb89780e2e939529fbb158957ae8e13bfd9af4c6b802efc03",
         "development/status.md": "cfe1f2cb6081d574784102e2bbf05bd172103cbaa0e0a63932739cdca81d9454",
         "development/handoff.md": "da6d3e43b2d6fc66980efc4863b81f0a84a2fb7cae35488bcca19b3c8b6e2925"
       },
-      "evidence": "Local demonstration, actual inventory and remaining creative/production limits documented; no publication or outreach.",
-      "time": "2026-10-20T10:09:15.304522+00:00"
+      "evidence": "Reviewed current README links, full actual inventory, status and limitations; manuscript, package, PDF and visual hashes remain unchanged. Local handoff stays a scoped demonstration, not professional certification.",
+      "time": "2026-10-20T10:29:24.693689+00:00"
     }
   }
 }

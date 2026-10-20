@@ -417,3 +417,40 @@ legend{font:23px var(--serif);padding-right:12px;color:var(--green)}
   #welcome .intro{margin-bottom:14px}
   #welcome .cover-description{margin-bottom:18px}
 }
+
+/* Show real deliverables rather than an invented sample page. */
+.real-output-art{position:relative;min-height:610px}
+.output-sheet{position:absolute;display:block;background:#fff;box-shadow:0 18px 48px #243b2f26;color:var(--green);text-decoration:none;border:1px solid #d8dacd}
+.output-sheet img{display:block;width:100%;height:auto}
+.output-sheet span{display:block;padding:12px 16px;font-size:13px;font-weight:700;background:var(--paper)}
+.output-package{width:57%;left:0;top:10px;transform:rotate(-7deg)}
+.output-screenplay{width:64%;right:0;top:92px;transform:rotate(5deg)}
+.output-sheet:hover,.output-sheet:focus-visible{transform:rotate(0);z-index:2}
+.real-output-art .art-caption{position:absolute;bottom:0;right:0;left:0;text-align:center;font-size:13px;line-height:1.6}
+.run-command-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.run-command-heading p{margin:0}
+.run-copy-actions{display:flex;gap:10px;flex-wrap:wrap}
+.run-copy-actions button{font:inherit;background:var(--green);color:#fff;border:1px solid var(--green);border-radius:3px;padding:11px 16px;min-height:44px;cursor:pointer}
+#full-run-request{font-family:var(--mono,monospace);font-size:15px;line-height:1.85;white-space:pre-wrap;overflow-wrap:anywhere;background:#f8f7f0;border:1px solid #c8cebd;padding:24px;margin:22px 0 12px;border-radius:3px}
+#run-copy-status{font-size:14px;color:var(--green);margin:0 0 18px;min-height:24px}
+@media(min-width:701px) and (max-width:1000px){.real-output-art{min-height:560px}.output-sheet span{font-size:11px;padding:10px}}
+@media(min-width:701px) and (max-height:800px){.real-output-art{min-height:500px}.output-package{width:49%}.output-screenplay{width:55%;top:55px}}
+@media(max-width:700px){#full-run-request{padding:18px;font-size:14px}.run-copy-actions button{font-size:14px}.run-command-heading{gap:12px}}
+
+.home-quality{padding:44px 0 24px;margin-top:28px;border-top:1px solid var(--line)}
+.review-loop{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:24px 0 32px;color:var(--green);font-size:15px;font-weight:700}
+.review-loop span:nth-child(odd){padding:10px 14px;background:#e3e7da;border-radius:3px}
+.quality-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px;margin:0 0 24px}
+.quality-grid>div{border-top:1px solid var(--line);padding:26px 0 12px}
+.gate-label{color:var(--green);font-size:11px;letter-spacing:1.6px;font-weight:700;margin:0 0 10px}
+.quality-grid h3{font-family:var(--serif);font-size:30px;line-height:1.15;margin:0 0 14px}
+.quality-grid p:not(.gate-label){font-size:16px;line-height:1.75}
+.home-context{display:grid;grid-template-columns:1fr 1.15fr;gap:8%;border-top:1px solid var(--line);padding:44px 0 24px}
+.home-context h2{font:48px/1.1 var(--serif);letter-spacing:-1px}
+.home-context p{font-size:16px;line-height:1.8}
+.home-context .small-copy{font-size:14px}
+@media(max-width:700px){.quality-grid,.home-context{grid-template-columns:1fr;gap:0}.home-context h2{font-size:38px}.quality-grid h3{font-size:28px}.review-loop{gap:8px;font-size:13px}.review-loop span:nth-child(odd){padding:8px 10px}}
+/* Existing cover rules zero min-height because the old illustration owned it. */
+#welcome .real-output-art{height:680px}
+@media(min-width:701px) and (max-width:1000px){#welcome .real-output-art{height:560px}}
+@media(min-width:701px) and (max-height:800px){#welcome .real-output-art{height:530px}}

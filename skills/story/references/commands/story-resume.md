@@ -2,3 +2,7 @@
 Read development/status.md, workflow receipts, brief, story bible, scene map, research mode/report, recent revision log, and relevant draft sections. Run workflow status and mechanical checks that apply; identify stale approvals before claiming readiness. Do not regenerate or overwrite existing scenes simply because a receipt is missing.
 
 Give the writer a short recap: the story we are telling, choices already made, what changed last, the biggest unresolved question, and the next useful command. If they asked to continue, execute that next stage within their scope. If context is missing, ask one consequential question and continue independent work. Preserve explicit creative decisions across sessions.
+
+Read CONTEXT.md. Keep canonical files and approved decisions current, work within finite context, track actual reading coverage and save an exact checkpoint before interruption. A complete review still requires the complete current draft, even when read across bounded scopes; unseen scenes cannot be approved from summaries.
+
+Treat the actual workflow tool result as evidence: name the exact next incomplete or stale stage it reports. Do not say a stage is complete because a draft exists or because an older summary says so. If files are ahead of receipts, explain that difference, preserve the draft, and reconstruct/review missing stage evidence before advancing. A process returning successfully does not prove its final prose matches the tool result. Verify quoted statuses and recalled facts against their actual outputs before reporting them to the writer.

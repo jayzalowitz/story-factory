@@ -104,6 +104,45 @@ class SkillTests(unittest.TestCase):
   self.assertEqual(checks.output_limit_problems(self.root,{'screenplay.pdf':{'pages':3}}),[])
   prefs.write_text(json.dumps({'screenplay_max_pages':True}))
   self.assertTrue(checks.output_limit_problems(self.root,{'screenplay.pdf':{'pages':1}}))
+ def truth_fixture(self):
+  root=self.root;(root/'research').mkdir();(root/'screenplay').mkdir();(root/'sources').mkdir()
+  (root/'research/source_mode.json').write_text(json.dumps({'mode':'based-on','audience_wording':'Based on records, with invented dialogue.','creative_departures':['Dialogue invented.']}))
+  (root/'research/claims.json').write_text(json.dumps({'sources':[{'id':'S1','path':'sources/notes.txt'}],'claims':[{'id':'C1','status':'inference','source_ids':['S1']}]}))
+  (root/'research/truth_report.md').write_text('Reviewed source notes against the complete draft and audience wording.')
+  (root/'screenplay/act1.tex').write_text('A fully reviewed invented conversation anchored to a supported event.')
+  (root/'sources/notes.txt').write_text('Inspected source notes with a specific factual limit.')
+  receipt=dict(checks.truth_bindings(root),verdict='READY',summary='Reviewed current local evidence, departures and audience promise.')
+  (root/'research/truth.json').write_text(json.dumps(receipt))
+  return receipt
+ def test_truth_receipt_invalidates_changed_promise_departures_and_original_relabel(self):
+  self.truth_fixture();self.assertEqual(checks.truth_problems(self.root,True),[])
+  path=self.root/'research/source_mode.json';original=path.read_text()
+  for field,value in [('audience_wording','Every spoken word is documented.'),('creative_departures',[]),('mode','inspired-by'),('mode','original')]:
+   data=json.loads(original);data[field]=value;path.write_text(json.dumps(data))
+   with self.subTest(field=field,value=value):
+    self.assertTrue(any('source mode' in error for error in checks.truth_problems(self.root,True)))
+ def test_truth_receipt_binds_actual_local_sources_and_research_notes(self):
+  self.truth_fixture();notes=self.root/'sources/notes.txt';original=notes.read_text()
+  notes.write_text('A correction contradicts the accepted claim.')
+  self.assertTrue(any('source artifacts' in error for error in checks.truth_problems(self.root,True)))
+  notes.write_text(original)
+  (self.root/'research/scene_traceability.md').write_text('A newly recorded scene changes the claim mapping.')
+  self.assertTrue(any('research evidence' in error for error in checks.truth_problems(self.root,True)))
+ def test_truth_receipt_binds_pitch_claims_and_requires_source_mode(self):
+  self.truth_fixture();(self.root/'one_pagers').mkdir()
+  (self.root/'one_pagers/one_pager.tex').write_text('Based on the verified true conversation.')
+  self.assertTrue(any('audience-facing' in error for error in checks.truth_problems(self.root,True)))
+  (self.root/'research/source_mode.json').unlink()
+  self.assertTrue(any('Missing source mode' in error for error in checks.truth_problems(self.root,True)))
+ def test_legacy_truth_receipts_and_missing_local_evidence_fail_closed(self):
+  receipt=self.truth_fixture()
+  for key in ['source_mode_sha256','research_sha256','audience_sha256','source_files_sha256']:receipt.pop(key)
+  (self.root/'research/truth.json').write_text(json.dumps(receipt))
+  self.assertTrue(any('missing bindings' in error for error in checks.truth_problems(self.root,True)))
+  (self.root/'sources/notes.txt').unlink()
+  with self.assertRaisesRegex(ValueError,'Missing local truth source'):
+   checks.truth_problems(self.root,True)
+
  def test_verified_claims_cannot_use_missing_or_synthetic_sources(self):
   root=self.root;(root/'research').mkdir()
   (root/'research/source_mode.json').write_text('{"mode":"based-on"}')

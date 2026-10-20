@@ -24,17 +24,17 @@ Invoking the research command authorizes ordinary web research using tools alrea
 
 ## Delegate distinct questions, then reconcile
 
-Create an assignment manifest before delegation. Give each worker its own output directory and bounded task; they may read shared files but must not edit the master ledger, screenplay, or another worker's files.
+Create an assignment manifest before delegation. Research helpers use the same development/workers/ root required by TEAMS.md and team_controls.py; keep their research-prefixed notes directories disjoint. Give each worker its own output directory and bounded task; they may read shared files but must not edit the master ledger, screenplay, or another worker's files.
 
 | Worker | Question | Exclusive write directory |
 | --- | --- | --- |
-| Chronology | What happened when? Which turning points are established, disputed, or unknown? | `research/workers/chronology/` |
-| Relationships | Who knew whom, what did each person want, and whose account is missing? | `research/workers/relationships/` |
-| Context and challenge | What social, professional, cultural, or material constraints matter? What evidence contradicts the leading interpretation? | `research/workers/context/` |
+| Chronology | What happened when? Which turning points are established, disputed, or unknown? | `development/workers/research-chronology/` |
+| Relationships | Who knew whom, what did each person want, and whose account is missing? | `development/workers/research-relationships/` |
+| Context and challenge | What social, professional, cultural, or material constraints matter? What evidence contradicts the leading interpretation? | `development/workers/research-context/` |
 
 Use only the host's documented native tools. Example assignment text, not an executable tool call:
 
-> Research only the chronology of [subject] during [period] using up to ten candidate sources. Prefer original records and clearly identify later retellings. Write notes.md and candidate_claims.json only inside research/workers/chronology/. Include source URLs, exact locations, access dates, relevant short quotations or paraphrases, uncertainties, contradictions, and dramatic implications. Do not invent evidence, write screenplay scenes, edit shared files, contact anyone, spend money, or spawn further agents. Return a concise findings report and actual files written.
+> Research only the chronology of [subject] during [period] using up to ten candidate sources. Prefer original records and clearly identify later retellings. Write notes.md and candidate_claims.json only inside development/workers/research-chronology/. Include source URLs, exact locations, access dates, relevant short quotations or paraphrases, uncertainties, contradictions, and dramatic implications. Do not invent evidence, write screenplay scenes, edit shared files, contact anyone, spend money, or spawn further agents. Return a concise findings report and actual files written.
 
 Adapt the question and exclusive directory for each worker. If native delegation is unavailable, state “Research ran sequentially in this host; no independent subagents were available,” and perform the same three passes in the same separate directories. Never fabricate workers, conversations, tool calls, independent agreement, or independent review. Running several roles in one context is useful but remains one agent's work.
 

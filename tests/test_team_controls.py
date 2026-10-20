@@ -85,6 +85,18 @@ class TeamControlsTests(unittest.TestCase):
         with self.assertRaises(TeamError):
             check_activity(settings, plan, receipt)
 
+    def test_documented_research_worker_directories_pass_preflight(self):
+        from pathlib import Path
+        import re
+        text=(Path(__file__).resolve().parents[1]/'skills/story/references/RESEARCH.md').read_text()
+        directories=re.findall(r'`(development/workers/research-[^`]+)`',text)
+        self.assertEqual(len(directories),3)
+        settings,plan,_=self.fixture()
+        plan['workers']=[dict(plan['workers'][0],name='research-'+str(index),task='research',
+                              source_limit=10,output_path=path)
+                         for index,path in enumerate(directories)]
+        self.assertEqual(authorize_plan(settings,plan,current_session='current-test-session')['worker_count'],3)
+
     def test_mirror_is_identical(self):
         from pathlib import Path
         root = Path(__file__).resolve().parents[1]
