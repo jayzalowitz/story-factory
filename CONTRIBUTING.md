@@ -15,4 +15,6 @@ make -C ../contribution-smoke all
 
 Check every expected PDF, all 16 pitch lengths, and changes to document layout. For prompt/playbook changes, also exercise the affected stage with a real example and distinguish mechanical test coverage from editorial evaluation.
 
-The included CI runs Python workflow tests and exporter smoke checks. It does not run model evaluations, compile PDFs, or judge story quality. Document those checks in the pull request when relevant.
+For website changes, also run `python3 -m unittest discover -s tests -v` and follow the [website guide](docs/site/README.md). Publishable files must match the explicit public-artifact allowlist; do not copy private project material into site/.
+
+The included CI runs Python workflow tests, public-site checks, and exporter smoke checks. It does not run model evaluations, compile PDFs, or judge story quality. Document those checks in the pull request when relevant.
