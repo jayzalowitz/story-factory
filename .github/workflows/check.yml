@@ -12,6 +12,8 @@ jobs:
           python-version: '3.11'
       - name: Workflow behavior
         run: python3 -m unittest discover -s story_factory -p 'test_*.py' -v
+      - name: Public introduction checks
+        run: python3 -m unittest discover -s tests -v
       - name: Export a clean project
         run: python3 story_factory/new_story.py "$RUNNER_TEMP/story-smoke" --title "CI Story"
       - name: Check exported workflow

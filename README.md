@@ -1,82 +1,64 @@
 # Story Factory
 
-Turn a story idea into a complete feature screenplay, development package, and 16 stakeholder pitches through a staged, evidence-backed workflow.
+### You bring the idea. We help you find the story.
 
-Inspired by gstack's product-development pattern: office hours → premise/scope review → character and structure design → draft → critical review and revision → package → QA → handoff. This is a story-specific adaptation, not an official gstack component. It works with a coding agent; gstack is optional.
+A character you cannot stop thinking about. An image from a dream. A family story. A half-finished screenplay.
 
-## Start a new story
+Story Factory gives you a thoughtful way to develop that spark with an AI writing assistant: ask better questions, find the heart of the story, write a draft, and make it stronger. You stay the author. You choose what belongs.
 
-Clone this repository, then create a fresh project:
+**You do not need to know how to code to begin.** You can start with a normal AI conversation. The complete project also includes tools for organizing files and making polished PDFs, when you are ready.
 
-```sh
-git clone https://github.com/jayzalowitz/story-factory.git
-cd story-factory
-python3 story_factory/new_story.py ../my-film --title "My Film"
-cd ../my-film
-```
+## Start with one conversation
 
-Python 3.9+ is required. The destination must not exist. The generated project is independent of this repository. The exporter preserves layout, fonts, and publishing rules; it exports no existing screenplay, agent sessions, or original Git history.
+Open the AI assistant you already use and paste this:
 
-Give your coding agent this instruction:
+> I want to develop a story with you using the Story Factory approach. My starting idea is: **[describe your idea in a sentence or two]**.
+>
+> Begin as a thoughtful story editor. Ask me one useful question at a time. Help me find who the story follows, what they want, what stands in the way, and why we should care. Explore a few directions before we choose one. Then help me build the characters, outline, draft, and revisions in that order. Challenge weak choices kindly and specifically. Keep my creative decisions intact. Do not rush into writing the whole screenplay.
 
-> Read AGENTS.md, WORKFLOW.md, MASTER_PROMPT.md, and development/brief.md. Help me discover the story from my idea. Run `python3 scripts/workflow.py status`, execute the next stage, challenge weak assumptions, write the real artifacts, and continue through revision and verification. Ask the most consequential unanswered question first. Preserve my explicit creative choices.
+That is enough to begin. A rough idea is welcome. “I know the feeling, but not the plot” is a useful starting point too.
 
-Supply your seed idea in the conversation or development/brief.md. The agent uses the [master prompt](MASTER_PROMPT.md) for craft requirements and the [workflow](WORKFLOW.md) for execution. Do not use this template repository itself as your first story unless you intentionally want to maintain your story and template together.
+For more guidance, follow the [writing guide](WRITING_GUIDE.md). For the more detailed instructions behind the process, see the [full writing prompt](MASTER_PROMPT.md).
 
-## The development system
+## How the process works
 
-| Stage | Purpose | Main evidence |
-|---|---|---|
-| Discover | Story office hours: specificity, audience experience, engine, constraints | Brief and discovery design document |
-| Premise | Challenge the idea, compare scopes, choose a direction | Story bible and premise review |
-| Structure | Design characters, causality, movement, chronology, and form | Outline, scene map, continuity, structure review |
-| Draft | Write the complete screenplay | Actual screenplay files and draft report |
-| Revise | Find structural failures, implement repairs, then polish | Review and revision log |
-| Package | Derive consistent development and stakeholder materials | Studio package, 16 pitches, package review |
-| Verify | Check story continuity and compile/inspect the documents | Verification report with real evidence |
-| Handoff | Deliver editable source and measured outputs | README, status, handoff inventory |
+**First, find the story.** Talk through the idea, explore different directions, and decide whose story it is. Work out what makes it worth telling and how ambitious it should be.
 
-The workflow command enforces stage order, required artifacts, no placeholder content, explicit review verdicts, and written completion evidence. Receipts hash reviewed files; upstream edits invalidate completion until revalidated. It does not call an AI service or certify creative quality. The agent and writer must supply honest editorial judgment and actual verification evidence.
+**Then, build and write it.** Develop people who want different things. Shape scenes where their choices have consequences. Make an outline, then write the actual screenplay.
 
-```sh
-python3 scripts/workflow.py status
-python3 scripts/workflow.py check
-python3 scripts/workflow.py complete discover --evidence "Reviewed the concrete story engine and direction."
-python3 scripts/workflow.py reopen structure --reason "The ending changed and causality needs another review."
-```
+**Finally, make it stronger and ready to share.** Read the whole draft critically. Fix the big problems before polishing individual lines. When the story is ready, create the materials that explain it to other people.
 
-## Build PDFs
+There are eight steps behind this process: discovery, premise, structure, draft, revision, presentation materials, final checks, and handoff. Each step leaves something useful to build on. You can return to an earlier step when the story changes.
 
-Install Tectonic, or latexmk with XeLaTeX. For example, on macOS with Homebrew:
+## What you can create
 
-```sh
-brew install tectonic
-make all
-```
+Start small, or work toward a complete film project:
 
-Individual targets: `make screenplay`, `make package`, `make one-pagers`. Outputs go in output/: screenplay.pdf, studio-package.pdf, and 16 pitch PDFs. Tectonic may download its TeX support files on the first build. Local fonts and their license are included.
+- **A clear story idea:** a title, a compelling one-sentence description, and a sense of the ending.
+- **Characters and an outline:** who these people are, what they want, and how the story unfolds.
+- **A complete screenplay:** followed by honest feedback and meaningful revisions.
+- **A story guide:** a reference for the characters, setting, timeline, and important details.
+- **A presentation package:** a synopsis, a longer story summary, creative direction, and production considerations.
+- **Short pitches for different readers:** an actor, director, producer, potential funder, and others. The full template includes 16 versions.
 
-The blank project compiles intentionally. Its documents are labeled as placeholders, and workflow completion remains blocked until actual writing exists. Mechanical build success is not story approval.
+These are drafts and development tools. They do not guarantee representation, financing, casting, sales, or awards. Proposed actors and partners remain ideas until they actually agree to participate.
 
-## Repository map
+## What you need
 
-- MASTER_PROMPT.md: detailed reusable writing and packaging requirements.
-- WORKFLOW.md: stage-by-stage agent playbook, review criteria, and handoff rules.
-- story_factory/: exporter and its self-contained workflow sources.
-- scripts/workflow.py: workflow command for this template project.
-- common/, fonts/, Makefile, latexmkrc: reusable publishing infrastructure.
-- screenplay/, package/, one_pagers/: blank content templates.
-- development/: brief, progress, and review evidence.
-- docs/ORIGIN.md: reconstruction of the original project's development history.
+An idea, some curiosity, and an AI assistant you are comfortable using. The public introduction and its prompt builder need no account of their own. Your chosen AI service may require an account and may charge for use.
 
-The root copies of MASTER_PROMPT.md, WORKFLOW.md, and scripts/workflow.py mirror their canonical versions in story_factory/. When changing the factory, update the root copies too. The original prototype was developed in the-letter-to-the-father; no original screenplay prose is included here.
+Story Factory is a guide and a set of templates. It is not a service that automatically writes a movie after you click a button. Your AI assistant helps with the writing; your taste, decisions, and revisions give the story its identity.
 
-## Developer checks
+If you want the assistant to save organized files, track the full process, and make PDFs, use the complete project with a coding assistant or ask someone to help with the [optional setup](docs/SETUP.md). You can let the assistant handle the commands.
 
-```sh
-python3 -m unittest discover -s story_factory -p 'test_*.py' -v
-python3 story_factory/new_story.py ../export-smoke --title "Export Smoke"
-make -C ../export-smoke all
-```
+## A few good habits
 
-Checks cover sequencing, missing evidence, review/placeholder failures, stale artifacts, and safe reopening. Export smoke checks should also confirm all 18 PDFs exist and all 16 pitches are one page. No external API key is needed; creative execution uses whichever coding agent you provide. Publishing this repository does not authorize outreach or imply talent attachments.
+Keep a copy of your work as you go. Ask for specific criticism, not just encouragement. Check facts when you write about real people or events. Make sure you have permission to use material that belongs to someone else. Read the final work yourself before sharing it.
+
+The approach is inspired by gstack's habit of exploring an idea, challenging the plan, building carefully, and reviewing the result. This is an independent adaptation for storytelling. You do not need gstack installed.
+
+---
+
+**The website:** [Preview and publishing guide](docs/site/README.md).
+
+**For helpers and contributors:** [Setup and commands](docs/SETUP.md) · [The full process](WORKFLOW.md) · [Contributing](CONTRIBUTING.md) · [Where this began](docs/ORIGIN.md)
