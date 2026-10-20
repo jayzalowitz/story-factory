@@ -2,5 +2,12 @@
   "draft_sha256": "bb711499ab6a62a6de29a09ecb70c5a535cd6f0b4bb4f3c4199ea2e3aff10135",
   "claims_sha256": "0116d1c7719349e32c9a436f5553fbdb071c03d56fdef0fe4a53e7aba4751e13",
   "verdict": "READY",
-  "summary": "Six-scene historical short checked against inspected institutional accounts; all dialogue invented; unresolved travel wording omitted; original telegram not quoted."
+  "summary": "Six-scene historical short checked against inspected institutional accounts; all dialogue invented; unresolved travel wording omitted; original telegram not quoted.",
+  "source_mode_sha256": "38c2f7c94c77a923f694ec9449f8dc2620cc74d5460c52eed0ae2d9f8d7030ee",
+  "research_sha256": "4225538812276014a8183a84da02a8fe3aabef35e9257aa7753221b722fafcf9",
+  "audience_sha256": "5ea7919ef60fa12615d0d87ccad37c3f258f7f5f863dabb41711cae47c261a8f",
+  "source_files_sha256": {
+    "sources/nps-reading-notes.md": "c4af1533ea951fff2dc671b46a7aa6ad702edacca17079cb9e82a03f7062e9d9"
+  },
+  "binding_review": "Receipt expanded after reading the current source-mode/departures, research reports/notes, local evidence and audience copy; previously reviewed screenplay and claim hashes are unchanged. No new source access or independent historical review is claimed."
 }

@@ -3,5 +3,10 @@
   "claims_sha256": "99552be75b2c337450d8862d09dc5fe2d4997d148cbcf04ca3dafa9fbfc93485",
   "coverage": "full-draft",
   "verdict": "READY",
-  "summary": "All four fictional scenes reviewed; actual historical source used solely as declared thematic seed; no real musical event or transcript claimed."
+  "summary": "All four fictional scenes reviewed; actual historical source used solely as declared thematic seed; no real musical event or transcript claimed.",
+  "source_mode_sha256": "21cc8a76663441502e29528d6b978791d76e0f3266a86484065cfe633cee55b9",
+  "research_sha256": "71fb76f2b257d1b833586890fa75b9446570e271342f484649ac231e638ae338",
+  "audience_sha256": "eb1adc0b5fb08d4bff8e72d7b3c3de84421f9a173fb0dd80755979391c2df12d",
+  "source_files_sha256": {},
+  "binding_review": "Receipt expanded after reading the current source-mode/departures, research reports/notes, local evidence and audience copy; previously reviewed screenplay and claim hashes are unchanged. No new source access or independent historical review is claimed."
 }

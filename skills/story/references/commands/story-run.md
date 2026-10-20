@@ -14,3 +14,5 @@ Read DELIVERY.md. The assistant owns the default quality checks and repair work;
 For a novel, memoir, article, play or other supplied non-screenplay source, read ADAPTATION.md and use story-adapt. Source fidelity, adaptation permission status and factual truth are separate. Recheck current source-to-scene mapping after substantive changes.
 
 When a setup step requires reopening in the new story folder, save the full run request and exact next step. Explain the folder change in plain language and resume the run there; do not restart discovery or require manual stage management. Follow the host's actual session/usage limits and save an honest resume point rather than promising uninterrupted one-turn completion.
+
+Read CONTEXT.md. Keep canonical files and approved decisions current, work within finite context, track actual reading coverage and save an exact checkpoint before interruption. A complete review still requires the complete current draft, even when read across bounded scopes; unseen scenes cannot be approved from summaries.

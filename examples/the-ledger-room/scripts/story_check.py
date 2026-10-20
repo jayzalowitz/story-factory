@@ -103,21 +103,67 @@ def quality_problems(root):
     return errors
 
 
+def truth_bindings(root):
+    """Bind a review to its promise, research records and locally available evidence.
+
+    Remote URLs are citations, not live snapshots. Preserve inspected copies/notes
+    under sources/ or register a project-relative path/local_path in the ledger.
+    """
+    root=root.resolve()
+    research=root/'research'
+    names=['plan.md','report.md','truth_report.md','chronology.md','relationships.md',
+           'context.md','open_questions.md','source_material.md','scene_traceability.md']
+    records={research/name for name in names if (research/name).is_file()}
+    for folder in [research/'sources',research/'workers',*(root/'development/workers').glob('research-*')]:
+        records.update(path for path in folder.rglob('*') if path.is_file())
+    artifacts={path for path in (root/'sources').rglob('*') if path.is_file()}
+    ledger=research/'claims.json'
+    data=json.loads(ledger.read_text())
+    source_records=list(data.get('sources',[]))
+    adaptation=root/'adaptation/project.json'
+    if adaptation.is_file():
+        source_records+=json.loads(adaptation.read_text()).get('sources',[])
+    for source in source_records:
+        for key in ['path','local_path']:
+            if source.get(key):
+                relative=Path(source[key])
+                if relative.is_absolute() or '..' in relative.parts:
+                    raise ValueError('Truth source paths must be project-relative; preserve a local copy before review')
+                artifacts.add(root/relative)
+    for path in records|artifacts:
+        if not path.resolve().is_relative_to(root):
+            raise ValueError('Truth evidence must remain inside the story project')
+        if not path.is_file():
+            raise ValueError('Missing local truth source: '+path.relative_to(root).as_posix())
+    audience={path for folder in ['package','one_pagers'] for path in (root/folder).rglob('*.tex')}
+    audience.update(path for path in [root/'README.md',root/'common/metadata.tex'] if path.is_file())
+    return {
+        'draft_sha256':draft_fingerprint(root),
+        'claims_sha256':hashlib.sha256(ledger.read_bytes()).hexdigest(),
+        'source_mode_sha256':hashlib.sha256((research/'source_mode.json').read_bytes()).hexdigest(),
+        'research_sha256':digest(records,root),
+        'audience_sha256':digest(audience,root),
+        'source_files_sha256':{path.relative_to(root).as_posix():hashlib.sha256(path.read_bytes()).hexdigest()
+                               for path in sorted(artifacts)},
+    }
+
+
 def truth_problems(root, require_draft=False):
     path=root/'research/source_mode.json'
-    if not path.exists():return []
+    if not path.exists():
+        return ['Missing source mode for the existing truth review'] if (root/'research/truth.json').exists() else []
     errors=[]
     try:mode=json.loads(path.read_text()).get('mode')
     except ValueError:return ['Invalid research/source_mode.json']
     if mode not in ['original','based-on','inspired-by']:return ['Unknown source mode']
-    if mode=='original':return []
+    if mode=='original' and not (root/'research/truth.json').exists():return []
     ledger=root/'research/claims.json'
     if not ledger.exists():return ['Missing research/claims.json']
     try:data=json.loads(ledger.read_text())
     except ValueError:return ['Invalid research/claims.json']
     sources={s.get('id'):s for s in data.get('sources',[])}
     claims=data.get('claims',[])
-    if not claims:errors.append('True-story mode needs a researched claim ledger')
+    if not claims and mode!='original':errors.append('True-story mode needs a researched claim ledger')
     seen=set()
     for claim in claims:
         identity=claim.get('id')
@@ -139,8 +185,13 @@ def truth_problems(root, require_draft=False):
         if not receipt.exists():errors.append('Missing full-draft research/truth.json receipt')
         else:
             result=json.loads(receipt.read_text())
-            if result.get('draft_sha256')!=draft_fingerprint(root):errors.append('Truth review is stale for this screenplay')
-            if result.get('claims_sha256')!=hashlib.sha256(ledger.read_bytes()).hexdigest():errors.append('Truth review is stale for the claim ledger')
+            bindings=truth_bindings(root)
+            labels={'draft_sha256':'this screenplay','claims_sha256':'the claim ledger',
+                    'source_mode_sha256':'the source mode, audience wording or departures',
+                    'research_sha256':'the research evidence','audience_sha256':'the audience-facing materials','source_files_sha256':'the local source artifacts'}
+            for field,value in bindings.items():
+                if field not in result or result[field]!=value:
+                    errors.append('Truth review is missing bindings or stale for '+labels[field])
             if result.get('verdict')!='READY':errors.append('Truth review requires revision')
     return errors
 
@@ -206,11 +257,12 @@ def build(root):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command',choices=['fingerprint','source','quality','truth','truth-current','build','check-build'])
+    parser.add_argument('command',choices=['fingerprint','truth-fingerprint','source','quality','truth','truth-current','build','check-build'])
     parser.add_argument('--project',type=Path,default=ROOT)
     args=parser.parse_args();root=args.project.resolve()
     try:
         if args.command=='fingerprint':print(draft_fingerprint(root));return
+        if args.command=='truth-fingerprint':print(json.dumps(truth_bindings(root),indent=2));return
         if args.command=='build':build(root);return
         functions={'source':source_problems,'quality':quality_problems,'truth':truth_problems,'truth-current':lambda root: truth_problems(root,require_draft=True),'check-build':build_problems}
         problems=functions[args.command](root)

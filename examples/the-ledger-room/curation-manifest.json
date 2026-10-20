@@ -5,7 +5,7 @@
     "AGENTS.md": "46c3a06462a16d619597c7df10d652b81a2eb288c789f24d4ded02ebe09d72d9",
     "MASTER_PROMPT.md": "9e26276186c67f3b6197153b639f84261f4aefb549ba820c6c60c00ba53bd3d7",
     "Makefile": "78488a1eb86e0a2345cb4d171dfde1be4ad67dbe3f9bbae25ff2de9347367092",
-    "README.md": "dc89f22540601c25f0f5f977cbe8a6d2c679859167f428e3139c5219d694e9c5",
+    "README.md": "ffc921b1d0ebc26bb89780e2e939529fbb158957ae8e13bfd9af4c6b802efc03",
     "WORKFLOW.md": "840ac5e8983a296e0e92ba4976d2d152bc0d383da597e0f946c0453943d6ef1a",
     "common/colors.tex": "169fac572f30286c3d1779413eddb97f23f9ff03faccca2e1d66aeecf219f79a",
     "common/metadata.tex": "ae297a8692ed465d489e665b991bf411c4dcca587d54bfd011da8395750174c8",
@@ -74,7 +74,7 @@
     "development/structure_review.md": "039a0f73629d25a8028750bf0f4c527af0befd64aa4b5f6fae7de142f1f5fd3a",
     "development/verification.md": "034ab9a68d9c728c2c3b88b83e25b291756597cfe33a34a0c9b65b64faa70e10",
     "development/visual_review.json": "d8a99a3be44276b23f347ba0b4bd043cea7b371c432b86a34007bb40fdc58fc9",
-    "development/workflow.json": "02c7fffab5785f048a102ce49ff77f0fc7e5116bb0a07f93867c0ab98fd38f0b",
+    "development/workflow.json": "76e1b8164a40b57b0ae70b7ba814c04219917984d565d88d9f5b7289dddf3d94",
     "fonts/Arimo-Bold.ttf": "6982e33e0370c907e364816a943ee5ce19468293aa21b9cbcb4d58bc1c230971",
     "fonts/Arimo-BoldItalic.ttf": "200c028da787741c888efee8f0416e3052160b21bce165a7607eb504a759f9fa",
     "fonts/Arimo-Italic.ttf": "9fb05a040729cef085041deeb627e488fa7fa2f126f798f3832f3eee9c1ec4ae",
@@ -154,9 +154,10 @@
     "scripts/import_source.py": "8ff75fb142f4d1389ff7b75e152f87017e3a79982790004fd56843cae5e9a8ac",
     "scripts/package_options.py": "eff15f2aceda415e34cc2f488502998cd7cb7d6a9421c9930fe0d524d3ca023a",
     "scripts/setup_check.py": "e9ca5fb17f9f97d62e50eb3ef9f0ddce78edb92277e1782c63edcafbc65e7953",
-    "scripts/story_check.py": "0e6b92e456f8b00d94c04a1e94a8482bb81975006ac59bb3c7ca8f32f477d33b",
+    "scripts/story_check.py": "1f13ee2113828855e141a1ce77d14c26df8b75395c511811e8c94497141602b2",
     "scripts/team_controls.py": "42429dcf5220df034f7eb62a81c3faa6872a64b0dacbea29b311e8f31ca57fe4",
     "scripts/upgrade_project.py": "32c1a4abd61707651181cbc62b3779e3c760e01e3e1b5173ce9de8508e7d1241",
-    "scripts/workflow.py": "f7d12a80ae2e1dae691f1a5eea7c8eaf1e0ce703eec5bb19e23502ddfd3bbc2b"
+    "scripts/workflow.py": "f7d12a80ae2e1dae691f1a5eea7c8eaf1e0ce703eec5bb19e23502ddfd3bbc2b",
+    ".story-factory-tools.json": "9304234926843ffdf2cac07d4d96c6f1237a7e72d1d4cc7f59cb211711e45e4e"
   }
 }

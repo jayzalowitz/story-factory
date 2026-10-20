@@ -6,3 +6,5 @@ Save development/quality_report.md with strong/revise/unassessed results by dime
 Optional parallel research/review follows TEAMS.md and development/teams.json, off by default. Keep one author and do not expose these settings unless useful or requested.
 
 For a novel, memoir, article, play or other supplied non-screenplay source, read ADAPTATION.md and use story-adapt. Source fidelity, adaptation permission status and factual truth are separate. Recheck current source-to-scene mapping after substantive changes.
+
+Read CONTEXT.md. Keep canonical files and approved decisions current, work within finite context, track actual reading coverage and save an exact checkpoint before interruption. A complete review still requires the complete current draft, even when read across bounded scopes; unseen scenes cannot be approved from summaries.
