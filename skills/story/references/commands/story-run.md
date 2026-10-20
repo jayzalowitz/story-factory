@@ -1,4 +1,6 @@
-# Carry the project through the writing room
+# One command: idea to reviewed screenplay and selected delivery
+This is the end-to-end entrypoint. Coordinate all stages yourself; do not give a beginner a checklist of commands to invoke. “The full process/package like The Letter to the Father” means discovery, conditional research/adaptation, premise, structure, complete screenplay, full-draft review and substantive repair, continuity and Bechdel/quality, all 15 studio sections, all 16 pitches, actual PDF build and all-page visual inspection, and selected local delivery with editable sources. Preserve any explicit narrower selection. Describe the historical feature as the process source, not proof that this command produced it or guarantees identical quality.
+
 Confirm the requested scope from the writer's message and project brief. If no project exists, use story-new; if no seed exists, ask the first discovery question. Read WORKFLOW.md and use native stage skills or their bundled procedures when the host cannot invoke another skill directly. Do not execute slash strings as shell commands.
 
 Follow discover → research (based-on/inspired-by only) → premise → structure → draft → review/revision → Bechdel/quality → package → build/visual checks → handoff. Reopen and revalidate upstream artifacts when changed. Use story-truth for real-world source-based work, including a final audit against the finished draft. Use the user's approvals already given; pause for material creative decisions they reserved, not for routine file writes. If they delegate decisions, record assumptions and keep working.
@@ -10,3 +12,5 @@ Optional parallel research/review follows TEAMS.md and development/teams.json, o
 Read DELIVERY.md. The assistant owns the default quality checks and repair work; do not reduce rigor because the writer is a beginner. At final handoff, record actual all-page inspection in visual_review.json and use scripts/delivery.py to prepare selected, current local files without private originals.
 
 For a novel, memoir, article, play or other supplied non-screenplay source, read ADAPTATION.md and use story-adapt. Source fidelity, adaptation permission status and factual truth are separate. Recheck current source-to-scene mapping after substantive changes.
+
+When a setup step requires reopening in the new story folder, save the full run request and exact next step. Explain the folder change in plain language and resume the run there; do not restart discovery or require manual stage management. Follow the host's actual session/usage limits and save an honest resume point rather than promising uninterrupted one-turn completion.

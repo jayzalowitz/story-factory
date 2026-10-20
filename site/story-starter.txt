@@ -1,7 +1,9 @@
-STORY FACTORY — A PLACE TO BEGIN
+STORY FACTORY — ONE COMMAND, THE WHOLE WRITING PROCESS
 
 Copy this into your AI assistant and replace the bracketed line with your idea.
 You do not need to fill in a plot. A person, a situation, a feeling, or a question is enough.
+
+After setup, use /story-run in Claude Code or $story-run in Codex, followed by this brief. It coordinates the stages and selected delivery; you do not need to run every command. For the complete example package, request the screenplay, all 15 studio sections and all 16 pitches (18 PDFs). Choose fewer if you prefer. Save and resume across sessions as needed.
 
 MY IDEA
 [Describe the spark in your own words.]

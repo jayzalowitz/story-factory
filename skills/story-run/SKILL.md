@@ -1,6 +1,6 @@
 ---
 name: story-run
-description: "Carry a story project through the staged writing and review process within user scope."
+description: "Run the whole writing process: idea to revised screenplay, chosen studio package, pitches and checked PDFs."
 ---
 
 Read [story-run procedure](../story/references/commands/story-run.md) and [shared operating guidance](../story/references/COMMON.md), then carry out the user's request. Resolve these paths from this SKILL.md, not the project working directory. The complete craft guidance, research system, original case study, examples, and portable print toolkit live with the sibling `story` skill.

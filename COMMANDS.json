@@ -101,7 +101,7 @@
   },
   {
     "name": "story-run",
-    "description": "Carry a story project through the staged writing and review process within user scope.",
+    "description": "Run the whole writing process: idea to revised screenplay, chosen studio package, pitches and checked PDFs.",
     "stage": null
   }
 ]
