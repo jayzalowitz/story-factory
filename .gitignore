@@ -1,0 +1,26 @@
+# Build output
+output/*.pdf
+output/aux/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Context directory
+.context/
+
+# Python cache and local development environments
+__pycache__/
+*.py[cod]
+.venv/

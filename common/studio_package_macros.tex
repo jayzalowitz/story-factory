@@ -1,0 +1,113 @@
+% studio_package_macros.tex — Formatting macros for the studio package
+
+% ============================================================
+% SECTION STYLING
+% ============================================================
+\titleformat{\section}
+  {\Large\bfseries\color{projectblack}\sffamily}
+  {}
+  {0em}
+  {}
+  [\vspace{2pt}\textcolor{sectionrule}{\rule{\textwidth}{0.5pt}}\vspace{6pt}]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{projectgray}\sffamily}
+  {}
+  {0em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{projectgray}\sffamily}
+  {}
+  {0em}
+  {}
+
+% ============================================================
+% PULL QUOTE
+% ============================================================
+% Usage: \pullquote{Text here}
+\NewEnviron{pullquote}{%
+  \vspace{8pt}%
+  \begin{adjustwidth}{0.5in}{0.5in}%
+    \color{pullquote}\itshape\large%
+    \BODY%
+  \end{adjustwidth}%
+  \vspace{8pt}%
+}
+
+% ============================================================
+% HIGHLIGHT BOX
+% ============================================================
+\newcommand{\highlightbox}[1]{%
+  \par\vspace{6pt}%
+  \noindent\colorbox{projectcream}{%
+    \parbox{\dimexpr\textwidth-2\fboxsep}{%
+      \vspace{4pt}#1\vspace{4pt}%
+    }%
+  }%
+  \par\vspace{6pt}%
+}
+
+% ============================================================
+% TARGET ENTRY (for director/producer lists)
+% ============================================================
+% Usage: \target{Name}{Why they fit}{Tier}
+\newcommand{\target}[3]{%
+  \needspace{4\baselineskip}%
+  \subsubsection*{#1 \hfill \textnormal{\small\textit{#3}}}%
+  #2\par\vspace{6pt}%
+}
+
+% ============================================================
+% SCENE CARD (for showcase section)
+% ============================================================
+% Usage: \scenecard{Title}{Description}
+\newcommand{\scenecard}[2]{%
+  \needspace{5\baselineskip}%
+  \vspace{4pt}%
+  \noindent\textbf{\sffamily #1}\\[3pt]%
+  #2\par\vspace{8pt}%
+  \textcolor{sectionrule}{\rule{0.3\textwidth}{0.25pt}}%
+  \vspace{8pt}%
+}
+
+% ============================================================
+% TAGLINE
+% ============================================================
+\newcommand{\tagline}[1]{%
+  \vspace{4pt}%
+  \begin{center}%
+    {\large\itshape\color{projectgray} ``#1''}%
+  \end{center}%
+  \vspace{4pt}%
+}
+
+% ============================================================
+% COMP FILM ENTRY
+% ============================================================
+% Usage: \compfilm{Title (Year)}{Relevance}
+\newcommand{\compfilm}[2]{%
+  \noindent\textbf{#1}\\%
+  {\small #2}\par\vspace{6pt}%
+}
+
+% ============================================================
+% RISK ENTRY
+% ============================================================
+% Usage: \risk{Risk}{Mitigation}
+\newcommand{\risk}[2]{%
+  \noindent\textbf{Risk:} #1\\%
+  \textbf{Mitigation:} #2\par\vspace{8pt}%
+}
+
+% ============================================================
+% PACKAGE GEOMETRY
+% ============================================================
+\newcommand{\packagegeometry}{%
+  \newgeometry{
+    left=1in,
+    right=1in,
+    top=1in,
+    bottom=1in,
+  }%
+}

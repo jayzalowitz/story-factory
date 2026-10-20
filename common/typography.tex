@@ -1,0 +1,83 @@
+% typography.tex — Typography settings
+\usepackage{fontspec}
+\usepackage{microtype}
+
+% Prefer repo-local metric-compatible fonts so Tectonic does not depend on
+% absolute host-system font paths. Fall back to system fonts only if the vendored
+% font payload is unavailable.
+\IfFileExists{../fonts/Tinos-Regular.ttf}{
+  \setmainfont{Tinos-Regular.ttf}[
+    Path=../fonts/,
+    BoldFont=Tinos-Bold.ttf,
+    ItalicFont=Tinos-Italic.ttf,
+    BoldItalicFont=Tinos-BoldItalic.ttf,
+  ]
+}{
+  \IfFontExistsTF{TeX Gyre Termes}{
+    \def\projectmainfont{TeX Gyre Termes}
+  }{
+    \IfFontExistsTF{Times New Roman}{
+      \def\projectmainfont{Times New Roman}
+    }{
+      \def\projectmainfont{Latin Modern Roman}
+    }
+  }
+  \setmainfont{\projectmainfont}
+}
+
+\IfFileExists{../fonts/Arimo-Regular.ttf}{
+  \setsansfont{Arimo-Regular.ttf}[
+    Path=../fonts/,
+    BoldFont=Arimo-Bold.ttf,
+    ItalicFont=Arimo-Italic.ttf,
+    BoldItalicFont=Arimo-BoldItalic.ttf,
+  ]
+}{
+  \IfFontExistsTF{TeX Gyre Heros}{
+    \def\projectsansfont{TeX Gyre Heros}
+  }{
+    \IfFontExistsTF{Helvetica}{
+      \def\projectsansfont{Helvetica}
+    }{
+      \def\projectsansfont{Latin Modern Sans}
+    }
+  }
+  \setsansfont{\projectsansfont}
+}
+
+\IfFileExists{../fonts/Cousine-Regular.ttf}{
+  \setmonofont{Cousine-Regular.ttf}[
+    Path=../fonts/,
+    BoldFont=Cousine-Bold.ttf,
+    ItalicFont=Cousine-Italic.ttf,
+    BoldItalicFont=Cousine-BoldItalic.ttf,
+    Scale=0.95,
+  ]
+  \def\screenplayfont{%
+    \fontspec{Cousine-Regular.ttf}[%
+      Path=../fonts/,
+      BoldFont=Cousine-Bold.ttf,
+      ItalicFont=Cousine-Italic.ttf,
+      BoldItalicFont=Cousine-BoldItalic.ttf,
+      Scale=1.0,
+    ]%
+  }
+}{
+  \IfFontExistsTF{Courier New}{
+    \def\projectmonofont{Courier New}
+  }{
+    \IfFontExistsTF{Courier}{
+      \def\projectmonofont{Courier}
+    }{
+      \def\projectmonofont{Latin Modern Mono}
+    }
+  }
+  \setmonofont{\projectmonofont}[Scale=0.95]
+  \def\screenplayfont{\fontspec{\projectmonofont}[Scale=1.0]}
+}
+
+% Microtype settings
+\microtypesetup{
+  protrusion=true,
+  expansion=false,
+}

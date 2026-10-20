@@ -1,0 +1,18 @@
+name: Factory checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Workflow behavior
+        run: python3 -m unittest discover -s story_factory -p 'test_*.py' -v
+      - name: Export a clean project
+        run: python3 story_factory/new_story.py "$RUNNER_TEMP/story-smoke" --title "CI Story"
+      - name: Check exported workflow
+        run: python3 "$RUNNER_TEMP/story-smoke/scripts/workflow.py" status

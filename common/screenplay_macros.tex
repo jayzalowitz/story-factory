@@ -1,0 +1,157 @@
+% screenplay_macros.tex — Professional screenplay formatting macros
+%
+% Industry-standard screenplay layout:
+% - Courier 12pt
+% - 1.5" left margin, 1" right margin
+% - Scene headings: full width, caps, bold
+% - Action: full width
+% - Character cue: centered (3.7" from left)
+% - Dialogue: 2.5" from left, 2.5" wide
+% - Parenthetical: 3.1" from left, 2" wide
+% - Transitions: right-aligned
+
+% ============================================================
+% PAGE SETUP FOR SCREENPLAY
+% ============================================================
+\newcommand{\screenplaygeometry}{%
+  \newgeometry{
+    left=1.5in,
+    right=1in,
+    top=1in,
+    bottom=1in,
+  }%
+}
+
+% ============================================================
+% SCENE HEADING
+% ============================================================
+% Usage: \scene{INT. LOCATION -- NIGHT}
+\newcommand{\scene}[1]{%
+  \needspace{4\baselineskip}%
+  \vspace{1.5\baselineskip}%
+  {\screenplayfont\bfseries\MakeUppercase{#1}}%
+  \par\vspace{0.5\baselineskip}%
+}
+
+% ============================================================
+% ACTION / DESCRIPTION
+% ============================================================
+% Usage: \action{A person acts.}
+\newcommand{\action}[1]{%
+  {\screenplayfont #1}%
+  \par\vspace{0.5\baselineskip}%
+}
+
+% ============================================================
+% CHARACTER CUE
+% ============================================================
+% Usage: \character{CHARACTER}
+\newcommand{\character}[1]{%
+  \needspace{3\baselineskip}%
+  \begin{adjustwidth}{2.2in}{0in}%
+    {\screenplayfont\MakeUppercase{#1}}%
+  \end{adjustwidth}%
+}
+
+% ============================================================
+% DIALOGUE
+% ============================================================
+% Usage: \dialogue{I cannot eat. Not today.}
+\newcommand{\dialogue}[1]{%
+  \begin{adjustwidth}{1in}{1.5in}%
+    {\screenplayfont #1}%
+  \end{adjustwidth}%
+  \vspace{0.5\baselineskip}%
+}
+
+% ============================================================
+% PARENTHETICAL
+% ============================================================
+% Usage: \paren{quietly}
+\newcommand{\paren}[1]{%
+  \begin{adjustwidth}{1.6in}{1.8in}%
+    {\screenplayfont (#1)}%
+  \end{adjustwidth}%
+}
+
+% ============================================================
+% VOICE OVER
+% ============================================================
+% Usage: \vo{CHARACTER}{A voice speaks.}
+\newcommand{\vo}[2]{%
+  \character{#1 (V.O.)}%
+  \dialogue{#2}%
+}
+
+% ============================================================
+% TRANSITION
+% ============================================================
+% Usage: \transition{CUT TO:}
+\newcommand{\transition}[1]{%
+  \vspace{0.5\baselineskip}%
+  \begin{flushright}%
+    {\screenplayfont #1}%
+  \end{flushright}%
+  \vspace{0.5\baselineskip}%
+}
+
+% ============================================================
+% CONTINUED
+% ============================================================
+\newcommand{\continued}{%
+  \begin{flushright}%
+    {\screenplayfont (CONTINUED)}%
+  \end{flushright}%
+}
+
+% ============================================================
+% TITLE CARD / SUPERIMPOSE
+% ============================================================
+% Usage: \titlecard{PRAGUE, 1917}
+\newcommand{\titlecard}[1]{%
+  \vspace{\baselineskip}%
+  \begin{center}%
+    {\screenplayfont\textit{#1}}%
+  \end{center}%
+  \vspace{\baselineskip}%
+}
+
+% ============================================================
+% MOVEMENT HEADING (structural, not scene)
+% ============================================================
+% Usage: \movement{I. THE FATHER}
+\newcommand{\movement}[1]{%
+  \clearpage
+  \vspace*{2in}%
+  \begin{center}%
+    {\screenplayfont\Large\bfseries #1}%
+  \end{center}%
+  \vspace{1in}%
+  \clearpage
+}
+
+% ============================================================
+% FADE IN / FADE OUT
+% ============================================================
+\newcommand{\fadein}{%
+  {\screenplayfont FADE IN:}%
+  \par\vspace{\baselineskip}%
+}
+\newcommand{\fadeout}{%
+  \vspace{0.5\baselineskip}%
+  \begin{flushright}%
+    {\screenplayfont FADE OUT.}%
+  \end{flushright}%
+}
+\newcommand{\fadetoblack}{%
+  \vspace{0.5\baselineskip}%
+  \begin{flushright}%
+    {\screenplayfont FADE TO BLACK.}%
+  \end{flushright}%
+}
+\newcommand{\smashcut}{%
+  \transition{SMASH CUT TO:}%
+}
+\newcommand{\cutto}{%
+  \transition{CUT TO:}%
+}
