@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Premise"
+  short_description: "Challenge a film premise, choose its scope, and establish the dr"
+  default_prompt: "Use $story-premise to help with my story project."

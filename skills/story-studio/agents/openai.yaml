@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Studio"
+  short_description: "Review an existing screenplay as a studio development editor and"
+  default_prompt: "Use $story-studio to help with my story project."

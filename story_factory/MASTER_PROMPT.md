@@ -189,7 +189,7 @@ Use a separate, restrained design for development materials. Preserve font licen
 
 ## 9. Verify the deliverables
 
-Run `make all` for full-package scope or the requested subset. Resolve compilation errors. Investigate overfull boxes, orphaned cues/headings, duplicate page anchors, and overflow. Confirm every expected PDF exists and has a plausible page count. Verify every one-pager is exactly one page.
+Record the selected screenplay, package sections and pitches in development/package_options.json. Run `python3 scripts/story_check.py build` to compile only the selected outputs; `make all` is for every template. Resolve compilation errors. Investigate overfull boxes, orphaned cues/headings, duplicate page anchors, and overflow. Confirm every expected PDF exists and has a plausible page count. Verify every one-pager is exactly one page.
 
 Inspect rendered samples of the screenplay opening, dialogue-heavy pages, act boundaries, package contents, and each pitch. Repair layout issues without distorting typography to hit a page target. If rendering tools are unavailable, state that visual verification remains outstanding.
 
@@ -204,3 +204,13 @@ Update the README with the real title, logline, file map, prerequisites, build c
 In your final response, link the screenplay, development package, pitches, and source. State what was drafted, what was revised, what was compiled and visually checked, and what remains unresolved. Separate a generated creative draft from professional legal, historical, financial, or production validation.
 
 Start by reading the brief and repository, write the plan, and begin the work. The goal is a specific, emotionally persuasive, producible story with coherent supporting materials and a repeatable build.
+
+## Installed commands, research, and quality controls
+
+The installed suite exposes the same craft guidance in Claude Code (/story…) and Codex ($story… or the skill picker). Use the local skill procedure instead of pretending a shell tracker generates a screenplay. The writer's requested deliverable and format take precedence over the default full feature package. Diagnose imported drafts before starting new-project discovery.
+
+Record original, based-on, or inspired-by in research/source_mode.json. Based-on work needs fidelity to central documented events; inspired-by permits a looser premise while clearly identifying invented people, scenes, dialogue, composites and changed chronology. Use story-research for bounded chronology, relationships and context passes, then reconcile findings into research/claims.json with inspected source locations, evidence states and contradictions. Keep one coordinating author responsible for creative decisions. Never describe invented content as verified fact or claim rights/legal clearance from a ledger. Audit the proposed truth label against the actual screenplay and package with story-truth before final handoff.
+
+Use story-bechdel and story-quality as separate evidence-based checks. Confirm character identities rather than inferring gender from names. A named-women Bechdel assessment reports PASS/FAIL/UNCLEAR and scope, with a specific conversation and subject. A pass does not establish strong characterization or a good film. Review agency, causality, escalation, voices, supporting-character independence, emotional range, ending, title payoff and production scope with stable findings and scene evidence. Store reports against the current draft fingerprint, rerun after revisions, and require a pass only if the writer chose that Bechdel target. No test should be manipulated with a token scene.
+
+Optional helper teams follow TEAMS.md and development/teams.json. Default mode is off: perform research and review sequentially. Only enable bounded native workers when the writer chooses ask/auto or explicitly requests delegation, and the current host actually supports it. Check plan/tool limits, keep one author, prohibit nested teams/new paid services, and record actual assignments and limitations. Keep these controls in Advanced; ordinary writers need only one conversation.

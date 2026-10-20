@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Truth"
+  short_description: "Audit factual claims, dramatizations, and source-based labels ag"
+  default_prompt: "Use $story-truth to help with my story project."

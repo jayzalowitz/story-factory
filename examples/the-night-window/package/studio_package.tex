@@ -1,0 +1,84 @@
+\documentclass[11pt,letterpaper]{article}
+
+% Load shared preamble
+\input{../common/preamble}
+\input{../common/typography}
+\input{../common/studio_package_macros}
+
+% Package geometry
+\geometry{
+  left=1in,
+  right=1in,
+  top=1in,
+  bottom=1in,
+}
+
+% Package-specific settings
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{projectlight}\filmtitleupper}
+\fancyhead[R]{\small\sffamily\color{projectlight}\thepage}
+\renewcommand{\headrulewidth}{0.25pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{projectlight}\leaders\hrule height \headrulewidth\hfill}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\onehalfspacing
+
+\begin{document}
+
+% Title page
+\thispagestyle{empty}
+\vspace*{2in}
+\begin{center}
+{\Huge\bfseries\sffamily\color{projectblack} \filmtitleupper}
+
+\vspace{0.5in}
+
+{\Large\sffamily\color{projectgray} Studio Development Package}
+
+\vspace{0.25in}
+
+{\large\color{projectlight} Confidential}
+
+\vspace{2in}
+
+{\normalsize\color{projectgray} \filmdate}
+\end{center}
+\newpage
+
+% Table of contents
+\tableofcontents
+\newpage
+
+% Package sections
+\input{logline_synopsis}
+\newpage
+\input{treatment}
+\newpage
+\input{character_breakdowns}
+\newpage
+\input{tone_visual_world}
+\newpage
+\input{comps_and_positioning}
+\newpage
+\input{casting_notes}
+\newpage
+\input{director_targets}
+\newpage
+\input{producer_targets}
+\newpage
+\input{awards_strategy}
+\newpage
+\input{festival_strategy}
+\newpage
+\input{budget_and_scope}
+\newpage
+\input{scene_showcase}
+\newpage
+\input{marketing_blurb}
+\newpage
+\input{poster_taglines}
+\newpage
+\input{appendix}
+
+\end{document}

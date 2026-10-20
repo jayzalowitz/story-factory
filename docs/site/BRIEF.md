@@ -1,3 +1,5 @@
+> Historical first-site record. Superseded for current scope by the public-toolkit expansion below and docs/site/README.md. Original private-repository approval changed: the user later authorized making the entire toolkit public.
+
 # Story Factory: writer-friendly introduction
 
 Audience: writers and people with an idea who do not use developer tools. Goal: understand the process, create a useful opening prompt, and begin a guided conversation with their own AI assistant. The repository and its existing workflow are authoritative. No market, financial, adoption, or quality-outcome claims are needed.

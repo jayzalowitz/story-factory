@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Draft"
+  short_description: "Write complete screenplay scenes from an established story plan."
+  default_prompt: "Use $story-draft to help with my story project."

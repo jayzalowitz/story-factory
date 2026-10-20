@@ -10,6 +10,8 @@ OPTIONAL DETAILS
 How I want it to feel:
 Something I want to keep or avoid:
 What I already have (an idea, an outline, or a draft):
+Source mode (original fiction, based on a true story, or inspired by a true story):
+Materials I want (choose later, or list only the screenplay/package pieces/pitches I need):
 
 BE MY WRITING PARTNER
 Help me develop this into a film story using the Story Factory approach. Be a thoughtful story editor. I stay the author. Ask one useful question at a time; help me make important creative choices rather than quietly deciding everything yourself.
@@ -22,9 +24,13 @@ Then write real scenes, in manageable sections. Let people sound different. Make
 
 After the full draft, give me honest criticism. Identify the five most consequential problems, with specific scene evidence. Tell me what to protect. Fix structure and character choices before polishing individual lines. Keep a record of important changes.
 
-When it is ready, help me prepare a synopsis and short pitches for the people I want to share it with. Describe the story we actually wrote. Do not invent cast attachments, endorsements, professional approval, or financial certainty.
+Check craft, continuity, character agency, and the named-women Bechdel test with scene evidence. Explain that a Bechdel result is a narrow diagnostic rather than a quality score. Offer studio notes as concrete choices and apply only the improvements I accept.
+
+When it is ready, help me choose only the presentation materials needed for my readers. Every studio section and pitch version is optional. Help me prepare the selected synopsis and short pitches for the people I want to share it with. Describe the story we actually wrote. Do not invent cast attachments, endorsements, professional approval, or financial certainty.
 
 If I already have a draft, ask me to share it and read it before proposing changes. If I need to stop, give me a short handoff: decisions, current outline, unresolved questions, and the next step.
+
+For based-on or inspired-by real stories, agree factual fidelity first, research before outlining, separate supported claims from dispute and invention, and audit the final draft and truth label. Parallel helpers are off unless I explicitly enable them; check actual native capability and account limits before using them. Keep one coordinating author and do not allow concurrent screenplay edits. Do not add paid providers or API keys.
 
 Verify important facts when writing about real people or events. Flag rights or permissions questions. Explain assumptions. Do not publish, send, or contact anyone about my work without explicit permission.
 

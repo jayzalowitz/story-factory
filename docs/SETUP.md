@@ -1,6 +1,6 @@
 # Setup and technical reference
 
-Most writers can start with the [writing guide](../WRITING_GUIDE.md). This page is for you or a helper setting up the complete project and PDF tools.
+Most writers should start with [the beginner guide](START_HERE.md) or the public website. This page is for you or a helper setting up the complete project and PDF tools.
 
 
 Turn a story idea into a complete feature screenplay, development package, and 16 stakeholder pitches through a staged, evidence-backed workflow.
@@ -31,11 +31,12 @@ Supply your seed idea in the conversation or development/brief.md. The agent use
 | Stage | Purpose | Main evidence |
 |---|---|---|
 | Discover | Story office hours: specificity, audience experience, engine, constraints | Brief and discovery design document |
+| Research (source-based only) | Reconcile facts, disputes and inventions before committing to a truth promise | Source/claim ledger and truth review |
 | Premise | Challenge the idea, compare scopes, choose a direction | Story bible and premise review |
 | Structure | Design characters, causality, movement, chronology, and form | Outline, scene map, continuity, structure review |
 | Draft | Write the complete screenplay | Actual screenplay files and draft report |
 | Revise | Find structural failures, implement repairs, then polish | Review and revision log |
-| Package | Derive consistent development and stakeholder materials | Studio package, 16 pitches, package review |
+| Package | Derive consistent development and stakeholder materials | Selected package sections/pitches, package review |
 | Verify | Check story continuity and compile/inspect the documents | Verification report with real evidence |
 | Handoff | Deliver editable source and measured outputs | README, status, handoff inventory |
 
@@ -53,11 +54,11 @@ python3 scripts/workflow.py reopen structure --reason "The ending changed and ca
 Install Tectonic, or latexmk with XeLaTeX. For example, on macOS with Homebrew:
 
 ```sh
-brew install tectonic
-make all
+brew install tectonic poppler
+python3 scripts/story_check.py build
 ```
 
-Individual targets: `make screenplay`, `make package`, `make one-pagers`. Outputs go in output/: screenplay.pdf, studio-package.pdf, and 16 pitch PDFs. Tectonic may download its TeX support files on the first build. Local fonts and their license are included.
+Selections: `python3 scripts/package_options.py list` and `configure`. The checked build honors development/package_options.json; direct `make all` compiles every template. Individual targets: `make screenplay`, `make package`, `make one-pagers`. Outputs go in output/: screenplay.pdf, studio-package.pdf, and 16 pitch PDFs. Tectonic may download its TeX support files on the first build. Local fonts and their license are included.
 
 The blank project compiles intentionally. Its documents are labeled as placeholders, and workflow completion remains blocked until actual writing exists. Mechanical build success is not story approval.
 
@@ -72,7 +73,7 @@ The blank project compiles intentionally. Its documents are labeled as placehold
 - development/: brief, progress, and review evidence.
 - docs/ORIGIN.md: reconstruction of the original project's development history.
 
-The root copies of MASTER_PROMPT.md, WORKFLOW.md, and scripts/workflow.py mirror their canonical versions in story_factory/. When changing the factory, update the root copies too. The original prototype was developed in the-letter-to-the-father; no original screenplay prose is included here.
+The root copies of MASTER_PROMPT.md, WORKFLOW.md, and scripts/workflow.py mirror their canonical versions in story_factory/. When changing the factory, update the root copies too. The original prototype was developed in the-letter-to-the-father. Its explicitly labeled source and PDFs are included under examples/ and the public site; the exporter creates a blank story, not a copy of that screenplay.
 
 ## Developer checks
 
@@ -82,4 +83,14 @@ python3 story_factory/new_story.py ../export-smoke --title "Export Smoke"
 make -C ../export-smoke all
 ```
 
-Checks cover sequencing, missing evidence, review/placeholder failures, stale artifacts, and safe reopening. Export smoke checks should also confirm all 18 PDFs exist and all 16 pitches are one page. No external API key is needed; creative execution uses whichever coding agent you provide. Publishing this repository does not authorize outreach or imply talent attachments.
+Checks cover sequencing, missing evidence, review/placeholder failures, stale artifacts, and safe reopening. For a full selection, export smoke checks should confirm all 18 PDFs exist and all 16 pitches are one page. For subsets, check precisely the selected inventory. No external API key is needed; creative execution uses whichever coding agent you provide. Publishing this repository does not authorize outreach or imply talent attachments.
+
+## Install the commands
+
+```sh
+python3 install.py --project . --host both
+```
+
+Choose `claude`, `codex`, or `both`. Project-local installation is the default; `--user` is an explicit alternative. Existing unowned or modified skills are preserved and installation stops before changing either host. Reopen your assistant session if skills are not discovered. Claude uses `/story`; Codex uses `$story` or `/skills`. `python3 install.py --project . --host both --check` checks ownership and installed-file integrity, not native model execution.
+
+All 18 commands share full craft, research, quality, optional-team and historical-case references. The `story` skill bundles a self-contained print toolkit, so an installed suite can export a new project without the original checkout. No model API client or external paid agent is bundled. See [commands](COMMANDS.md), [package choices](PACKAGE.md), and [advanced teams](ADVANCED.md).

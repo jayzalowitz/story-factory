@@ -1,0 +1,30 @@
+% preamble.tex — Shared preamble for all documents
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{etoolbox}
+\usepackage{xspace}
+\usepackage{needspace}
+\usepackage{changepage}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage{environ}
+
+% Hyperref setup
+\hypersetup{
+  colorlinks=false,
+  pdfborder={0 0 0},
+  pdftitle={The Letter to the Father},
+  pdfauthor={},
+}
+
+% Load project files
+\input{../common/colors}
+\input{../common/metadata}
+
+% Public example status travels with every downloadable document.
+\AddToHook{shipout/foreground}{\put(40,-776){\makebox(0,0)[l]{\fontsize{8}{9}\selectfont\textit{Development example. All casting, financing and awards language is illustrative; no attachments confirmed.}}}}

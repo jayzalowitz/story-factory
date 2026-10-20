@@ -8,7 +8,7 @@ Tell your agent:
 
 > Read AGENTS.md, WORKFLOW.md, MASTER_PROMPT.md, and development/brief.md. Run `python3 scripts/workflow.py status`. Execute the next incomplete stage using WORKFLOW.md. Ask discovery questions when the seed is unclear; otherwise develop the artifacts, review them honestly, record evidence, and continue. Do not skip structural review to produce packaging early.
 
-The stages apply to a complete feature package. For a smaller request, deliver the requested subset and report the remaining stages as unfinished. Never mark omitted work complete.
+The stages apply to a complete film workflow with the selected final documents. For a smaller request, deliver the requested subset and report the remaining stages as unfinished. Never mark omitted work complete.
 
 ## 1. Discover: story office hours
 
@@ -51,11 +51,11 @@ The review must show findings, scene evidence, repairs, and remaining limitation
 
 ## 6. Package: derive the business and creative materials
 
-Produce the development package and all 16 reader-specific pitches from the revised screenplay. Follow MASTER_PROMPT.md. Write `development/package_review.md` mapping claims to scene IDs, checking the ending and relationships, distinguishing proposed talent from attachments, and recording financial/research assumptions. Repair drift before passing.
+Read development/package_options.json and produce only the selected development sections and reader-specific pitches from the revised screenplay. Ask the writer what is useful; do not treat every template as mandatory. Configure selections with scripts/package_options.py when needed. Follow MASTER_PROMPT.md. Write `development/package_review.md` mapping claims to scene IDs, checking the ending and relationships, distinguishing proposed talent from attachments, and recording financial/research assumptions. Repair drift before passing.
 
 ## 7. Verify: story QA and publishing QA
 
-Run `make all`. Check all 18 PDFs and all 16 one-page lengths. Render and inspect layout; record tools, commands, actual outputs, and visual observations. Search for scaffold placeholders and stale details. Perform a final continuity/readability review. Save `development/verification.md` with `Verdict: PASS` only when these checks actually pass. If a tool or check is unavailable, document the gap and leave this stage incomplete.
+Run `python3 scripts/story_check.py build` to build the selected documents. Check every selected PDF and each selected pitch's one-page length. A full selection is 18 PDFs, including 16 pitches. Render and inspect layout; record tools, commands, actual outputs, and visual observations. Search for scaffold placeholders and stale details. Perform a final continuity/readability review. Save `development/verification.md` with `Verdict: PASS` only when these checks actually pass. If a tool or check is unavailable, document the gap and leave this stage incomplete.
 
 ## 8. Handoff: delivery, not outreach
 
@@ -73,3 +73,21 @@ python3 scripts/workflow.py reopen structure --reason "The ending changed, so ca
 Complete stages in order. Every stage requires its output files, substantive content without scaffold markers, a PASS verdict in its review/report, and a written evidence summary. Each completion records hashes of its artifacts. Editing completed artifacts makes the workflow stale; `status` identifies the earliest affected stage. Reopen that stage explicitly and revalidate it and all later stages. Reopening preserves creative files and discards only completion receipts. Changing upstream material late in revision therefore requires rechecking upstream approvals; it does not require discarding the draft.
 
 The mechanical gate catches missing, placeholder, and stale artifacts. The agent and writer remain responsible for truthful verdicts, creative judgment, facts, and visual verification. `complete verify` cannot by itself prove a build or visual review happened; its report must contain real evidence.
+
+## Installed command suite
+
+Use /story to choose a stage in Claude Code, or $story in Codex. The complete catalog is COMMANDS.json in the toolkit, with a writer-facing guide in docs/COMMANDS.md. New projects install both hosts' skills by default. The native helper scripts track and verify artifacts; the coding assistant reads the skill, writes, researches and makes explicit editorial judgments.
+
+## Conditional true-story research stage
+
+After discovery and before premise, the tracker adds a research stage when research/source_mode.json selects based-on or inspired-by. Original fiction skips that gate, though targeted world research remains available. Use story-research for chronology, people/relationships and setting/context passes, sequentially by default or with bounded native workers only when teams are enabled; the parent inspects decisive sources and reconciles claims, uncertainty and creative implications. The stage requires research/plan.md, research/report.md, research/claims.json and research/truth_report.md, with truthful PASS verdicts in both review reports. A concept-stage truth review does not cover a later screenplay. Preserve source IDs, inspected locations, contradictory accounts, inventions and limits. The full procedure lives in the installed skill's RESEARCH.md.
+
+## Revised-draft and final-check evidence
+
+The revised-draft stage now also requires development/quality_report.md, development/bechdel_report.md, and their quality.json/bechdel.json receipts. Both receipts must cover the full current draft and contain its fingerprint from scripts/story_check.py. Quality READY is an editorial verdict supported by scenes, not an automated score. The Bechdel result may be PASS, FAIL or UNCLEAR; the target is report by default, or pass if explicitly chosen in development/preferences.json. A pass is not a quality certificate.
+
+Final verification requires a real development/build.json receipt from `python3 scripts/story_check.py build`, with hashes and measured page counts for the selected PDFs (18 for the complete package), plus actual visual inspection documented in verification.md. Based-on/inspired-by work also requires a current research/truth.json covering both the screenplay and claim ledger. Changed sources or output bytes invalidate their receipts. The scripts check evidence structure and currency, not whether a human judgment is true.
+
+## Optional teams
+
+One assistant is the normal path. Read TEAMS.md and development/teams.json before delegation. Teams are off by default; ask/auto modes permit bounded native research or review when supported by the actual session and account limits. Keep advanced settings out of ordinary onboarding. One coordinator owns the script; workers return findings in separate folders. Unavailable teams fall back to honest sequential checks.

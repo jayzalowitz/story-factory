@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Package"
+  short_description: "Create a coherent studio development package and reader-specific"
+  default_prompt: "Use $story-package to help with my story project."

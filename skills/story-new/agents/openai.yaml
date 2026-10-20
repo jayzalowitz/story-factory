@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story New"
+  short_description: "Create a fresh film-writing project with templates and skills fo"
+  default_prompt: "Use $story-new to help with my story project."

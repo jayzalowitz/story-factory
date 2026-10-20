@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Check"
+  short_description: "Compile screenplay deliverables and check actual PDFs, continuit"
+  default_prompt: "Use $story-check to help with my story project."

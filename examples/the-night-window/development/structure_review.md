@@ -1,0 +1,4 @@
+# Structure self-review
+Verdict: PASS
+S01 establishes money later surrendered in S07; S02 forces opening; S03 causes ledger concealment; S04 invalidates easy false insurance; S05 makes Inez's obligations visible; S06 rejects a waiver; S07 spends the deposit and misses cutoff; S08 avoids a rescue. Three costly Mae choices: opens instead of charging first, exposes her ledger, cancels renewal. Inez independently refuses liability and uploads after the route loss.
+Repaired plan weaknesses: explicitly show contract terms rather than rely on business exposition; make missed deadline irreversible; let Inez propose her own compromise. Dry humor comes from classification and time rather than interchangeable aphorisms. Remaining risk: compressed commercial mechanics may need prop legibility and restrained performance. Single-agent planning judgment, no external reader.

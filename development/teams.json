@@ -1,0 +1,14 @@
+{
+  "mode": "off",
+  "max_workers": 3,
+  "max_rounds": 1,
+  "max_sources_per_worker": 10,
+  "allowed_tasks": [
+    "research",
+    "continuity",
+    "quality",
+    "package-review"
+  ],
+  "allow_nested": false,
+  "new_paid_services": false
+}

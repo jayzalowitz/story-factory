@@ -1,0 +1,5 @@
+# Revised architecture
+Opening / S01–S02: Mae counts renewal money while Inez needs a scanner repair; refusal of a diagnostic fee forces Mae to open the battery she sold.
+Middle / S03–S05: an embossed refurb serial contradicts the sale record. Inez proposes a false damage claim; Mae's attempt to hide responsibility makes Inez demand the actual record. On the pavement, route work on Inez's roster reveals she is responsible for two other workers' pay.
+Decision / S06–S07: Mae can sign a correction only by admitting her own substitution. Inez refuses a private payment conditioned on silence, but accepts a written refund without a waiver. Mae cancels renewal to fund it. The route deadline passes during these choices.
+Exit / S08: review receipt offers no money yet. Inez pays for a cable. Mae writes the replacement part's real condition before doing the next small job. Order cannot be shuffled: exposure causes concealment, which causes refusal, which makes an unconditioned correction necessary.

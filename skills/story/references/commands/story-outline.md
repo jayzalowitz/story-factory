@@ -1,0 +1,6 @@
+# Design causality and a watchable experience
+Read the accepted premise, story bible, research controls, and MASTER_PROMPT.md structural guidance. Choose the right number of movements for this story; the six source files are conveniences, not a six-act mandate. Build development/outline.md, development/scene_map.md, development/continuity.md, and development/structure_review.md.
+
+Assign stable IDs such as S01. For each scene record place/time, point of view, immediate want, obstacle, tactic or choice, changed condition, downstream consequence, and why it needs to be shown. Keep factual chronology separate from screen order for nonlinear work. Track at least three costly protagonist choices and the price of the ending. Supporting characters should alter the story, not only interpret its lead. Give any recurring institution or case a problem that evolves. Vary pressure with humor, warmth, competence, or pleasure as the genre permits.
+
+Review first-act hook, middle escalation, relationship differentiation, title/ending payoff, audience orientation, and production scope. For source-based work, link factual events to claim IDs; mark invention explicitly. Repair structural failures before drafting, record verdict/evidence, and complete structure only when valid. Avoid pretending scene counts or symmetrical acts establish quality.

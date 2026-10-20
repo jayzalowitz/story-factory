@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Outline"
+  short_description: "Design characters, causal scenes, chronology, and the structure "
+  default_prompt: "Use $story-outline to help with my story project."

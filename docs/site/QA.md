@@ -1,3 +1,5 @@
+> Historical first-site record. Superseded for current scope by the public-toolkit expansion below and docs/site/README.md. Original private-repository approval changed: the user later authorized making the entire toolkit public.
+
 # Site evidence and review
 
 Checked 2026-10-20 against the writer-friendly-site candidate. This report distinguishes local proof from public delivery. Public hosting has a separate approval gate.
@@ -51,3 +53,7 @@ A fresh-context reviewer on the current agent host reviewed the source, safety b
 Copilot and external model review were not requested because new external processing was not approved. No Copilot result is claimed.
 
 Documentation coverage: README provides the plain-language entry and starter conversation; WRITING_GUIDE.md is the beginner tutorial; docs/SETUP.md retains the technical reference; docs/site/README.md explains preview, browser assertions, publishing, and rollback; CONTRIBUTING.md covers site tests and the public allowlist. The exporter now gives new projects a writer-friendly README as well. No configured version file or changelog existed, so none was invented.
+
+## Current public-toolkit expansion
+
+The user later authorized making the entire toolkit public. The current site has eight chapters, beginner account/app setup, all18commands, optional deliverable choices, a reviewed feature gallery and collapsed off-default helper settings. Current checks and limitations are in [VALIDATION.md](../VALIDATION.md). Earlier counts/private restrictions above describe the first iteration only. Public delivery is verified separately after deployment.

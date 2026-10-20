@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Review"
+  short_description: "Diagnose a full screenplay with concrete scene evidence before r"
+  default_prompt: "Use $story-review to help with my story project."

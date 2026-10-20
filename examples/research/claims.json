@@ -1,0 +1,55 @@
+{
+  "example_only": true,
+  "notice": "Illustrative scaffold. No research occurred. All sources and events below are invented examples.",
+  "sources": [
+    {
+      "id": "SRC-EXAMPLE-001",
+      "url": "https://example.invalid/radio-station-log",
+      "title": "PLACEHOLDER: a station log that a future researcher might locate",
+      "author": null,
+      "published": null,
+      "accessed": null,
+      "kind": "illustrative-placeholder",
+      "locator": "PLACEHOLDER: replace with actual page, entry date, or archive identifier",
+      "notes": "Not a real source. Do not use as evidence."
+    }
+  ],
+  "claims": [
+    {
+      "id": "CLM-EXAMPLE-001",
+      "text": "The community station remained on air through the storm.",
+      "status": "unverified",
+      "kind": "fact",
+      "confidence": "low",
+      "source_ids": ["SRC-EXAMPLE-001"],
+      "scene_ids": ["SC-EXAMPLE-001"],
+      "evidence": [],
+      "contradictions": [],
+      "notes": "Example research question only. The source ID points to a placeholder, not support."
+    },
+    {
+      "id": "CLM-EXAMPLE-002",
+      "text": "Staying on air may have mattered more to the operator than obeying the evacuation order.",
+      "status": "inference",
+      "kind": "inference",
+      "confidence": "low",
+      "source_ids": [],
+      "scene_ids": ["SC-EXAMPLE-001"],
+      "evidence": [],
+      "contradictions": [],
+      "notes": "Illustrates a motive inference requiring actual supporting evidence and alternative interpretations. Not a biographical assertion."
+    },
+    {
+      "id": "CLM-EXAMPLE-003",
+      "text": "An invented caller tells the operator that the bridge has vanished.",
+      "status": "invented",
+      "kind": "invented",
+      "confidence": "not-applicable",
+      "source_ids": [],
+      "scene_ids": ["SC-EXAMPLE-002"],
+      "evidence": [],
+      "contradictions": [],
+      "notes": "A fictional dramatic event and fictional dialogue premise; no claim that this occurred."
+    }
+  ]
+}

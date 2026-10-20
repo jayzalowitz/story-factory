@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Resume"
+  short_description: "Recover story decisions, progress, and the next action from a sa"
+  default_prompt: "Use $story-resume to help with my story project."

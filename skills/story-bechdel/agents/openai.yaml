@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Bechdel"
+  short_description: "Assess screenplay conversations against a named-women Bechdel te"
+  default_prompt: "Use $story-bechdel to help with my story project."

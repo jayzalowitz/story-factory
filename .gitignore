@@ -24,3 +24,11 @@ Thumbs.db
 __pycache__/
 *.py[cod]
 .venv/
+
+# Installed command snapshots and private research material
+.claude/skills/story*/
+.agents/skills/story*/
+research/private/
+
+# Generated outputs in worked examples
+**/output/

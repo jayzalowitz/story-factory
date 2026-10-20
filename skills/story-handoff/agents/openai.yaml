@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Handoff"
+  short_description: "Prepare an honest inventory of a story project and its editable "
+  default_prompt: "Use $story-handoff to help with my story project."

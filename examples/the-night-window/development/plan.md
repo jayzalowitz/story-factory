@@ -1,0 +1,2 @@
+# The Night Window execution plan
+Write a contained original contemporary short, not a feature. Discovery and causality precede complete pages; self-review then repair precedes packaging. Build all eighteen requested PDFs and disclose actual length and limits. No research services, contacts, attachments, or professional guarantees. Routine creative decisions are delegated. Two women, one night, kiosk interior and pavement only. Preserve readable screenplay macros and typography.

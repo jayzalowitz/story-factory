@@ -1,0 +1,13 @@
+> Historical writing-agent report from the original local run. Verdicts describe that review, not a relocated runtime workflow receipt. Later second-agent notes are in reader_review.md; relocated build evidence is in verification.md.
+
+# Full-draft self-review, after repair
+Verdict: PASS
+Coverage: all six act sources and S01–S08. This is the writing agent adopting an editorial posture, not independent review. PASS means complete revised short with no remaining flaw defeating this limited design, not guaranteed professional quality.
+
+Q-01 | high | S01/S07 | Renewal cash could look like optional savings, weakening cost. Audience might read painless generosity. Repair: PAY TO RENEW condition and removal of renewal card after cancellation. Verified in current act1/act6 versus preserved first draft.
+Q-02 | medium | S05 | Supplier pressure was vague. Repair: explicit risk of account freeze; Mae can lose stock access as well as cash. Verified act4; not claimed to occur tonight.
+Q-03 | high | S06 | Inez said refund meant accepting battery as expense, which was confusing. Repair: make her refusal explicitly preserve asking for lost booking money. Verified changed act5 exchange and PURCHASE PRICE ONLY carbon initials. This is an invented contract, not legal analysis.
+Q-04 | medium | S01/S07 | Actual builds exposed overfull boxes in S01 dialogue and S07 written correction. Initial terminal simplification did not fix the warnings. Repair: shorter opening dialogue and sentence-case correction allow proper breaks. Final stable rebuild has no warnings; visual contact-sheet review confirms readable lines.
+Q-05 | low | S08 | Final relabeling risks an overly neat moral image. Retained in this demo because a visible inventory action closes Mae's professional behavior without restoring lease. Residual: test in independent read/filmed performance; not accepted by user as a waiver. Cable payment is eight versus renewal 180, visibly insufficient to rescue her.
+
+Protected: simultaneous catch in S03; Inez's own false-claim offer in S04; cashier precision after loss in S07; no miraculous return of route. Pursuit stays fixing scanner/accountability; each middle scene changes the available settlement. Mae causes concealment and cost, Inez causes refusal and public correction. Title earns its window boundary and final ordinary transaction. No scene is removable without losing pressure, but S05 is the first compression candidate if a read is slow. Minor risk remains that several terms require readable props. Further action: independent visual and story review before any production use.
