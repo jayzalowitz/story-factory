@@ -1,0 +1,10 @@
+{
+  "changed_pages": [
+    "studio-package/page-02.png",
+    "studio-package/page-17.png",
+    "studio-package/page-20.png",
+    "studio-package/page-19.png",
+    "studio-package/page-18.png"
+  ],
+  "comparison": "SHA256 of actual PNG bytes after final rebuild; unchanged page images are exactly identical to visually inspected prior render."
+}

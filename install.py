@@ -9,7 +9,7 @@ import tempfile
 
 ROOT = Path(__file__).resolve().parent
 MARKER = '.story-factory-owned.json'
-IGNORE = shutil.ignore_patterns('__pycache__', '*.pyc', 'toolkit', '.git', '.claude', '.agents', 'output', '.context', MARKER)
+IGNORE = shutil.ignore_patterns('__pycache__', '*.pyc', 'toolkit', '.git', '.claude', '.agents', 'output', '.context', 'private', 'delivery', 'dist', MARKER)
 PAYLOAD_FILES = ['Makefile', 'latexmkrc', '.gitignore', 'install.py', 'COMMANDS.json', 'MASTER_PROMPT.md', 'WORKFLOW.md', 'WRITING_GUIDE.md']
 PAYLOAD_DIRS = ['story_factory', 'common', 'fonts', 'screenplay', 'package', 'one_pagers', 'skills', 'examples']
 
@@ -54,6 +54,8 @@ def install(project, host='both', check=False):
         toolkit.mkdir()
         for name in PAYLOAD_FILES:
             shutil.copyfile(ROOT / name, toolkit / name)
+        if (ROOT / 'VERSION').is_file():
+            shutil.copyfile(ROOT / 'VERSION', toolkit / 'VERSION')
         for name in PAYLOAD_DIRS:
             shutil.copytree(ROOT / name, toolkit / name, ignore=IGNORE)
         for entry in catalog:

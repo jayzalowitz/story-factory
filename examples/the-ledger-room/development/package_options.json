@@ -1,0 +1,38 @@
+{
+  "screenplay": true,
+  "sections": [
+    "logline_synopsis",
+    "treatment",
+    "character_breakdowns",
+    "tone_visual_world",
+    "comps_and_positioning",
+    "casting_notes",
+    "director_targets",
+    "producer_targets",
+    "awards_strategy",
+    "festival_strategy",
+    "budget_and_scope",
+    "scene_showcase",
+    "marketing_blurb",
+    "poster_taglines",
+    "appendix"
+  ],
+  "pitches": [
+    "one_pager",
+    "actor_pitch",
+    "director_pitch",
+    "financier_pitch",
+    "producer_pitch",
+    "distributor_pitch",
+    "streamer_pitch",
+    "festival_pitch",
+    "awards_pitch",
+    "coproduction_pitch",
+    "public_funder_pitch",
+    "talent_rep_pitch",
+    "exhibitor_pitch",
+    "cultural_partnership_pitch",
+    "press_pitch",
+    "craft_pitch"
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "outputs": {
+    "screenplay.pdf": {
+      "sha256": "032bc4d27fc023acb677b3535ba771bbc39701189c6d7fad2b4224385077d2f5",
+      "pages_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected contact sheets01\u201311 covering physical1\u201391; full-resolution15,36,63,79,82,91; ragged-right fixed overfull dialogue at unchanged12pt. No clipping, blank/divider page or orphan cue observed. Contact-sheet coverage is layout review, not raster word-by-word proofreading."
+    },
+    "studio-package.pdf": {
+      "sha256": "6bea88b832769c45600095ab69aa6c31c417ccd91b9c95e6e004b625800af045",
+      "pages_inspected": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected every physical page through all3 contact sheets. Local showcase spacing fixed almost-empty spill, producing20 pages at unchanged11pt. Final re-rendered contents/page17\u201320 checked anew; all other PNGs exactly match inspected images. No clipping or orphan heading observed."
+    },
+    "one-pager.pdf": {
+      "sha256": "756d8c15c302dfe04cc749226ccf28e50d18f103a36158d4bd839e17ef0e2942",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "actor-pitch.pdf": {
+      "sha256": "b07430cd28c14bf0d4bf15d707b892d3c2e8726e9e974d379431ca5b0b1a3575",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "director-pitch.pdf": {
+      "sha256": "6c193cca7b0d844708ea7cafbef252ab25de8956860e0b9737b28681d57a192c",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "financier-pitch.pdf": {
+      "sha256": "52d540cd9eaf0f3dbe07f5666b20009b3c36e623b54933a0d460d75ef43f1ceb",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "producer-pitch.pdf": {
+      "sha256": "da80c1fcdbd678909013f0f8f36846a54412a011c4ac92cca37d38a01054642d",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "distributor-pitch.pdf": {
+      "sha256": "ada0ac9cd5e0085f3572a0f8cff72e7faf088fe6817fff3d7cfddf0bb1bd69a0",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "streamer-pitch.pdf": {
+      "sha256": "45473a304940d9c271b8d6b7a2df6d08bd709912252acbcf7ffd51cfb79a17ac",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "festival-pitch.pdf": {
+      "sha256": "bb5e0ccab20ff4ee9898525320df8eec75f7e1eb4f695cf4dd34c41b5d302642",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "awards-pitch.pdf": {
+      "sha256": "c173e147167cc71e60c96a99b38542364f2493cd478f8cf03549cc05f3466b12",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "coproduction-pitch.pdf": {
+      "sha256": "811ff66e2a8dc20a8b93b26dbd3945b2e8de6959dcb45e9a04b24a8eed08de05",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "public-funder-pitch.pdf": {
+      "sha256": "c9932c94f436dc439054c9dc13abb5137e444289b601bd928bf18c83a6bae476",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "talent-rep-pitch.pdf": {
+      "sha256": "7d140e88d7b6cb561cd2d398a309fa65116ee50603e945a2cf13efa1bd10d719",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "exhibitor-pitch.pdf": {
+      "sha256": "d27989461326c63f84a743ca28244d2924c9dba8635d72a4c1044b426cffae1e",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "cultural-partnership-pitch.pdf": {
+      "sha256": "dc68716e7bc5a945ac2599a579173f5e5e12a7c58c83ae9bda8bfcc8a483b217",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "press-pitch.pdf": {
+      "sha256": "1602fbe86c0801fca28496246da82f67621b9c845d64d0fdc6f5c45354ce3cfa",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    },
+    "craft-pitch.pdf": {
+      "sha256": "974f968eb8d965a6c0253a20d883753e93a3bd7cc634fb35d683fd8427608f5b",
+      "pages_inspected": [
+        1
+      ],
+      "verdict": "PASS",
+      "observations": "Author inspected this physical page in the4 grouped pitch contact sheets. Actual1-page11pt PDF; legible title and body, no clipping/overflow. Final PNG is byte-identical to inspected prior render."
+    }
+  },
+  "scope": "Author all-page contact sheets plus selected full-resolution checks; parent scoped sample only. See verification.md for limits."
+}

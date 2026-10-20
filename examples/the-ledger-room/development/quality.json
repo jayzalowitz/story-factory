@@ -1,0 +1,23 @@
+{
+  "draft_sha256": "c2b3b834f384051fad4c12ced785142635c9a52770a76a510c68513673020061",
+  "coverage": "full-draft",
+  "verdict": "READY",
+  "summary": "Full self-diagnosis and one focused repair;54 causal scenes,90 dramatic pages. Specific motive, live final alternative, on-screen dissent and conditional partnership repaired. Remaining voice/performance and real production limits disclosed.",
+  "findings": [
+    {
+      "id": "Q-VOICE",
+      "severity": "medium",
+      "scenes": [
+        "S10",
+        "S34",
+        "S46",
+        "S52"
+      ],
+      "status": "open-limitation",
+      "observation": "Some polished procedural idiom remains shared.",
+      "next_action": "Human read and performance test; no further automatic full-model pass."
+    }
+  ],
+  "accepted_risks": [],
+  "review_scope": "Author self-review; independent bounded report and parent clock check separately described in revision_log.md."
+}

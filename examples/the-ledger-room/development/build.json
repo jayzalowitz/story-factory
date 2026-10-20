@@ -1,0 +1,77 @@
+{
+  "source_sha256": "c99ca15f27de765485c3b3ef9202774ae3bee12749060fff91fb78d3052ae713",
+  "outputs": {
+    "screenplay.pdf": {
+      "pages": 91,
+      "sha256": "032bc4d27fc023acb677b3535ba771bbc39701189c6d7fad2b4224385077d2f5"
+    },
+    "studio-package.pdf": {
+      "pages": 20,
+      "sha256": "6bea88b832769c45600095ab69aa6c31c417ccd91b9c95e6e004b625800af045"
+    },
+    "one-pager.pdf": {
+      "pages": 1,
+      "sha256": "756d8c15c302dfe04cc749226ccf28e50d18f103a36158d4bd839e17ef0e2942"
+    },
+    "actor-pitch.pdf": {
+      "pages": 1,
+      "sha256": "b07430cd28c14bf0d4bf15d707b892d3c2e8726e9e974d379431ca5b0b1a3575"
+    },
+    "director-pitch.pdf": {
+      "pages": 1,
+      "sha256": "6c193cca7b0d844708ea7cafbef252ab25de8956860e0b9737b28681d57a192c"
+    },
+    "financier-pitch.pdf": {
+      "pages": 1,
+      "sha256": "52d540cd9eaf0f3dbe07f5666b20009b3c36e623b54933a0d460d75ef43f1ceb"
+    },
+    "producer-pitch.pdf": {
+      "pages": 1,
+      "sha256": "da80c1fcdbd678909013f0f8f36846a54412a011c4ac92cca37d38a01054642d"
+    },
+    "distributor-pitch.pdf": {
+      "pages": 1,
+      "sha256": "ada0ac9cd5e0085f3572a0f8cff72e7faf088fe6817fff3d7cfddf0bb1bd69a0"
+    },
+    "streamer-pitch.pdf": {
+      "pages": 1,
+      "sha256": "45473a304940d9c271b8d6b7a2df6d08bd709912252acbcf7ffd51cfb79a17ac"
+    },
+    "festival-pitch.pdf": {
+      "pages": 1,
+      "sha256": "bb5e0ccab20ff4ee9898525320df8eec75f7e1eb4f695cf4dd34c41b5d302642"
+    },
+    "awards-pitch.pdf": {
+      "pages": 1,
+      "sha256": "c173e147167cc71e60c96a99b38542364f2493cd478f8cf03549cc05f3466b12"
+    },
+    "coproduction-pitch.pdf": {
+      "pages": 1,
+      "sha256": "811ff66e2a8dc20a8b93b26dbd3945b2e8de6959dcb45e9a04b24a8eed08de05"
+    },
+    "public-funder-pitch.pdf": {
+      "pages": 1,
+      "sha256": "c9932c94f436dc439054c9dc13abb5137e444289b601bd928bf18c83a6bae476"
+    },
+    "talent-rep-pitch.pdf": {
+      "pages": 1,
+      "sha256": "7d140e88d7b6cb561cd2d398a309fa65116ee50603e945a2cf13efa1bd10d719"
+    },
+    "exhibitor-pitch.pdf": {
+      "pages": 1,
+      "sha256": "d27989461326c63f84a743ca28244d2924c9dba8635d72a4c1044b426cffae1e"
+    },
+    "cultural-partnership-pitch.pdf": {
+      "pages": 1,
+      "sha256": "dc68716e7bc5a945ac2599a579173f5e5e12a7c58c83ae9bda8bfcc8a483b217"
+    },
+    "press-pitch.pdf": {
+      "pages": 1,
+      "sha256": "1602fbe86c0801fca28496246da82f67621b9c845d64d0fdc6f5c45354ce3cfa"
+    },
+    "craft-pitch.pdf": {
+      "pages": 1,
+      "sha256": "974f968eb8d965a6c0253a20d883753e93a3bd7cc634fb35d683fd8427608f5b"
+    }
+  }
+}

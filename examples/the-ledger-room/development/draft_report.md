@@ -1,0 +1,6 @@
+# Complete first-draft report
+Verdict: PASS
+All54 planned scenes exist as actual action and dialogue in screenplay/act1.tex through act6.tex. No outline substitutes, repeated scene blocks or movement divider pages. First build:71 physical pages including one title page;70 dramatic pages. Approximately11,433 prose words, tokenizer/word-definition dependent. Complete shorter feature draft; requested90–110-page target not achieved. Preserve development/original-draft as the immutable before-revision text. The draft is not being called ready for outreach. Full self-review is REVISE and the parent is separately reading the snapshot. No historical source or external research claimed. Actual authoring model is the hosting assistant; usage and dollar cost are not exposed to this worker and are unknown.
+
+# Final revised draft
+The focused repair increased the actual prose to approximately14,500 words while preserving54 scenes. Correct ragged-right12pt monospaced screenplay layout now measures91 physical/90 dramatic pages, with no movement dividers or length padding. This meets the requested lower bound. The historic first-draft measurement above remains a record of the actual earlier output.

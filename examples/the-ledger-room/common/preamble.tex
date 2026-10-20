@@ -1,0 +1,28 @@
+% preamble.tex — Shared preamble for all documents
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{etoolbox}
+\usepackage{xspace}
+\usepackage{needspace}
+\usepackage{changepage}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage{environ}
+
+\input{../common/metadata}
+
+% Hyperref setup
+\hypersetup{
+  colorlinks=false,
+  pdfborder={0 0 0},
+  pdftitle={\filmtitle},
+  pdfauthor={},
+}
+
+% Load project files
+\input{../common/colors}

@@ -1,0 +1,3 @@
+# Discovery
+Verdict: PASS
+The supplied premise has a specific engine: two workers require the same signature for incompatible purposes. The small version is six locations, no crowd hearing or magical exposure. Audience experience moves from pleasure in competence to discomfort about who competence serves. No factual source is claimed. We chose an escrow dispute rather than publication because privacy, custody and employment can remain in conflict after proof exists. An archive mystery or a revenge thriller would dilute that relationship. Open questions are execution and measured length, not absent permission.

@@ -1,0 +1,31 @@
+{
+  "draft_sha256": "c2b3b834f384051fad4c12ced785142635c9a52770a76a510c68513673020061",
+  "coverage": "full-draft",
+  "status": "PASS",
+  "summary": "Explicit women roster and substantive conversations about records consent and paid labor in current full draft.",
+  "evidence": [
+    {
+      "scene_id": "S22",
+      "women": [
+        "Ina Werr",
+        "Bea Quill"
+      ],
+      "exchange": "INA: You don't get to put it in a file because it's true. BEA: You asked me to keep those rent slips. INA: To keep them.",
+      "non_man_topic": "Private rent papers, consent and representative authority.",
+      "notes": "Actual current screenplay wording; surrounding encounter changes the contact packet."
+    },
+    {
+      "scene_id": "S27",
+      "women": [
+        "Jory Senn",
+        "Clara Venn"
+      ],
+      "exchange": "Jory asks whether overtime is paid and requests the signed time sheet; Clara supplies it; both negotiate disclosure and exit terms.",
+      "non_man_topic": "Paid labor, privacy and a conditional working partnership.",
+      "notes": "Substantive dramatic exchange, not a token insertion."
+    }
+  ],
+  "limitations": [
+    "A binary representation diagnostic does not certify characterization or artistic quality."
+  ]
+}

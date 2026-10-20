@@ -1,0 +1,80 @@
+{
+  "sources": [
+    {
+      "id": "NPS-SEED",
+      "title": "First Flight Landing",
+      "url": "https://www.nps.gov/places/000/first-flight-landing.htm",
+      "accessed": "2026-10-20",
+      "locator": "Historical paragraph after Quick Facts; page updated May 2, 2021",
+      "type": "institutional retrospective",
+      "inspection": "Opened and read in preceding historical adaptation; reused here without new browsing."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C001",
+      "text": "The first flight lasted twelve seconds and covered 120 feet.",
+      "status": "verified",
+      "source_ids": [
+        "NPS-SEED"
+      ],
+      "scene_ids": [],
+      "use": "Thematic seed only; no flight or measurements appear in the fictional screenplay."
+    },
+    {
+      "id": "C002",
+      "text": "A modest first success can remain meaningful despite imperfection.",
+      "status": "inference",
+      "source_ids": [
+        "NPS-SEED"
+      ],
+      "scene_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "S004"
+      ],
+      "reason": "An authorial thematic interpretation, not a documented motive or historical claim."
+    },
+    {
+      "id": "C003",
+      "text": "Jo, Inez, their relationship, pool, instruments and recording plan",
+      "status": "invented",
+      "source_ids": [],
+      "scene_ids": [
+        "S001"
+      ],
+      "reason": "Original fictional people, place, music and events; no represented real musical event."
+    },
+    {
+      "id": "C004",
+      "text": "Failed duet, anxiety and dialogue about a move",
+      "status": "invented",
+      "source_ids": [],
+      "scene_ids": [
+        "S002"
+      ],
+      "reason": "Original fictional people, place, music and events; no represented real musical event."
+    },
+    {
+      "id": "C005",
+      "text": "Playback, weekly-return proposal and choice to sing",
+      "status": "invented",
+      "source_ids": [],
+      "scene_ids": [
+        "S003"
+      ],
+      "reason": "Original fictional people, place, music and events; no represented real musical event."
+    },
+    {
+      "id": "C006",
+      "text": "Successful imperfect duet, permission, joint credits and shared carrying of case",
+      "status": "invented",
+      "source_ids": [],
+      "scene_ids": [
+        "S004"
+      ],
+      "reason": "Original fictional people, place, music and events; no represented real musical event."
+    }
+  ]
+}

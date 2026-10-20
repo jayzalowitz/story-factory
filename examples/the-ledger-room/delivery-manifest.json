@@ -1,0 +1,305 @@
+{
+  "schema": 1,
+  "created": "2026-10-20T10:09:15.871773+00:00",
+  "draft_sha256": "c2b3b834f384051fad4c12ced785142635c9a52770a76a510c68513673020061",
+  "selection": {
+    "screenplay": true,
+    "sections": [
+      "logline_synopsis",
+      "treatment",
+      "character_breakdowns",
+      "tone_visual_world",
+      "comps_and_positioning",
+      "casting_notes",
+      "director_targets",
+      "producer_targets",
+      "awards_strategy",
+      "festival_strategy",
+      "budget_and_scope",
+      "scene_showcase",
+      "marketing_blurb",
+      "poster_taglines",
+      "appendix"
+    ],
+    "pitches": [
+      "one_pager",
+      "actor_pitch",
+      "director_pitch",
+      "financier_pitch",
+      "producer_pitch",
+      "distributor_pitch",
+      "streamer_pitch",
+      "festival_pitch",
+      "awards_pitch",
+      "coproduction_pitch",
+      "public_funder_pitch",
+      "talent_rep_pitch",
+      "exhibitor_pitch",
+      "cultural_partnership_pitch",
+      "press_pitch",
+      "craft_pitch"
+    ]
+  },
+  "review_status": "current editorial, truth and all-page visual receipts checked",
+  "limitations": "# Local demonstration handoff\nVerdict: PASS\nOriginal revised feature,54 stable causal scenes, approximately14,500 prose words. Screenplay91 physical pages including one title page,90 dramatic pages. Development package20 physical pages with15 content modules. Sixteen distinct stakeholder pitches, each exactly one page. Eighteen selected PDFs,127 physical pages total.\n\nOne authoring pass and one focused repair, with real build/layout fixes afterward. Frozen first-draft screenplay text is retained separately. Independent full reading covers the frozen original only; targeted revised reading and parent clock/seal inspection are explicitly scoped in independent_review.md, review_binding.json and revision_log.md. No blanket independent final-draft certification is claimed.\n\nAll selected outputs were rendered and inspected through all-page contact sheets; full-resolution screenplay pages15,36,63,79,82,91 checked ambiguous/wrapped cues, headings, dense interface action and ending. The package showcase spill was repaired through local card spacing at unchanged readable type. Final re-render matches previously inspected page images where content/layout did not change, and the revised package pages were inspected anew. Hash-bound visual receipts preserve physical-page coverage. Inspection is layout review, not a word-by-word proofread of every raster page or an art-quality test.\n\nAuthor quality judgment READY for this local demonstration; Bechdel named-women PASS with S22/S27 evidence. Some polished shared procedural idiom remains. Human reading, rehearsal, performed runtime, jurisdiction-specific plausibility, rights/legal review, verified named targets, market demand, line budget and production feasibility remain unassessed. The package transparently substitutes search profiles/comparison criteria for invented named research. No compensation, restored employment, awards, revenue or artistic equivalence is promised.\n\nAll story people, places, institutions and civic procedures are invented. No confidential source data or real allegations. No external model calls, nested agents, outreach, publication, commits or pushes by the author worker. Hosting model's specific inherited identifier and usage/dollar cost are not exposed to this worker and are unknown. Next useful action: a human script/table read focused on voice, pacing and practical performance, not another automatic full-context review.\n",
+  "files": {
+    "pdfs/screenplay.pdf": {
+      "pages": 91,
+      "sha256": "032bc4d27fc023acb677b3535ba771bbc39701189c6d7fad2b4224385077d2f5"
+    },
+    "pdfs/studio-package.pdf": {
+      "pages": 20,
+      "sha256": "6bea88b832769c45600095ab69aa6c31c417ccd91b9c95e6e004b625800af045"
+    },
+    "pdfs/one-pager.pdf": {
+      "pages": 1,
+      "sha256": "756d8c15c302dfe04cc749226ccf28e50d18f103a36158d4bd839e17ef0e2942"
+    },
+    "pdfs/actor-pitch.pdf": {
+      "pages": 1,
+      "sha256": "b07430cd28c14bf0d4bf15d707b892d3c2e8726e9e974d379431ca5b0b1a3575"
+    },
+    "pdfs/director-pitch.pdf": {
+      "pages": 1,
+      "sha256": "6c193cca7b0d844708ea7cafbef252ab25de8956860e0b9737b28681d57a192c"
+    },
+    "pdfs/financier-pitch.pdf": {
+      "pages": 1,
+      "sha256": "52d540cd9eaf0f3dbe07f5666b20009b3c36e623b54933a0d460d75ef43f1ceb"
+    },
+    "pdfs/producer-pitch.pdf": {
+      "pages": 1,
+      "sha256": "da80c1fcdbd678909013f0f8f36846a54412a011c4ac92cca37d38a01054642d"
+    },
+    "pdfs/distributor-pitch.pdf": {
+      "pages": 1,
+      "sha256": "ada0ac9cd5e0085f3572a0f8cff72e7faf088fe6817fff3d7cfddf0bb1bd69a0"
+    },
+    "pdfs/streamer-pitch.pdf": {
+      "pages": 1,
+      "sha256": "45473a304940d9c271b8d6b7a2df6d08bd709912252acbcf7ffd51cfb79a17ac"
+    },
+    "pdfs/festival-pitch.pdf": {
+      "pages": 1,
+      "sha256": "bb5e0ccab20ff4ee9898525320df8eec75f7e1eb4f695cf4dd34c41b5d302642"
+    },
+    "pdfs/awards-pitch.pdf": {
+      "pages": 1,
+      "sha256": "c173e147167cc71e60c96a99b38542364f2493cd478f8cf03549cc05f3466b12"
+    },
+    "pdfs/coproduction-pitch.pdf": {
+      "pages": 1,
+      "sha256": "811ff66e2a8dc20a8b93b26dbd3945b2e8de6959dcb45e9a04b24a8eed08de05"
+    },
+    "pdfs/public-funder-pitch.pdf": {
+      "pages": 1,
+      "sha256": "c9932c94f436dc439054c9dc13abb5137e444289b601bd928bf18c83a6bae476"
+    },
+    "pdfs/talent-rep-pitch.pdf": {
+      "pages": 1,
+      "sha256": "7d140e88d7b6cb561cd2d398a309fa65116ee50603e945a2cf13efa1bd10d719"
+    },
+    "pdfs/exhibitor-pitch.pdf": {
+      "pages": 1,
+      "sha256": "d27989461326c63f84a743ca28244d2924c9dba8635d72a4c1044b426cffae1e"
+    },
+    "pdfs/cultural-partnership-pitch.pdf": {
+      "pages": 1,
+      "sha256": "dc68716e7bc5a945ac2599a579173f5e5e12a7c58c83ae9bda8bfcc8a483b217"
+    },
+    "pdfs/press-pitch.pdf": {
+      "pages": 1,
+      "sha256": "1602fbe86c0801fca28496246da82f67621b9c845d64d0fdc6f5c45354ce3cfa"
+    },
+    "pdfs/craft-pitch.pdf": {
+      "pages": 1,
+      "sha256": "974f968eb8d965a6c0253a20d883753e93a3bd7cc634fb35d683fd8427608f5b"
+    },
+    "editable/Makefile": {
+      "sha256": "78488a1eb86e0a2345cb4d171dfde1be4ad67dbe3f9bbae25ff2de9347367092"
+    },
+    "editable/common/colors.tex": {
+      "sha256": "169fac572f30286c3d1779413eddb97f23f9ff03faccca2e1d66aeecf219f79a"
+    },
+    "editable/common/metadata.tex": {
+      "sha256": "ae297a8692ed465d489e665b991bf411c4dcca587d54bfd011da8395750174c8"
+    },
+    "editable/common/preamble.tex": {
+      "sha256": "79d34acae25fb0da6241834cd6c88dd8b0e35c0a0d373ec0de7bf969d706db68"
+    },
+    "editable/common/screenplay_macros.tex": {
+      "sha256": "0f3cf62e589d8e518f528430b6dfc9dea97b52af7d5ec9c3e2f42f12542e696c"
+    },
+    "editable/common/studio_package_macros.tex": {
+      "sha256": "06fada7d7371a19fc095948bc80f819b7d145a448db98085edf22937c8f02b41"
+    },
+    "editable/common/typography.tex": {
+      "sha256": "1cdcb9e73c8b665077a5af5d4173dce364d01790f1b18bdc21fd6cd583d39f65"
+    },
+    "editable/fonts/Arimo-Bold.ttf": {
+      "sha256": "6982e33e0370c907e364816a943ee5ce19468293aa21b9cbcb4d58bc1c230971"
+    },
+    "editable/fonts/Arimo-BoldItalic.ttf": {
+      "sha256": "200c028da787741c888efee8f0416e3052160b21bce165a7607eb504a759f9fa"
+    },
+    "editable/fonts/Arimo-Italic.ttf": {
+      "sha256": "9fb05a040729cef085041deeb627e488fa7fa2f126f798f3832f3eee9c1ec4ae"
+    },
+    "editable/fonts/Arimo-Regular.ttf": {
+      "sha256": "f405056d25ddc3ad89a852db367f1dc075d8c7212fddcf7c488e212efeb8b176"
+    },
+    "editable/fonts/Cousine-Bold.ttf": {
+      "sha256": "42d14baaf1802f8edf7659346a8574b41c4c78e264eb81cdb0891ca6686354ce"
+    },
+    "editable/fonts/Cousine-BoldItalic.ttf": {
+      "sha256": "ef65b8624e7993977feb9f9ba18f514a1fa9adc4e1c4737c8839574685c188ae"
+    },
+    "editable/fonts/Cousine-Italic.ttf": {
+      "sha256": "9b2b98e5d389fe74968af2abb440ac4b6fcd24e2a1aba5ed895b0337b6b0b5e6"
+    },
+    "editable/fonts/Cousine-Regular.ttf": {
+      "sha256": "69e1ea59eb770014204e5174f805750f9a793db4a2531e6516b30b7460d470b3"
+    },
+    "editable/fonts/LICENSE.txt": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "editable/fonts/README.md": {
+      "sha256": "a08f9d20c2d4dc833096cbe18654373c7f9e2f3de65d4932a61e486b2f251883"
+    },
+    "editable/fonts/Tinos-Bold.ttf": {
+      "sha256": "6a0afe87068ba5ddeb6a9bb7b9d0dc41666966c044767df69de3efb7e33f5af8"
+    },
+    "editable/fonts/Tinos-BoldItalic.ttf": {
+      "sha256": "52c4d87a988eb1f1c25e1fcb97970d456a2fb252e0fa2116e2b4bb33e7824bda"
+    },
+    "editable/fonts/Tinos-Italic.ttf": {
+      "sha256": "751c979043c9641dad389ab9c680c2c9ffb0a0c7352153f48b9ebd958e8963d8"
+    },
+    "editable/fonts/Tinos-Regular.ttf": {
+      "sha256": "1061395ac6775f3cea27dc9ef3d7a3b9cc34c2b4a2d97aa649411294d5165990"
+    },
+    "editable/latexmkrc": {
+      "sha256": "6e1b746ca0fa251e1c90f6adf39a9a4a7b8ea1047813d135f4197be8ffb2d9c3"
+    },
+    "editable/one_pagers/actor_pitch.tex": {
+      "sha256": "ef23f4831ebdee89712baae3314cf97724d7199ddd4dcae8e5d93d5a4ef8cd50"
+    },
+    "editable/one_pagers/awards_pitch.tex": {
+      "sha256": "b23d4f16f3fca29699774e675bcaddf2f2bca006e3ee61a04e3388ed23b0ac9a"
+    },
+    "editable/one_pagers/coproduction_pitch.tex": {
+      "sha256": "143230d738c8adc15399021df5259a91f1f906d124b5c4e1b3ef3cb6666c8e3a"
+    },
+    "editable/one_pagers/craft_pitch.tex": {
+      "sha256": "24009d1e429fc2fde0752895012657d9b161285f3ba6dd9e7d9d539177be4a06"
+    },
+    "editable/one_pagers/cultural_partnership_pitch.tex": {
+      "sha256": "74470b26d29147a21d6daeae3b9bdcddd1709e1ffd7ac5f010cc99df7009b8d4"
+    },
+    "editable/one_pagers/director_pitch.tex": {
+      "sha256": "23cb30e69ae983649525159c052e1ace5f282ed1598d06077b3706513de5e79b"
+    },
+    "editable/one_pagers/distributor_pitch.tex": {
+      "sha256": "bd57c8caca0f960a21814622b9e652ea5fe420954b6741f1c194d85bd6667106"
+    },
+    "editable/one_pagers/exhibitor_pitch.tex": {
+      "sha256": "66480c376c81d946e459c048e8dbd042c5a4521fe826de6403df94b86d879111"
+    },
+    "editable/one_pagers/festival_pitch.tex": {
+      "sha256": "ad099e5e2a7a1321ba9e70e18a497bf99de1df29e19ef1a5fbd7c4983082673a"
+    },
+    "editable/one_pagers/financier_pitch.tex": {
+      "sha256": "9371d4fb72a2e41d4c4bc39035dc0fdb7e8e985a3ee8ce975fe81006889f5aef"
+    },
+    "editable/one_pagers/one_pager.tex": {
+      "sha256": "38beed4b2bfc14db31b42dcd847e64e31521748e56195a148e71642365f0f9be"
+    },
+    "editable/one_pagers/press_pitch.tex": {
+      "sha256": "dce39e5cc72c8be3026bbab9582ea1e6081704020c54bd43dd7b619d532371ff"
+    },
+    "editable/one_pagers/producer_pitch.tex": {
+      "sha256": "f0508abc5c5611d288755136b472b98be5ca81c41c229c78f2dbbdede1a8013c"
+    },
+    "editable/one_pagers/public_funder_pitch.tex": {
+      "sha256": "39dd84360a0ea9092b9e4f2538b89b63ec24e47233ab7a161e6948c2c7e2c3a7"
+    },
+    "editable/one_pagers/streamer_pitch.tex": {
+      "sha256": "2ccaf592c888fb2ad7e5a90564da45668d1c429c7433e2dc1b12482106812e0d"
+    },
+    "editable/one_pagers/talent_rep_pitch.tex": {
+      "sha256": "83d35f8234cd1ee5d9b545d64d058f4df83a7dcb54716e5a2f46f9bed2af1258"
+    },
+    "editable/package/appendix.tex": {
+      "sha256": "4cd5ad42235ebf5f1eb24b98039dc5b86bd1a2aa373b164752670c7ab6ba06c4"
+    },
+    "editable/package/awards_strategy.tex": {
+      "sha256": "6f86a981554d2dbe426150178f224f365202d34d99cc98f114a913cf26bf99b0"
+    },
+    "editable/package/budget_and_scope.tex": {
+      "sha256": "f81319168306dc7cadede7ae27885e8fb84fb73b3ce1afed3ccdc0cf7f57a45c"
+    },
+    "editable/package/casting_notes.tex": {
+      "sha256": "be40b2d4ce968dad07c292c831e943a3305a5daf411553b3ade2a48cd6f013df"
+    },
+    "editable/package/character_breakdowns.tex": {
+      "sha256": "bcf90c9ce7d4a7122318cd81a1f13a37333c8ff1c907631e3aaf7e454bcdba17"
+    },
+    "editable/package/comps_and_positioning.tex": {
+      "sha256": "ea9f76f5e81b261d9a3763f77e1bcad72f5ed6518b73e78eef6d97d6f37ba1a8"
+    },
+    "editable/package/director_targets.tex": {
+      "sha256": "1ca1c1bcb99c967c3c2bd845926ce939800e22a5fd99e82ba5fdd020481b4cdb"
+    },
+    "editable/package/festival_strategy.tex": {
+      "sha256": "b16d5b8e86ccedaa622de04d3507bc901382718ddfdb71138c1edc58d4ff6661"
+    },
+    "editable/package/logline_synopsis.tex": {
+      "sha256": "7dc4f6964d2eaadc3b60437ff9448f93c112e8028f15ad30a1ac674f62b8f0df"
+    },
+    "editable/package/marketing_blurb.tex": {
+      "sha256": "67bea0d5c25391c7945d0937e0f685c11b5f480454944e17603f0a6c67be346b"
+    },
+    "editable/package/poster_taglines.tex": {
+      "sha256": "209fbf12789fc9aab8d01c6135a04bac1e53fd7e015a7c30a00026fa6780e226"
+    },
+    "editable/package/producer_targets.tex": {
+      "sha256": "34b4d559ae0f05e13b66229f44df4b14eb61d0f90ccf0c987fadcc76f459e499"
+    },
+    "editable/package/scene_showcase.tex": {
+      "sha256": "4a6dccc42babeef81eb757c4a5167abb7c83b8cb97fc735fe0372edce4f97d78"
+    },
+    "editable/package/studio_package.tex": {
+      "sha256": "093deb442b934c2c7782a468770e4e13a7f010984c0f6ac1d70b6f833d2252ba"
+    },
+    "editable/package/tone_visual_world.tex": {
+      "sha256": "f1ec4c1a0261df08ecdac48d994608c3555ac2e6c6628ec19d5103cab85c9297"
+    },
+    "editable/package/treatment.tex": {
+      "sha256": "f69002a4b8c6cc169bbc64c54bed28b009a2fc52a7074597b390a2003b5e6b59"
+    },
+    "editable/screenplay/act1.tex": {
+      "sha256": "67b746609c7b6b6b20e934209424dbefd1b37c91d75eabf638ee98586429b5ca"
+    },
+    "editable/screenplay/act2.tex": {
+      "sha256": "6cb1d13fe0ef9dedcaec839a44c7fb88a24291e3967ae7e0cded8065a0e14510"
+    },
+    "editable/screenplay/act3.tex": {
+      "sha256": "1e8b3172bf9b9ea764eecc06ff2b9e8226f02d479c33d6a3645aa1f9a5832dc9"
+    },
+    "editable/screenplay/act4.tex": {
+      "sha256": "41d4e22055e138f2dd540a3a86e0742895538ba4fbeb9404a73c71fcdda33f97"
+    },
+    "editable/screenplay/act5.tex": {
+      "sha256": "b08ccedac45558042a5adc1bc6d490ec4a289b9b91e5c9fe7cc94f9487451036"
+    },
+    "editable/screenplay/act6.tex": {
+      "sha256": "2f821e8499fff8fe4c058ff83d6213578739707afab275c6b68f9b41a1c3ef3f"
+    },
+    "editable/screenplay/main_screenplay.tex": {
+      "sha256": "276d99ba103d2083d27968eaa97e5717d0246a976c42a4c853468dfcc9612902"
+    },
+    "editable/screenplay/title_page.tex": {
+      "sha256": "b58de1d7cccd477f9ff8c2fbbfd948602a9e468f90fd600a5049c1016b42f199"
+    }
+  }
+}

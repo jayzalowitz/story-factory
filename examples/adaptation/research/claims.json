@@ -1,0 +1,120 @@
+{
+  "sources": [
+    {
+      "id": "S1",
+      "title": "First Flight Landing",
+      "url": "https://www.nps.gov/places/000/first-flight-landing.htm",
+      "accessed": "2026-10-20",
+      "locator": "Historical paragraph after Quick Facts; updated May 2, 2021",
+      "type": "institutional retrospective",
+      "independence_group": "National Park Service"
+    },
+    {
+      "id": "S2",
+      "title": "Fourth Flight Landing",
+      "url": "https://www.nps.gov/places/000/fourth-flight-landing.htm",
+      "accessed": "2026-10-20",
+      "locator": "Historical paragraph and Why No Fifth Flight?; updated May 2, 2021",
+      "type": "institutional retrospective",
+      "independence_group": "National Park Service"
+    },
+    {
+      "id": "S3",
+      "title": "The First Flight",
+      "url": "https://www.nps.gov/articles/firstflight.htm",
+      "accessed": "2026-10-20",
+      "locator": "Historical narrative paragraphs 1\u20139; updated August 15, 2017",
+      "type": "institutional retrospective",
+      "independence_group": "National Park Service"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C001",
+      "text": "Orville flew on December 17, 1903, approximately 10:35 a.m., for 12 seconds over 120 feet.",
+      "status": "verified",
+      "source_ids": [
+        "S1",
+        "S3"
+      ],
+      "scene_ids": [
+        "S002",
+        "S003"
+      ],
+      "limits": "Institutional retrospective support; not two independent witnesses."
+    },
+    {
+      "id": "C002",
+      "text": "Wilbur made the fourth flight, covering 852 feet in 59 seconds.",
+      "status": "verified",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "scene_ids": [
+        "S004",
+        "S005"
+      ]
+    },
+    {
+      "id": "C003",
+      "text": "Wind damaged the flyer after the fourth flight; a telegram was later sent to the brothers\u2019 father.",
+      "status": "verified",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "scene_ids": [
+        "S005",
+        "S006"
+      ]
+    },
+    {
+      "id": "C004",
+      "text": "The brothers valued an exact modest record over an inflated description.",
+      "status": "inference",
+      "source_ids": [
+        "S3"
+      ],
+      "scene_ids": [
+        "S003",
+        "S006"
+      ],
+      "reason": "Interpretation of the institutional account\u2019s description of a matter-of-fact telegram, not evidence of private motive."
+    },
+    {
+      "id": "C005",
+      "text": "All dialogue, screw business, notebook choreography and final writing location.",
+      "status": "invented",
+      "source_ids": [],
+      "scene_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "S004",
+        "S005",
+        "S006"
+      ],
+      "reason": "Original dramatic writing; never presented as a transcript."
+    },
+    {
+      "id": "C006",
+      "text": "The plan after lunch was to travel to the postmaster by airplane.",
+      "status": "unverified",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "scene_ids": [],
+      "reason": "S2 uses wording that appears to imply flight despite ending the season after damage; S3 says only that a telegram was sent. Possible narrative sequencing or colloquial wording; not resolved from these sources. Omitted from screenplay."
+    },
+    {
+      "id": "C007",
+      "text": "Exact original diary and telegram wording.",
+      "status": "unverified",
+      "source_ids": [],
+      "scene_ids": [],
+      "reason": "LOC archival collection page inaccessible (403); no original wording quoted."
+    }
+  ]
+}

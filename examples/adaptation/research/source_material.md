@@ -1,0 +1,3 @@
+# Source material and source-use limits
+
+Complete agreed source scope: three inspected public institutional historical accounts summarized in sources/nps-reading-notes.md. Historical factual elements are paraphrased; dialogue and dramatic staging are original. No copied archival text, photographs or substantial prose passages are used. That does not constitute a legal opinion or a blanket public-domain claim about everything displayed on a government website. No contemporary private interviews or living-person allegations are involved. The original source pages can change; the local hash protects notes, not a remote archive.

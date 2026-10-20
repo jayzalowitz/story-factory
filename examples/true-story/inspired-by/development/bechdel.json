@@ -1,0 +1,26 @@
+{
+  "draft_sha256": "004358b7e56a10c27893e12d034e01400172bb152c7759f174cc704c64b53200",
+  "coverage": "full-draft",
+  "status": "PASS",
+  "summary": "Named women Jo and Inez discuss taking responsibility for their music and sharing the recording. These exchanges produce the central decisions.",
+  "evidence": [
+    {
+      "scene_id": "S003",
+      "women": [
+        "Jo",
+        "Inez"
+      ],
+      "exchange": "Inez: I don't know who starts us without you. Jo: You do.",
+      "non_man_topic": "Leading the Thursday singing after Jo moves."
+    },
+    {
+      "scene_id": "S004",
+      "women": [
+        "Jo",
+        "Inez"
+      ],
+      "exchange": "Inez: May I play that on Thursday? Jo: Use both names.",
+      "non_man_topic": "Permission to share and joint credit for their recording."
+    }
+  ]
+}

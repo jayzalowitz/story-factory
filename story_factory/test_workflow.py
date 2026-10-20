@@ -19,6 +19,7 @@ class WorkflowTests(unittest.TestCase):
         shutil.copyfile(SOURCE / "workflow.py", self.root / "scripts/workflow.py")
         shutil.copyfile(SOURCE / "story_check.py", self.root / "scripts/story_check.py")
         shutil.copyfile(SOURCE / "package_options.py", self.root / "scripts/package_options.py")
+        shutil.copyfile(SOURCE / "delivery.py", self.root / "scripts/delivery.py")
         (self.root / "development").mkdir()
 
     def run_cli(self, *args):

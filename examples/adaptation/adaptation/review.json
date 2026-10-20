@@ -1,0 +1,10 @@
+{
+  "coverage": "full-draft",
+  "draft_sha256": "612f449a789666e3ea5facd84acb06153224e1b115c27794f8b88b0114c66c6c",
+  "record_sha256": "6fe2594a8d4648ab25b8029a117683f36adfec550f72be3bc0246dc309a0a072",
+  "source_sha256": {
+    "NPS-NOTES": "c4af1533ea951fff2dc671b46a7aa6ad702edacca17079cb9e82a03f7062e9d9"
+  },
+  "verdict": "READY",
+  "summary": "All six scenes mapped; reconstructed exchanges and omitted ambiguity explicit; approved compact scope reviewed by authoring agent."
+}

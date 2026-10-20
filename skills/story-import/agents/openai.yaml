@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Import"
+  short_description: "Preserve and extract a screenplay or other source document with "
+  default_prompt: "Use $story-import to help with my story project."

@@ -1,0 +1,15 @@
+{
+  "builder": "Tectonic",
+  "selected_outputs": [
+    "screenplay"
+  ],
+  "outputs": {
+    "the-pool.pdf": {
+      "pages": 6,
+      "screenplay_pages": 5,
+      "sha256": "f70090620c695751fd01d02cb129f7ea0cfb4a4407a213c86a366136b09f3422"
+    }
+  },
+  "not_a_standard_package_build_receipt": true,
+  "source_sha256": "004358b7e56a10c27893e12d034e01400172bb152c7759f174cc704c64b53200"
+}

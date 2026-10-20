@@ -138,6 +138,12 @@ def create(destination, title, source_mode="original", bechdel_target="report", 
     shutil.copyfile(FACTORY / "workflow.py", destination / "scripts/workflow.py")
     shutil.copyfile(FACTORY / "story_check.py", destination / "scripts/story_check.py")
     shutil.copyfile(FACTORY / "package_options.py", destination / "scripts/package_options.py")
+    for helper in ['setup_check.py', 'import_source.py', 'adaptation.py', 'team_controls.py', 'delivery.py', 'upgrade_project.py']:
+        shutil.copyfile(FACTORY / helper, destination / 'scripts' / helper)
+    import hashlib
+    managed = {f'scripts/{name}': hashlib.sha256((destination / 'scripts' / name).read_bytes()).hexdigest()
+               for name in ['workflow.py', 'story_check.py', 'package_options.py', 'setup_check.py', 'import_source.py', 'adaptation.py', 'team_controls.py', 'delivery.py', 'upgrade_project.py']}
+    write('.story-factory-tools.json', json.dumps({'schema': 1, 'files': managed}, indent=2)+'\n')
     from_package = {"screenplay": True, "sections": list(SECTIONS), "pitches": list(PITCHES)}
     write("development/package_options.json", json.dumps(from_package, indent=2) + "\n")
     write("CLAUDE.md", "# Project instructions\n\nRead MASTER_PROMPT.md and development/brief.md. "
@@ -188,7 +194,7 @@ def create(destination, title, source_mode="original", bechdel_target="report", 
           "- development/status.md records where things stand.\n\n"
           "## Your writing-room commands\n\n"
           "In Claude Code, start with `/story-office-hours`; in Codex, use `$story-office-hours`. "
-          "Use story-outline, story-draft, story-review, and story-revise as you develop the story. "
+          "Use story-setup for help, story-import for existing files, and story-adapt for a book or other source. Use story-outline, story-draft, story-review, and story-revise as you develop the story. "
           "The story-bechdel, story-quality, and story-truth checks provide specific evidence, "
           "not automatic praise. Use story-run for the complete process and story-resume to pick up later. "
           "These commands need the installed skills; a helper can install them if omitted.\n\n"

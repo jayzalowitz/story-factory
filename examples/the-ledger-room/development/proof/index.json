@@ -1,0 +1,140 @@
+{
+  "studio-package.pdf": {
+    "sha256": "6bea88b832769c45600095ab69aa6c31c417ccd91b9c95e6e004b625800af045",
+    "page_images": 20,
+    "sheets": [
+      "studio-package-contact-01.png",
+      "studio-package-contact-02.png",
+      "studio-package-contact-03.png"
+    ]
+  },
+  "actor-pitch.pdf": {
+    "sha256": "b07430cd28c14bf0d4bf15d707b892d3c2e8726e9e974d379431ca5b0b1a3575",
+    "page_images": 1,
+    "sheets": [
+      "actor-pitch-contact-01.png"
+    ]
+  },
+  "festival-pitch.pdf": {
+    "sha256": "bb5e0ccab20ff4ee9898525320df8eec75f7e1eb4f695cf4dd34c41b5d302642",
+    "page_images": 1,
+    "sheets": [
+      "festival-pitch-contact-01.png"
+    ]
+  },
+  "public-funder-pitch.pdf": {
+    "sha256": "c9932c94f436dc439054c9dc13abb5137e444289b601bd928bf18c83a6bae476",
+    "page_images": 1,
+    "sheets": [
+      "public-funder-pitch-contact-01.png"
+    ]
+  },
+  "awards-pitch.pdf": {
+    "sha256": "c173e147167cc71e60c96a99b38542364f2493cd478f8cf03549cc05f3466b12",
+    "page_images": 1,
+    "sheets": [
+      "awards-pitch-contact-01.png"
+    ]
+  },
+  "director-pitch.pdf": {
+    "sha256": "6c193cca7b0d844708ea7cafbef252ab25de8956860e0b9737b28681d57a192c",
+    "page_images": 1,
+    "sheets": [
+      "director-pitch-contact-01.png"
+    ]
+  },
+  "streamer-pitch.pdf": {
+    "sha256": "45473a304940d9c271b8d6b7a2df6d08bd709912252acbcf7ffd51cfb79a17ac",
+    "page_images": 1,
+    "sheets": [
+      "streamer-pitch-contact-01.png"
+    ]
+  },
+  "producer-pitch.pdf": {
+    "sha256": "da80c1fcdbd678909013f0f8f36846a54412a011c4ac92cca37d38a01054642d",
+    "page_images": 1,
+    "sheets": [
+      "producer-pitch-contact-01.png"
+    ]
+  },
+  "talent-rep-pitch.pdf": {
+    "sha256": "7d140e88d7b6cb561cd2d398a309fa65116ee50603e945a2cf13efa1bd10d719",
+    "page_images": 1,
+    "sheets": [
+      "talent-rep-pitch-contact-01.png"
+    ]
+  },
+  "press-pitch.pdf": {
+    "sha256": "1602fbe86c0801fca28496246da82f67621b9c845d64d0fdc6f5c45354ce3cfa",
+    "page_images": 1,
+    "sheets": [
+      "press-pitch-contact-01.png"
+    ]
+  },
+  "exhibitor-pitch.pdf": {
+    "sha256": "d27989461326c63f84a743ca28244d2924c9dba8635d72a4c1044b426cffae1e",
+    "page_images": 1,
+    "sheets": [
+      "exhibitor-pitch-contact-01.png"
+    ]
+  },
+  "craft-pitch.pdf": {
+    "sha256": "974f968eb8d965a6c0253a20d883753e93a3bd7cc634fb35d683fd8427608f5b",
+    "page_images": 1,
+    "sheets": [
+      "craft-pitch-contact-01.png"
+    ]
+  },
+  "coproduction-pitch.pdf": {
+    "sha256": "811ff66e2a8dc20a8b93b26dbd3945b2e8de6959dcb45e9a04b24a8eed08de05",
+    "page_images": 1,
+    "sheets": [
+      "coproduction-pitch-contact-01.png"
+    ]
+  },
+  "cultural-partnership-pitch.pdf": {
+    "sha256": "dc68716e7bc5a945ac2599a579173f5e5e12a7c58c83ae9bda8bfcc8a483b217",
+    "page_images": 1,
+    "sheets": [
+      "cultural-partnership-pitch-contact-01.png"
+    ]
+  },
+  "distributor-pitch.pdf": {
+    "sha256": "ada0ac9cd5e0085f3572a0f8cff72e7faf088fe6817fff3d7cfddf0bb1bd69a0",
+    "page_images": 1,
+    "sheets": [
+      "distributor-pitch-contact-01.png"
+    ]
+  },
+  "financier-pitch.pdf": {
+    "sha256": "52d540cd9eaf0f3dbe07f5666b20009b3c36e623b54933a0d460d75ef43f1ceb",
+    "page_images": 1,
+    "sheets": [
+      "financier-pitch-contact-01.png"
+    ]
+  },
+  "screenplay.pdf": {
+    "sha256": "032bc4d27fc023acb677b3535ba771bbc39701189c6d7fad2b4224385077d2f5",
+    "page_images": 91,
+    "sheets": [
+      "screenplay-contact-01.png",
+      "screenplay-contact-02.png",
+      "screenplay-contact-03.png",
+      "screenplay-contact-04.png",
+      "screenplay-contact-05.png",
+      "screenplay-contact-06.png",
+      "screenplay-contact-07.png",
+      "screenplay-contact-08.png",
+      "screenplay-contact-09.png",
+      "screenplay-contact-10.png",
+      "screenplay-contact-11.png"
+    ]
+  },
+  "one-pager.pdf": {
+    "sha256": "756d8c15c302dfe04cc749226ccf28e50d18f103a36158d4bd839e17ef0e2942",
+    "page_images": 1,
+    "sheets": [
+      "one-pager-contact-01.png"
+    ]
+  }
+}

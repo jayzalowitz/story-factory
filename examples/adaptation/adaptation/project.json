@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "NPS-NOTES",
+      "title": "Three inspected NPS first-flight accounts: original reading notes",
+      "kind": "nonfiction",
+      "path": "sources/nps-reading-notes.md",
+      "sha256": "c4af1533ea951fff2dc671b46a7aa6ad702edacca17079cb9e82a03f7062e9d9",
+      "provenance": "Three official National Park Service pages, inspected 2026-10-20; URLs and limitations in the notes. Institutional retrospective accounts, not independent primary witnesses.",
+      "locator_scheme": "Numbered units 1\u20133; the complete agreed source scope is these three historical accounts, not the full Wright biography.",
+      "units": 3,
+      "read_units": [
+        1,
+        2,
+        3
+      ],
+      "rights": {
+        "status": "public-domain-asserted",
+        "basis": "Historical facts paraphrased in original notes and original dramatic writing; no copied passages, images or archival texts. No legal certification of underlying third-party contributions."
+      }
+    }
+  ],
+  "contract": {
+    "scope": "A complete compact historical short about measurement and the end of the flying day, not a feature or biography. Demonstration author approved these choices; no user interview is represented.",
+    "preserve": [
+      "Date, place, first and fourth flight measurements, alternating pilots, four flights, wind damage, later telegram to father."
+    ],
+    "change_policy": "Original private conversation and gestures; compress middle flights; invent notebook scene as an explicitly reconstructed dramatic device. Never quote an uninspected telegram.",
+    "status": "approved"
+  },
+  "departures": [
+    {
+      "id": "D001",
+      "description": "All spoken dialogue, pocket screw, notebook handling and final message composition are invented.",
+      "reason": "Turn measurements and an event sequence into visible choices and a restrained relationship; no claim of verbatim history.",
+      "decision": "approved"
+    },
+    {
+      "id": "D002",
+      "description": "Middle two flights compressed into a montage; location of final writing invented.",
+      "reason": "Keep a compact short focused on testing, measurement and preserving a record.",
+      "decision": "approved"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "S001",
+      "source_refs": [
+        {
+          "source_id": "NPS-NOTES",
+          "locator": "Unit 3"
+        }
+      ],
+      "transformation": "Invent a practical repair exchange to externalize care without a speech about brotherhood.",
+      "departure_ids": [
+        "D001"
+      ]
+    },
+    {
+      "id": "S002",
+      "source_refs": [
+        {
+          "source_id": "NPS-NOTES",
+          "locator": "Unit 1"
+        },
+        {
+          "source_id": "NPS-NOTES",
+          "locator": "Unit 3"
+        }
+      ],
+      "transformation": "Show launch, camera and landing through action; dialogue after landing is invented.",
+      "departure_ids": [
+        "D001"
+      ]
+    },
+    {
+      "id": "S003",
+      "source_refs": [
+        {
+          "source_id": "NPS-NOTES",
+          "locator": "Unit 1"
+        }
+      ],
+      "transformation": "Turn flight measurements into a physical measuring task.",
+      "departure_ids": [
+        "D001"
+      ]
+    },
+    {
+      "id": "S004",
+      "source_refs": [
+        {
+          "source_id": "NPS-NOTES",
+          "locator": "Unit 3"
+        }
+      ],
+      "transformation": "Compress two flights and show alternating responsibility; preserve four total.",
+      "departure_ids": [
+        "D001",
+        "D002"
+      ]
+    },
+    {
+      "id": "S005",
+      "source_refs": [
+        {
+          "source_id": "NPS-NOTES",
+          "locator": "Unit 2"
+        },
+        {
+          "source_id": "NPS-NOTES",
+          "locator": "Unit 3"
+        }
+      ],
+      "transformation": "Show established wind damage; private repair exchange and notebook details are invented.",
+      "departure_ids": [
+        "D001"
+      ]
+    },
+    {
+      "id": "S006",
+      "source_refs": [
+        {
+          "source_id": "NPS-NOTES",
+          "locator": "Unit 3"
+        }
+      ],
+      "transformation": "Invent a restrained writing scene; keep telegram wording out of view.",
+      "departure_ids": [
+        "D001",
+        "D002"
+      ]
+    }
+  ]
+}

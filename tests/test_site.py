@@ -79,12 +79,17 @@ class PublicSiteTests(unittest.TestCase):
                      'public-funder-pitch', 'exhibitor-pitch', 'cultural-partnership-pitch',
                      'press-pitch', 'craft-pitch']:
             allowed.add('examples/the-letter-to-the-father/' + stem + '.pdf')
+            allowed.add('examples/the-night-window/' + stem + '.pdf')
+            allowed.add('examples/the-ledger-room/' + stem + '.pdf')
+        allowed.add('examples/adaptation/twelve-seconds.pdf')
+        allowed.add('examples/inspired-by/the-pool.pdf')
+        allowed.add('examples/the-letter-to-the-father/screenplay-revised.pdf')
         actual = {path.relative_to(SITE).as_posix() for path in SITE.rglob('*') if path.is_file()}
         self.assertEqual(actual, allowed, 'review new public files before changing the publication allowlist')
 
     def test_beginner_path_and_optional_controls_match_supported_hosts(self):
         for phrase in ['Download the toolkit ZIP', 'Extract All', 'Code</strong> tab',
-                       'python3 install.py --project . --host both', '$story-new', '/story-new',
+                       'included installer for my current assistant', '$story-new', '/story-new',
                        '/story-handoff', '/story-resume', 'has not been tested']:
             self.assertIn(phrase, self.text)
         component_inputs = [attrs for tag, attrs in self.doc.elements

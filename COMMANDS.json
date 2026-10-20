@@ -10,6 +10,21 @@
     "stage": null
   },
   {
+    "name": "story-adapt",
+    "description": "Develop a screenplay from a novel, memoir, article, play, or other source material.",
+    "stage": null
+  },
+  {
+    "name": "story-import",
+    "description": "Preserve and extract a screenplay or other source document with traceable locations.",
+    "stage": null
+  },
+  {
+    "name": "story-setup",
+    "description": "Check setup and explain missing tools in plain language before a first writing session.",
+    "stage": null
+  },
+  {
     "name": "story-office-hours",
     "description": "Explore a story seed through a focused conversation before outlining or drafting.",
     "stage": "discover"
