@@ -21,3 +21,7 @@ The layout and code remain Story Factory's. No third-party product code, artwork
 ## Actual review
 
 Local browser checks cover desktop 1440×1000, phone 390×844, tablet 768×1024 and short laptop 1280×720. The landing page, one-command request, review gates and context explanation were inspected without horizontal overflow or console errors. Both host-specific clipboard paths and denied-copy selection recovery were exercised. Earlier chapter/deep-link/history/form checks remain covered separately. Screenshot evidence is local, outside the published artifact. Publishing and live-byte verification are separate final steps.
+
+## Progressive depth
+
+The introduction remains a short starting path. A separate guide.html supplies twelve native, bookmarkable topics, actual/illustrative case distinctions, expanded material menus and an after-draft roadmap. It requires no JavaScript; native links, history and details disclosures work independently of the introduction's chapter router. README has a concise one-command entry and seven optional deeper guides. docs/guide-content.json is the shared source for the designed guide and docs/DEEP_DIVE.md; rebuild with python3 scripts/build_guide.py. The practical package reference explains purpose, content choice and when to skip every section/pitch.

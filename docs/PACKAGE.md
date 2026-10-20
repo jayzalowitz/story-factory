@@ -1,51 +1,74 @@
-# Choose your finished materials
+# Choose the materials your project needs
 
-Every item is optional. Tell the assistant what you need in ordinary language. You can request only a screenplay, a small set of development pages, a single pitch, or the complete package. A full selection produces 18 PDFs: the screenplay, one book containing the selected development sections, and sixteen separate one-page pitches. Research/review notes are working evidence, not extra mandatory sales documents.
+Every package item is optional. Choose by the next real conversation you expect to have, the stage of the project, and the evidence you can support. A screenplay with a short synopsis may be the right handoff; an early outline may need only a logline and a few character notes. A full package is available when the project is mature enough to support it. Selecting a template never turns an estimate, target, attachment, eligibility claim, or market statement into a verified fact.
 
-## Development package sections
+## Choose by situation
 
-- Logline and Synopses
-- Treatment
-- Character Breakdowns
-- Tone and Visual World
-- Comparables and Positioning
-- Casting Proposals
-- Director Targets
-- Producer Targets
-- Awards Strategy
-- Festival Strategy
-- Budget and Production Scope
-- Scene Showcase
-- Marketing Description
-- Taglines
-- Risks, Research, Rights, and Next Steps
+| Situation | Useful starting selection |
+| --- | --- |
+| Early outline or premise discussion | Logline and Synopses (label an unfinished story as a premise or outline), Character Breakdowns, Tone and Visual World, and a General Pitch. A treatment can help test the story before screenplay pages exist. Avoid presenting a draft synopsis as the finished film's plot. |
+| Actor conversation | Character Breakdowns, Scene Showcase, and Actor Pitch. Add Logline and Synopses if the reader needs the whole story. Describe the role and its playable choices; call an actor a proposal only when you have a reason, and never imply contact or attachment without evidence. |
+| Director conversation | Tone and Visual World, Scene Showcase, Character Breakdowns, and Director Pitch. Add Treatment when the director needs the complete dramatic movement. A director search profile is useful before names are researched; it is not a shortlist. |
+| Producer conversation | Logline and Synopses, Treatment, Tone and Visual World, Comparables and Positioning, Budget and Production Scope, Producer Pitch, and optionally Director/Casting notes or Appendix. Use a comparison brief if you have not verified named films or market data. Keep production assumptions visibly preliminary until a real schedule and budget exist. |
+| Financier or funder conversation | Logline and Synopses, Budget and Production Scope, Financier Pitch or Public Funder Pitch, and Appendix. Explain what is known, what must be costed, and which eligibility questions remain. Do not imply financing, returns, public benefit eligibility, or a funder's interest. |
+| Release, festival, press, or audience-facing discussion | Marketing Description and a General, Distributor, Streamer, Festival, Exhibitor, or Press Pitch matched to the actual reader. Add Comparables and Positioning if it is a useful creative frame. Confirm current rules, release facts, credits, and claims before external use. |
+| Craft or community conversation | Scene Showcase, Tone and Visual World, and Craft or Cultural Partnership Pitch. Make the proposed contribution specific and reciprocal; do not imply a group has endorsed the project or owes it participation. |
+| No identified reader yet | Start small: screenplay plus Logline and Synopses, or a General Pitch. Add pieces as a real reader or decision requires them. |
+
+These are starting points, not fixed bundles. Pick sections and pitches independently. One selected section produces a small assembled development package; a pitch is its own PDF and can travel by itself. The assembled package is a reader-friendly book containing only the selected sections. A partial selection therefore travels as a coherent partial book, without blank template chapters. You may also share individual PDFs when a reader needs only one document.
+
+With every catalog item selected and the screenplay included, the build produces 18 PDFs: the screenplay, one assembled development package containing 15 sections, and 16 separate pitches. It does not produce 15 separate section PDFs. The default selection includes every item, so trim it when the full set would not serve an actual reader. Research and review records are working evidence, not extra sales documents.
+
+## Development sections
+
+The examples below are invented illustrations of the kind of decision each page supports. They are not market research, budget quotes, eligibility findings, or claims about a real production.
+
+| Catalog name | What it is for and who reads it | Example of a useful content decision | Skip it or qualify it when… |
+| --- | --- | --- | --- |
+| Logline and Synopses | Gives a reader a fast premise, short account, and full plot including the actual ending. Useful to nearly every reader. | “A night dispatcher has one shift to find the missing key before the ferry terminal closes.” The full synopsis then states who made the key disappear and what the dispatcher chooses. | The story is still changing: call it a premise/outline and flag the ending as provisional. Never hide the ending in the full synopsis or claim a finished draft follows it if it does not. |
+| Treatment | Tells the complete story in readable prose, with enough cause and consequence for a reader to follow the film without screenplay formatting. Often useful to producers and directors. | Explain how the dispatcher first suspects a theft, why the obvious search fails, and how the final choice follows from earlier pressure. | The screenplay is still too incomplete to support a full account, or a treatment would duplicate a more useful short synopsis. Mark the version and do not add scenes that are absent from the script. |
+| Character Breakdowns | Describes what principal characters want, how they act, their conflicts, and how they change. Useful to actors, directors, and producers. | Show that the dispatcher protects a junior worker by hiding a mistake, then must decide whether to correct the public log under their own name. | Roles or arcs are not defined yet, or the list would expose unnecessary personal details about real people. Avoid reducing a role to age, type, or casting shorthand alone. |
+| Tone and Visual World | Makes the film's cinematic approach discussable: image, sound, point of view, rhythm, and formal rules. Useful to directors and craft collaborators. | Let ferry horns interrupt private conversations; show the terminal through practical work zones instead of generic sweeping establishing shots. | The form is deliberately open for a director, or the notes dictate choices without serving the story. Present proposals as invitations, not promises about a future film. |
+| Comparables and Positioning | Explains the audience promise and what comparisons help communicate, including where the project differs. Useful to producers, distributors, and funders. | Compare the story's contained workplace pressure with one film's ensemble focus and another's suspense structure, then state that neither comparison establishes demand. | You have not researched titles or performance data: provide comparison axes or a clearly labeled positioning brief. Do not imply a similar budget, audience, sales result, or buyer appetite without evidence. |
+| Casting Proposals | Identifies performance needs and roles that may attract actors; separates creative fit from real-world attachment. Useful to actors, representatives, directors, and producers. | A role needs an actor who can make a tiny delay at a counter read as both fear and calculation; cite the scene where that choice occurs. | There is no meaningful reason to name performers yet. Role-led rationale is enough. A named proposal is not contact, interest, availability, approval, or attachment. |
+| Director Targets | Defines the creative experience and qualifications sought in a director, from aspirational to practical profiles. Useful during packaging and producer discussion. | Seek a director who stages groups so a worker's refusal can change the scene, then identify the scene that tests this. | Named targets have not been researched. Use profiles and label them as search criteria; do not call them a shortlist or state current credits, interest, or availability without checking. |
+| Producer Targets | Clarifies what production expertise or partners the project needs. Useful for planning the next packaging step. | Seek a producer experienced with contained ensemble films and industrial locations; identify the location access and safety questions to resolve. | No real targets have been researched. Describe the role or company profile and say a verified shortlist remains future work. Never invent a company's mandate or imply an approach. |
+| Awards Strategy | Identifies craft strengths that could be discussed if a completed film, release, rules, and resources make a campaign sensible. Useful for later planning. | Point to a sustained ensemble scene as a possible performance discussion, while deferring any campaign decision until the film exists and eligibility is checked. | There is no completed film, campaign capacity, or relevant award path. Omit it or state that no strategy is warranted yet. Do not predict nominations or claim eligibility without current verification. |
+| Festival Strategy | Frames possible festival or alternative-launch paths around the finished film and intended audience. Useful to producers and release planners. | Describe the film's precise programming proposition and note that premiere status, dates, and rules need checking before spending submission money. | The film, runtime, premiere history, or current rules are unknown. Keep it a launch hypothesis, not a researched calendar. Never claim selection or eligibility. |
+| Budget and Production Scope | Describes scale, locations, cast and practical cost drivers; helps a producer decide what must be scheduled and costed. | Note that three scenes could share one terminal set, while night access, vehicle work, and rain continuity need real production planning. | You lack a line budget: state that clearly and give scope assumptions only. “Contained” does not mean cheap, financed, or feasible at a particular amount. Avoid unsupported ranges, incentives, and savings claims. |
+| Scene Showcase | Points to existing scenes that demonstrate character, tone, conflict, or cinematic potential. Useful to actors, directors, and producers. | Choose the scene where the dispatcher can safely return the key but would erase a colleague's incident by doing so. Explain what the scene lets the character decide. | Scene IDs or draft structure are unstable, or the scene does not actually support the claim. Cite the current screenplay and do not describe a scene that was cut. |
+| Marketing Description | Offers concise audience-facing language about the film's premise, hook, and experience. Useful for a deck, listing, or release conversation. | “One terminal. One missing key. A final shift to decide whose name belongs in the log.” Follow with a grounded description of the movie. | The project is too early for public copy, or the line promises a thriller while the draft is a quiet drama. Avoid invented reviews, awards, endorsements, release dates, or true-story wording. |
+| Taglines | Gives several short creative directions for a poster or campaign to evaluate later. | Offer one line about the workplace deadline and another about the cost of keeping a record; keep both faithful to the ending. | No visual campaign is planned or none of the lines adds clarity. Taglines are creative options, not tested slogans or evidence of audience response. |
+| Risks, Research, Rights, and Next Steps | Makes unresolved story, production, factual, rights, and packaging questions visible to a decision-maker. | Flag that the terminal procedure needs a local operations adviser and that location access, chain of title, and cost remain unverified. | There are no meaningful open items, or an appendix would bury a critical limitation. Keep it concise and distinguish completed checks from work still needed; do not imply legal clearance. |
 
 ## Reader-specific one-page pitches
 
-- General Pitch
-- Actor Pitch
-- Director Pitch
-- Financier Pitch
-- Producer Pitch
-- Distributor Pitch
-- Streamer Pitch
-- Festival Pitch
-- Awards Pitch
-- Co-production Pitch
-- Public Funder Pitch
-- Talent Representative Pitch
-- Exhibitor Pitch
-- Cultural Partnership Pitch
-- Press Pitch
-- Craft Department Pitch
+Each pitch is a separate, concise version for one reader's decision. It should keep the same story facts while changing the emphasis. A page can state why the project may be relevant; it cannot claim the reader's interest or approval. These examples are invented and make no claim about actual market conditions.
 
-## How to ask
+| Catalog name | What this reader needs to understand | Example emphasis | Skip it or qualify it when… |
+| --- | --- | --- | --- |
+| General Pitch | The premise, emotional hook, intended audience, form, and production profile at a glance. | Lead with the dispatcher's deadline, then describe the central moral choice and contained terminal setting. | The project is too early for a reliable synopsis; use a clearly labeled premise page instead. Avoid calling audience response proven. |
+| Actor Pitch | The role's contradictions, arc, playable moments, and scope. | Highlight the scene where the dispatcher can protect a colleague only by admitting their own error. | There is no defined character or concrete reason a role might suit this reader. Never suggest the actor is attached, contacted, or available without evidence. |
+| Director Pitch | The film's visual and formal opportunity, relationships, and cinematic problems worth solving. | Describe how a live terminal's work rhythms can create suspense without turning routine machinery into spectacle. | The director is not identified or no distinct filmmaking opportunity is clear. Do not imply a target has been approached or is interested. |
+| Financier Pitch | The production scope, financing assumptions, audience proposition, risks, and dependencies. | Name the shared location opportunity alongside unresolved night access, insurance, schedule, and cost questions. | There is no costed plan: label all scope as preliminary and leave figures out. Do not promise returns, financing, or a low budget. |
+| Producer Pitch | What practical development and assembly work remains and why this producer's skills could matter. | Request a feasibility conversation about terminal access, night scheduling, and a real budget after a script read. | No producer or company has been verified. It can remain a role-based project brief; do not invent a mandate or prior interest. |
+| Distributor Pitch | Audience promise, distinctive positioning, release considerations, and what further materials are available. | Describe the intimate workplace drama and the concrete deadline that gives it forward motion; mark audience and release assumptions for validation. | There is no finished film or release evidence. Avoid claims about sales, demand, comparable performance, or distribution interest. |
+| Streamer Pitch | A clear audience fit and why the story can hold attention in the proposed format. | Explain how each shift changes the cost of the missing key, while avoiding claims about any platform's current appetite. | No specific platform research has been done, or the feature format is unsettled. Do not imply a platform has reviewed or requested it. |
+| Festival Pitch | Artistic identity and a specific possible programming fit, without asking the reader to assume selection. | Focus on the film's labor-centered suspense and ensemble choices; verify premiere, runtime, and eligibility details for the actual event. | No festival is selected or rules are unchecked. Keep it a general programming proposition, not a submission claim. |
+| Awards Pitch | Demonstrable craft and performance strengths, with a campaign premise proportionate to the film and resources. | Name a precise performance or sound-design sequence that could merit attention if the completed film and release support it. | The film is only a draft or no campaign is justified. Do not state eligibility, likely nominations, or awards recognition as fact. |
+| Co-production Pitch | Potential creative contributions, locations, partners, and unresolved co-production qualification questions. | Identify a second territory's story-relevant locations as a possibility, then list rights, spend, tax, and treaty questions for professional review. | No genuine cross-border creative need or researched rules exist. Do not imply qualification, partner interest, or incentive availability. |
+| Public Funder Pitch | Cultural value, access plan, intended public benefit, and eligibility questions for a specific funder. | Propose a captioned community screening and paid consultation, pending the funder's remit, eligibility, and a real access budget. | No funder or eligibility criteria are known. Describe a possible public benefit, not an entitlement, guaranteed award, or endorsement. |
+| Talent Representative Pitch | Career fit, role scope, current package status, and one clear possible next step. | State that the role has a substantial decision scene and that the script is available for consideration; accurately disclose that no cast is attached. | No representative or suitable role is identified. Never imply a referral, relationship, offer, or actor commitment that does not exist. |
+| Exhibitor Pitch | The theatrical experience, likely audience, and a specific programming proposition. | Describe the film's accumulating terminal sounds and ensemble tension as a reason it could invite a post-screening conversation. | Theatrical intent, finished sound mix, or audience proposition is unknown. Do not promise turnout or a theatrical release. |
+| Cultural Partnership Pitch | A relevant possible program and a concrete mutual benefit for a cultural or community partner. | Suggest an optional paid panel on workplace records, with the partner choosing whether the fictional story is useful to its audience. | No real partner has been identified or the proposed benefit is one-sided. Do not imply endorsement, representation, access, or unpaid participation. |
+| Press Pitch | A truthful story angle, concise description, and verifiable production facts. | Offer the angle of how ordinary shift work becomes a moral deadline, with no invented behind-the-scenes anecdote or review quote. | There is no actual news hook or verified production fact. Do not invent a true-story basis, interview, review, endorsement, or release announcement. |
+| Craft Department Pitch | The specific visual, sound, design, costume, or editorial work the project invites. | Describe the paper trail as a continuity challenge: each stamp and version changes who can act, so the props must stay legible and consistent. | No department-specific opportunity is clear or the script's needs are unsettled. Present a creative brief, not a promise of budget, schedule, or final cut control. |
 
-> Make a screenplay, synopsis, treatment, character descriptions, and a director pitch. Skip everything else.
+## Choosing and building
 
-Your assistant records the selection in development/package_options.json. All available choices are initially selected in a new project; change them before packaging. Unselected templates can stay blank and do not block a selected build. Selecting a budget or awards page does not make estimates true or a campaign real. Every claim still needs honest qualification.
+You can ask in ordinary language, for example: “I have an outline and want to discuss the role with an actor. Give me a provisional synopsis, the lead character breakdown, scene showcase if the scenes are stable, and an actor pitch. Leave budgets, named targets, and campaign plans out.” The writer-facing workflow should translate that request into catalog selections and keep unfinished material labeled honestly.
 
-For a helper using the terminal:
+For terminal helpers, names in the options file are the exact catalog identifiers:
 
 ```sh
 python3 scripts/package_options.py list
@@ -53,4 +76,6 @@ python3 scripts/package_options.py configure --section logline_synopsis --sectio
 python3 scripts/story_check.py build
 ```
 
-`configure` replaces each section or pitch list only when its flags are supplied; omitted lists keep their current selection. Use `--no-sections` or `--no-pitches` to choose none. Screenplay keeps its current setting unless `--with-screenplay` or `--without-screenplay` is supplied (initially selected). At least one output must remain. `show` prints the saved choice. `make all` builds every template; use `story_check.py build` to honor your selection and record verified outputs. A selection change makes earlier package/build receipts stale until checked again. Omitted full-project writing stages are never marked complete just to make a partial request look finished.
+`configure` replaces a section or pitch list only when that list's flags are supplied; omitted lists keep their saved selection. `--no-sections` and `--no-pitches` select none for that group. The screenplay stays as currently selected unless `--with-screenplay` or `--without-screenplay` is provided. At least one output must remain. `show` prints the saved selection. `make all` builds every template; `story_check.py build` honors the selection and records outputs. Changing a selection makes an earlier build receipt stale until the selected build is checked again.
+
+Build only after the selected content is ready, then inspect the actual PDFs. Confirm each selected pitch is one readable page and the assembled package contains only its chosen sections. Keep the editable source files with a handoff when the recipient may need revisions; send individual PDFs when the reader needs only one item. The project guide and build record should identify precisely what was created, while professional legal, financial, factual, eligibility, and production review remain separate where needed.
