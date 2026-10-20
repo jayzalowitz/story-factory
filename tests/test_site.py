@@ -89,7 +89,7 @@ class PublicSiteTests(unittest.TestCase):
 
     def test_beginner_path_and_optional_controls_match_supported_hosts(self):
         for phrase in ['Download the toolkit ZIP', 'Extract All', 'Code</strong> tab',
-                       'included installer for my current assistant', '$story-new', '/story-new',
+                       'included installer for my current assistant', '$story-run', '/story-run',
                        '/story-handoff', '/story-resume', 'has not been tested']:
             self.assertIn(phrase, self.text)
         component_inputs = [attrs for tag, attrs in self.doc.elements

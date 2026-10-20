@@ -1,4 +1,4 @@
 interface:
   display_name: "Story Run"
-  short_description: "Carry a story project through the staged writing and review proc"
+  short_description: "Run the whole writing process: idea to revised screenplay, chose"
   default_prompt: "Use $story-run to help with my story project."

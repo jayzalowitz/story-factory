@@ -1,6 +1,6 @@
 # Writing commands
 
-In Claude Code type `/name`; in Codex type `$name` or choose it with `/skills`. These are assistant messages, never terminal commands. Add your request after the name. Start with `story` if unsure.
+In Claude Code type `/name`; in Codex type `$name` or choose it with `/skills`. These are assistant messages, never terminal commands. Add your request after the name. For the whole process, start with **`/story-run` (Claude)** or **`$story-run` (Codex)**. Individual commands below are optional controls. Use `story` if you only want a recommendation.
 
 | Command | What it does |
 |---|---|
@@ -25,6 +25,14 @@ In Claude Code type `/name`; in Codex type `$name` or choose it with `/skills`. 
 | `story-handoff` | Prepare an honest inventory of a story project and its editable deliverables. |
 | `story-resume` | Recover story decisions, progress, and the next action from a saved project. |
 | `story-run` | Carry a story project through the staged writing and review process within user scope. |
+
+## The complete project in one command
+
+```text
+/story-run My idea is [your idea]. Take it from discovery to a complete revised feature, all 15 studio sections, all 16 pitches, and built, inspected PDFs plus editable sources. Create a separate project if needed. Ask me about important creative choices; carry out the routine stages and save progress.
+```
+
+In Codex use `$story-run`. Choose fewer outputs in the same request if you prefer. Research, adaptation, source audits and studio decisions are routed when relevant; you do not need to invoke each stage yourself. See the [README example](../README.md#one-command-the-whole-process).
 
 ## Examples
 

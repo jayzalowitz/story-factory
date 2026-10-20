@@ -6,15 +6,29 @@ A writing room for you and your AI assistant: explore the idea, develop characte
 
 **[Start here: the illustrated, step-by-step website](https://jayzalowitz.github.io/story-factory/)** — including help choosing an AI assistant and getting set up. No coding experience required.
 
+## One command, the whole process
+
+After setup, type **`/story-run` in Claude Code** or **`$story-run` in Codex**, followed by your idea. You do not need to run the individual writing commands yourself.
+
+For the full kind of project shown by *The Letter to the Father*, paste:
+
+```text
+/story-run My idea is: [your idea]. Create a separate feature-film project and carry it from discovery and research where needed through characters, outline, complete screenplay, full-draft review, meaningful revisions, continuity and Bechdel checks, all 15 studio-package sections, all 16 pitches, and built, visually inspected PDFs with editable sources. Ask me one useful question at a time for important creative choices; handle the routine steps and save progress between sessions. Do not send or publish my work.
+```
+
+**Codex:** replace `/story-run` with `$story-run`. Ask for dry wit and restrained writing if you want those qualities from the example. The full selection produces **18 PDFs**: screenplay, assembled studio package, and sixteen pitches. You can request fewer materials in the same command.
+
+One command starts and coordinates the entire process; you still make creative choices. A feature can span several sessions or usage resets. Return with `story-resume`; missing tools and unfinished checks stay visible. The historical feature predates the command suite, so this is its extracted workflow, not a promise of identical writing or page counts.
+
 ## Your first session
 
 1. Choose a writing assistant that can work with files: **Claude Code** or **Codex**. The website explains accounts, plans, apps, and opening a project folder. You only need one. Story Factory is free; your chosen AI service has its own usage limits and possible charges.
-2. [Download this project](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.1/story-factory-0.2.0-preview.1.zip) and unzip it. Open the resulting folder in your assistant.
+2. [Download this project](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.2/story-factory-0.2.0-preview.2.zip) and unzip it. Open the resulting folder in your assistant.
 3. Paste this message:
 
 > Set up Story Factory for my current assistant in this folder using its install.py. I am new to this: explain anything I must do in plain language. Check Python is available first. Install the project skills for my current assistant, then tell me how to reopen this folder if needed. Help me create a separate story project without overwriting anything. My starting idea is: [your idea]. Ask one useful question at a time. I will choose which final files I want. Do not publish or send my work.
 
-Once the commands appear, type **`/story` in Claude Code** or **`$story` in Codex**. These are messages to your assistant, not commands you need to type into a computer terminal. Codex also offers a skill picker (`/skills`).
+Once the commands appear, use **`/story-run` in Claude Code** or **`$story-run` in Codex** with the example above. Use `story` if you only want help choosing a next step. These are messages to your assistant, not commands you need to type into a computer terminal. Codex also offers a skill picker (`/skills`).
 
 Starting with a novel, memoir, article, play or other source? Use `/story-adapt` (Claude) or `$story-adapt` (Codex). It helps read the material, agree what to preserve or change, turn it into scenes, and track departures. Use `story-import` to preserve and extract the original. [Adaptation guide](docs/ADAPTATION.md).
 

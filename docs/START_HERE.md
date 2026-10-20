@@ -14,7 +14,7 @@ Choose whichever you already use or feel comfortable with. You only need one. Pr
 
 ## 2. Download and open the project
 
-Use the versioned [download](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.1/story-factory-0.2.0-preview.1.zip). Unzip it in a place you can find, such as Documents. GitHub is the place the project files are stored; you do not need a GitHub account to download this public project.
+Use the versioned [download](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.2/story-factory-0.2.0-preview.2.zip). Unzip it in a place you can find, such as Documents. GitHub is the place the project files are stored; you do not need a GitHub account to download this public project.
 
 Open your assistant and choose the unzipped folder as its project folder. That gives it the files it needs. Keep your future screenplay in a separate folder; the assistant will create it. Downloading this public toolkit does not make your private screenplay public.
 
@@ -28,25 +28,27 @@ The setup uses Python, a common small program already on many computers. If miss
 
 If the app asks to approve reading files or running the local installer, approve reading and saving in this chosen folder and running its included installer. The assistant should explain system-tool installation separately. If a command is missing afterward, reopen the session in the same folder and ask the assistant to check the installation. In Codex, also try the skill picker (`/skills`).
 
-## 4. Start writing
+## 4. Start the whole process with one command
 
-In Claude Code type `/story-new`; in Codex type `$story-new`. Add your idea and a title if you have one. Say whether it is invented, based on a true story, or inspired by something real. The assistant creates a new folder and tells you to open it for the writing sessions.
+In Claude Code type **`/story-run`**; in Codex type **`$story-run`**. Add:
 
-If you have a book, memoir, article, play or another source, use `story-import` then `story-adapt` instead of treating it as a blank idea. The assistant preserves your original and asks which parts matter most. Adaptation permission and factual accuracy are separate checks.
+> My idea is [your idea]. Create a separate feature-film project. Carry it from discovery through a complete screenplay, full-draft review and revisions, continuity and Bechdel checks, all 15 studio-package sections, all 16 pitches, and built, inspected PDFs with editable sources. Ask me one useful question at a time about important creative choices. Handle the routine steps and save progress. Do not send or publish my work.
 
-Then use `/story-office-hours` or `$story-office-hours`. A sentence, a feeling, or a half-formed character is enough. Answer the questions, choose a direction, and ask the assistant to explain any unfamiliar film-development term. Bring an existing screenplay through `story-studio` instead.
+This requests the full kind of package shown by *The Letter to the Father*: 18 PDFs. You can instead say “only the screenplay and synopsis.” Every studio component is optional. You do not need to run `story-new`, `story-office-hours`, or each review command yourself; `story-run` coordinates them.
 
-## 5. Work through the film
+Say whether the story is invented, based on a true story, or inspired by something real. If you have a novel, memoir, article, play or existing screenplay, say so in the same request and identify the file. The assistant routes preservation, adaptation or studio review as needed. It must read the material before proposing changes, and ask before major rewrites you have not approved.
 
-Ask `story-run` to continue through the agreed scope. It develops the premise, characters, outline, actual scenes, review and revisions. You can intervene at any point. Decide which suggestions to accept; studio mode keeps a decision record. For a full feature this takes sustained writing and revision, often across several sessions. It is not a one-click quality guarantee.
+## 5. Make choices while the assistant carries the work
 
-Tell the assistant which [materials](PACKAGE.md) you want. For example: “Make only the screenplay and a synopsis. Leave out every other section and pitch.” You can leave out every pitch and simply make the script. For true-story work, inspect the research and what remains uncertain before accepting factual claims. Read and revise the screenplay before investing in packaging.
+Answer the questions, choose a direction, and ask for unfamiliar terms in plain language. The assistant develops characters, outline and actual scenes, reviews the complete draft, repairs weaknesses, aligns the selected materials, and checks the final PDFs. Important decisions remain yours.
+
+A full feature takes sustained work and may span several sessions or usage resets. One command coordinates the whole process; it does not remove decisions, tool requirements or usage limits. If interrupted, reopen the story folder and use `story-resume`. Do not restart from scratch.
 
 ## 6. Make, inspect and receive your files
 
-Use `story-check`. The assistant checks the sources and builds your selected PDFs. PDF creation needs a local typesetting tool (Tectonic, or XeLaTeX with latexmk) and `pdfinfo`; ask the assistant to check these and explain installation if missing. Installing system tools is a separate action you should understand. Writing can continue before print tools are ready.
+`story-run` includes the final checks and handoff; you do not need extra commands. You can use `story-check` separately whenever you want to check a build. The assistant checks the sources and builds your selected PDFs. PDF creation needs a local typesetting tool (Tectonic, or XeLaTeX with latexmk) and `pdfinfo`; ask the assistant to check these and explain installation if missing. Installing system tools is a separate action you should understand. Writing can continue before print tools are ready.
 
-Have it inspect dialogue pages, page breaks, the package, and every selected pitch. A pitch must fit one readable page. Use `story-handoff` for editable sources, PDFs, actual page counts, known limitations, and a clear next step. Open the PDFs yourself before sending them.
+Have it inspect dialogue pages, page breaks, the package, and every selected pitch. A pitch must fit one readable page. The included `story-handoff` stage collects editable sources, PDFs, actual page counts, known limitations, and a clear next step. Open the PDFs yourself before sending them.
 
 To return later, reopen the **story's folder** and use `story-resume`. Keep a backup of the folder. If usage runs out, ask the assistant to save your current decisions and next action; resume after your allowance resets. No need to understand advanced helper teams to do any of this.
 
