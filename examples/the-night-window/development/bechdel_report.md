@@ -1,0 +1,5 @@
+# Named-women Bechdel assessment
+Verdict: PASS
+Status: PASS. Coverage: full draft, S01–S08, all six act sources. Mae and Inez are explicitly introduced as women in S01, with names and ages, not inferred from names.
+Qualifying direct exchange, S03: Inez asks “Can you put a new one in?” Mae answers “Not until morning.” Inez responds “Morning is what I'm trying to buy.” They address one another about replacement battery availability and route timing, not a man. S06 also discusses refund terms and a claim for booking money. The script's central negotiation therefore provides substantive evidence, not a token added scene.
+Broader agency is separate: Mae needs lease renewal and supplier access; Inez needs cooperative income and credibility. Inez proposes then declines false damage reporting, strikes a waiver and uploads correction. Mae signs and pays at professional cost. Sal and Dev have no stated gender and are not used as evidence. This narrow pass certifies neither feminism nor creative excellence. No unseen film or performance is assessed.

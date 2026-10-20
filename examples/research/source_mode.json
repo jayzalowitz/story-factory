@@ -1,0 +1,20 @@
+{
+  "example_only": true,
+  "mode": "original",
+  "subject": "An entirely fictional community radio operator during an invented storm",
+  "time_range": "Unspecified contemporary period; no historical event asserted",
+  "intended_claim": "An original fictional drama; no claim to depict actual events or people.",
+  "creative_departures": [
+    {
+      "description": "All characters, the storm, the station, and the bridge incident are invented.",
+      "reason": "Develop an original dramatic premise.",
+      "scene_ids": ["SC-EXAMPLE-001", "SC-EXAMPLE-002"],
+      "changes_real_person_role_or_event_meaning": false
+    }
+  ],
+  "research_budget": {
+    "max_workers": 3,
+    "max_sources_per_worker": 10
+  },
+  "living_people": []
+}

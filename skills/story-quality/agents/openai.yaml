@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Quality"
+  short_description: "Review screenplay craft, representation, and production feasibil"
+  default_prompt: "Use $story-quality to help with my story project."

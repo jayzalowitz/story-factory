@@ -110,14 +110,40 @@
     const feeling = document.querySelector('#feeling').value.trim();
     const keep = document.querySelector('#keep').value.trim();
     const startingPoint = starts[document.querySelector('#starting-point').value];
-    output.value = `I want to develop a film story with you using the Story Factory approach. Be a thoughtful writing partner and an honest story editor. I stay the author; help me make deliberate choices rather than quietly deciding everything for me.\n\nMY STARTING IDEA\n${seed}\n\n${feeling ? 'HOW IT SHOULD FEEL\n' + feeling + '\n\n' : ''}${keep ? 'WHAT TO KEEP OR AVOID\n' + keep + '\n\n' : ''}WHERE I AM STARTING\n${startingPoint}\n\nHOW WE WILL WORK\n1. Ask one useful question at a time. Find the person, the want, the obstacle, and the reason we should care. Do not ask questions I have already answered.\n2. Explore genuinely different directions when helpful, explain your recommendation, and let me choose the important creative commitments.\n3. Develop characters with their own wants and an outline where choices lead to consequences.\n4. Write real scenes in manageable sections. Keep the tone specific to this story.\n5. Review the full draft honestly. Name the biggest problems with scene evidence, protect what works, and repair structure before polishing lines.\n6. When ready, help me make a synopsis and pitches that describe the story we actually wrote. Do not invent attachments, professional approval, or financial certainty.\n7. Keep track of decisions and give me a short handoff when we stop so I can continue later.\n\nCheck important facts and rights questions for real-world material. Tell me when you are making an assumption. Do not publish or send my work without my explicit permission.\n\nStart with the single question that will help this story most.`;
+    const sourceMode = document.querySelector('#source-mode').value;
+    const sourceBrief = {
+      original: 'Original fiction. Research factual details where needed; do not invent real-world authority.',
+      'based-on': 'Based on a true story. Agree factual fidelity before outlining. Use Story Factory research, with optional native helpers only when enabled, maintain a claim and source ledger, distinguish supported facts from disputes and invention, and audit the final draft with story-truth. Do not claim rights clearance.',
+      'inspired-by': 'Inspired by a true story. Agree the boundary between real events and fictional invention. Use Story Factory research, with optional native helpers only when enabled, record source claims and deliberate departures separately, and audit the final draft and its truth label. Do not imply invented events really happened.'
+    }[sourceMode];
+    const scope = document.querySelector('#package-scope').value;
+    const selected = Array.from(document.querySelectorAll('input[name="component"]:checked'));
+    const packageBrief = scope === 'complete'
+      ? 'I want the complete screenplay, all 15 studio sections, and all 16 reader-specific pitches. Confirm the scope before drafting.'
+      : scope === 'custom'
+        ? selected.length
+          ? 'Create only these selected deliverables: ' + selected.map(item => item.dataset.label).join('; ') + '. Configure development/package_options.json to match. Everything else is optional and unselected; do not fill it merely to complete a template.'
+          : 'I chose a custom package but have not selected any deliverables yet. Help me choose at least one before creating presentation materials. Do not assume a full package.'
+        : 'Help me choose the deliverables later based on the reader. Every studio section and pitch is optional; do not assume I need the complete package.';
+    const swarmMode = document.querySelector('#swarm-mode').value;
+    const swarmTasks = Array.from(document.querySelectorAll('input[name="swarm-task"]:checked')).map(item => item.value);
+    const swarmBrief = swarmMode === 'off'
+      ? 'Parallel helpers are OFF. Work sequentially; do not spawn subagents.'
+      : (swarmMode === 'ask' ? 'Ask me before starting native parallel helpers.' : 'Native parallel helpers may run automatically within the following limits.')
+        + ' First verify actual native capability and current account/plan limits. Maximum concurrent helpers: ' + document.querySelector('#swarm-workers').value
+        + '. Permitted tasks: ' + (swarmTasks.join(', ') || 'none; ask me to choose before spawning')
+        + '. Keep one coordinating author. Helpers return evidence and findings; do not allow simultaneous screenplay edits. Do not add paid providers, API keys, or external model services. If unavailable, work sequentially and disclose it.';
+    output.value = `I want to develop a film story with you using the Story Factory approach. Be a thoughtful writing partner and an honest story editor. I stay the author; help me make deliberate choices rather than quietly deciding everything for me.\n\nMY STARTING IDEA\n${seed}\n\n${feeling ? 'HOW IT SHOULD FEEL\n' + feeling + '\n\n' : ''}${keep ? 'WHAT TO KEEP OR AVOID\n' + keep + '\n\n' : ''}WHERE I AM STARTING\n${startingPoint}\n\nSOURCE AND TRUTH\n${sourceBrief}\n\nMY DELIVERABLES\n${packageBrief}\n\nPARALLEL HELPERS\n${swarmBrief}\n\nHOW WE WILL WORK\n1. Ask one useful question at a time. Find the person, the want, the obstacle, and the reason we should care. Do not ask questions I have already answered.\n2. Explore genuinely different directions when helpful, explain your recommendation, and let me choose the important creative commitments.\n3. Develop characters with their own wants and an outline where choices lead to consequences.\n4. Write real scenes in manageable sections. Keep the tone specific to this story.\n5. Review the full draft honestly. Name the biggest problems with scene evidence, protect what works, and repair structure before polishing lines. Check character agency, continuity, tone, and production feasibility. Assess the named-women Bechdel test with actual exchanges; it is a narrow diagnostic, not a quality guarantee. Offer studio notes as choices and apply only changes I accept.\n6. When ready, help me make a synopsis and pitches that describe the story we actually wrote. Do not invent attachments, professional approval, or financial certainty.\n7. Keep track of decisions and give me a short handoff when we stop so I can continue later.\n\nCheck important facts and rights questions for real-world material. Tell me when you are making an assumption. Do not publish or send my work without my explicit permission.\n\nStart with the single question that will help this story most.`;
     document.querySelector('#prompt-empty').hidden = true;
     document.querySelector('#prompt-result').hidden = false;
     copyStatus.textContent = '';
     document.querySelector('#result-heading').focus();
     document.querySelector('#prompt-room').scrollIntoView({ behavior: 'instant', block: 'start' });
   });
-  idea.addEventListener('input', () => {
+  document.querySelectorAll('input[name="component"]').forEach(input => {
+    input.addEventListener('change', () => { document.querySelector('#package-scope').value = 'custom'; });
+  });
+  idea.addEventListener('input' , () => {
     if (idea.value.trim()) { error.hidden = true; idea.removeAttribute('aria-invalid'); }
   });
   document.querySelector('#use-example').addEventListener('click', () => {

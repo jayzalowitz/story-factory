@@ -27,7 +27,7 @@ The repeatable method is **creative doctrine → complete draft → candid struc
 - `Makefile` and `latexmkrc`: compilation of 18 PDFs, using Tectonic or latexmk/XeLaTeX. This compiles writing; it does not generate stories.
 - `screenplay/`, `package/`, `one_pagers/`: worked examples for structure and audience-specific copy. Their content is project-specific and should be replaced for a new story.
 
-The final README describes a 106-page screenplay and a 45-page package. Those are recorded claims from the existing project, not newly measured page counts in this investigation. The core package has 15 included content modules plus its assembly file. There are 16 pitch documents total.
+The final README describes a 106-page screenplay and a 45-page package. The public example build has now independently measured the same 106 and 45 page counts. The core package has 15 included content modules plus its assembly file. There are 16 pitch documents total.
 
 ## Use the new master prompt
 
@@ -60,7 +60,7 @@ make all
 
 The blank project is intentionally compilable. Its PDFs remain labeled as placeholders. A successful blank build proves only that the publishing system works. The exporter does not call an AI model; the coding agent follows the prompt to create the story. Six files are a starting organization, not a requirement for six acts or title pages.
 
-The starter script must run from this source repository, because it exports the source assets. Once generated, the new project builds independently and needs no access to this repository. No bundled `.claude/skills`, Git history, private `.context` material, original prose, or actor-specific claims are exported.
+The starter script runs from this source repository or the self-contained toolkit carried by an installed story skill. Once generated, the new project builds independently and needs no access to this repository. Both Claude and Codex project skills are installed by default, with bundled historical references clearly labeled as examples. No original Git history or private `.context` material is exported, and the new story's screenplay/package files are blank neutral templates.
 
 Validation in this workspace: a generated scaffold compiled all 18 PDFs with Tectonic; all 16 pitches measured exactly one page. Extracted text confirmed placeholder labeling, and PDF metadata preserved a title containing ampersand, percent, and underscore characters. The build log contained no overfull/underfull diagnostics or errors. The exporter also passed checks for neutral source, expected files, and refusing an existing destination. These are build and content checks, not visual approval of a finished screenplay or package.
 

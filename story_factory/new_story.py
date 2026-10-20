@@ -2,6 +2,9 @@
 """Export the reusable publishing infrastructure into a new, blank story project."""
 
 import argparse
+import json
+import subprocess
+import sys
 from datetime import date
 from pathlib import Path
 import re
@@ -66,7 +69,7 @@ def neutralize(text):
     ).replace("The trial begins...", "A voice speaks.")
 
 
-def create(destination, title):
+def create(destination, title, source_mode="original", bechdel_target="report", install_skills=True):
     destination.mkdir(parents=True, exist_ok=False)
 
     def write(name, text):
@@ -77,20 +80,15 @@ def create(destination, title):
     for name in ("Makefile", "latexmkrc", ".gitignore"):
         write(name, neutralize((ROOT / name).read_text()))
     shutil.copytree(ROOT / "fonts", destination / "fonts")
-    # The original font README contains a workspace-specific link.
-    write("fonts/README.md", (ROOT / "fonts/README.md").read_text().replace(
-        "/Users/jayzalowitz/conductor/workspaces/the-letter-to-the-father/colombo/fonts/LICENSE.txt",
-        "LICENSE.txt",
-    ))
     for source in (ROOT / "common").glob("*.tex"):
         if source.name == "metadata.tex":
             continue
         content = neutralize(source.read_text())
         if source.name == "preamble.tex":
+            # Source templates may already be exported. Normalize, never truncate.
+            content = re.sub(r"(?m)^\\input\{\.\./common/metadata\}\s*\n?", "", content)
             content = content.replace("pdftitle={Story Project}", r"pdftitle={\filmtitle}")
             content = content.replace("% Hyperref setup", "\\input{../common/metadata}\n\n% Hyperref setup")
-            # Load metadata once, before hyperref expands the title.
-            content = content.rsplit("\\input{../common/metadata}", 1)[0]
         write("common/" + source.name, content)
 
     metadata = {
@@ -138,6 +136,10 @@ def create(destination, title):
     shutil.copyfile(FACTORY / "WORKFLOW.md", destination / "WORKFLOW.md")
     (destination / "scripts").mkdir()
     shutil.copyfile(FACTORY / "workflow.py", destination / "scripts/workflow.py")
+    shutil.copyfile(FACTORY / "story_check.py", destination / "scripts/story_check.py")
+    shutil.copyfile(FACTORY / "package_options.py", destination / "scripts/package_options.py")
+    from_package = {"screenplay": True, "sections": list(SECTIONS), "pitches": list(PITCHES)}
+    write("development/package_options.json", json.dumps(from_package, indent=2) + "\n")
     write("CLAUDE.md", "# Project instructions\n\nRead MASTER_PROMPT.md and development/brief.md. "
           "Follow the user's requested scope. The source files are publishing scaffolds, not finished creative work. "
           "Replace all DRAFT PLACEHOLDER text and validate all outputs before claiming completion.\n")
@@ -145,6 +147,17 @@ def create(destination, title):
           "Run `python3 scripts/workflow.py status` and execute the next stage. "
           "Follow discovery, premise review, structure review, draft, revision, packaging, verification, and handoff in order. "
           "Use artifact-backed completion receipts; never claim a mechanical check establishes creative quality.\n")
+    write("research/source_mode.json", json.dumps({
+        "mode": source_mode, "subject": "", "time_range": "", "intended_claim": "To be established with the writer",
+        "creative_departures": [], "research_budget": {"max_workers": 3, "max_sources_per_worker": 10}, "living_people": []
+    }, indent=2) + "\n")
+    write("research/claims.json", json.dumps({"sources": [], "claims": []}, indent=2) + "\n")
+    write("development/teams.json", json.dumps({
+        "mode": "off", "max_workers": 3, "max_rounds": 1, "max_sources_per_worker": 10,
+        "allowed_tasks": ["research", "continuity", "quality", "package-review"],
+        "allow_nested": False, "new_paid_services": False
+    }, indent=2) + "\n")
+    write("development/preferences.json", json.dumps({"bechdel_target": bechdel_target}, indent=2) + "\n")
     write("development/brief.md", f"# {title}\n\nSeed idea: TO BE PROVIDED\n\n"
           "Genre and audience: TO BE DEVELOPED\n\nScope: Full feature screenplay and development package\n\n"
           "Cast and partners: No attachments\n\nFill in the project brief from MASTER_PROMPT.md before drafting.\n")
@@ -173,29 +186,42 @@ def create(destination, title):
           "- MASTER_PROMPT.md gives the assistant detailed creative instructions.\n"
           "- development/brief.md is a place to keep your starting idea.\n"
           "- development/status.md records where things stand.\n\n"
+          "## Your writing-room commands\n\n"
+          "In Claude Code, start with `/story-office-hours`; in Codex, use `$story-office-hours`. "
+          "Use story-outline, story-draft, story-review, and story-revise as you develop the story. "
+          "The story-bechdel, story-quality, and story-truth checks provide specific evidence, "
+          "not automatic praise. Use story-run for the complete process and story-resume to pick up later. "
+          "These commands need the installed skills; a helper can install them if omitted.\n\n"
           "## Optional: make PDFs\n\n"
           "A coding assistant or helper can set up Tectonic, or latexmk with XeLaTeX, "
-          "and run `make all`. This produces a screenplay PDF, a development package, "
-          "and 16 pitch documents in output/. The templates can compile before any writing "
+          "and Poppler for PDF measurement. Tell the assistant which documents you want, then "
+          "run `python3 scripts/story_check.py build` to create and measure only those PDFs in output/. "
+          "The complete selection is a screenplay, development package and 16 pitches. "
+          "The templates can compile before any writing "
           "exists, so a successful build does not mean the story is ready.\n\n"
           "Your AI service may require an account or charge for use. Check facts and rights, "
           "keep copies of your work, and read everything before sharing it. "
           "Proposed actors and partners are ideas, not attachments.\n")
+    if install_skills:
+        subprocess.run([sys.executable, str(ROOT / "install.py"), "--project", str(destination), "--host", "both"], check=True)
     print(f"Created blank story scaffold: {destination}")
-    print("Next: fill development/brief.md and run the instructions in MASTER_PROMPT.md.")
+    print("Next: open this folder in your assistant. Claude: /story-office-hours; Codex: $story-office-hours.")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("destination", type=Path, help="New directory; must not already exist")
     parser.add_argument("--title", required=True, help="Working title (plain text)")
+    parser.add_argument("--source-mode", choices=["original", "based-on", "inspired-by"], default="original")
+    parser.add_argument("--bechdel-target", choices=["report", "pass"], default="report")
+    parser.add_argument("--no-skills", action="store_true", help="Export writing/PDF files only, without installing commands")
     args = parser.parse_args()
     if not args.title.strip() or any(ord(char) < 32 or ord(char) == 127 for char in args.title):
         parser.error("title must be nonempty text without control characters")
     destination = args.destination.expanduser().resolve()
     if destination.exists():
         parser.error(f"destination already exists; refusing to overwrite: {destination}")
-    create(destination, args.title.strip())
+    create(destination, args.title.strip(), args.source_mode, args.bechdel_target, not args.no_skills)
 
 
 if __name__ == "__main__":

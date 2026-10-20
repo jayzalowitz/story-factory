@@ -1,0 +1,92 @@
+[
+  {
+    "name": "story",
+    "description": "Choose the next Story Factory command for a story project or explain the command suite.",
+    "stage": null
+  },
+  {
+    "name": "story-new",
+    "description": "Create a fresh film-writing project with templates and skills for Claude Code and Codex.",
+    "stage": null
+  },
+  {
+    "name": "story-office-hours",
+    "description": "Explore a story seed through a focused conversation before outlining or drafting.",
+    "stage": "discover"
+  },
+  {
+    "name": "story-research",
+    "description": "Research a based-on or inspired-by true story using source-led native subagent work.",
+    "stage": "research"
+  },
+  {
+    "name": "story-premise",
+    "description": "Challenge a film premise, choose its scope, and establish the dramatic promise.",
+    "stage": "premise"
+  },
+  {
+    "name": "story-outline",
+    "description": "Design characters, causal scenes, chronology, and the structure of a film story.",
+    "stage": "structure"
+  },
+  {
+    "name": "story-draft",
+    "description": "Write complete screenplay scenes from an established story plan.",
+    "stage": "draft"
+  },
+  {
+    "name": "story-review",
+    "description": "Diagnose a full screenplay with concrete scene evidence before revising it.",
+    "stage": null
+  },
+  {
+    "name": "story-studio",
+    "description": "Review an existing screenplay as a studio development editor and ask the writer to choose concrete improvements.",
+    "stage": null
+  },
+  {
+    "name": "story-revise",
+    "description": "Implement prioritized screenplay repairs and recheck the revised draft.",
+    "stage": "revise"
+  },
+  {
+    "name": "story-bechdel",
+    "description": "Assess screenplay conversations against a named-women Bechdel test with scene evidence.",
+    "stage": null
+  },
+  {
+    "name": "story-quality",
+    "description": "Review screenplay craft, representation, and production feasibility with scene evidence.",
+    "stage": null
+  },
+  {
+    "name": "story-truth",
+    "description": "Audit factual claims, dramatizations, and source-based labels against a research ledger.",
+    "stage": null
+  },
+  {
+    "name": "story-package",
+    "description": "Create a coherent studio development package and reader-specific pitches from a draft.",
+    "stage": "package"
+  },
+  {
+    "name": "story-check",
+    "description": "Compile screenplay deliverables and check actual PDFs, continuity, and completeness.",
+    "stage": "verify"
+  },
+  {
+    "name": "story-handoff",
+    "description": "Prepare an honest inventory of a story project and its editable deliverables.",
+    "stage": "handoff"
+  },
+  {
+    "name": "story-resume",
+    "description": "Recover story decisions, progress, and the next action from a saved project.",
+    "stage": null
+  },
+  {
+    "name": "story-run",
+    "description": "Carry a story project through the staged writing and review process within user scope.",
+    "stage": null
+  }
+]

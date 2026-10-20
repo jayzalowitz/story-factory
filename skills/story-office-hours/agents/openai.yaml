@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Office Hours"
+  short_description: "Explore a story seed through a focused conversation before outli"
+  default_prompt: "Use $story-office-hours to help with my story project."

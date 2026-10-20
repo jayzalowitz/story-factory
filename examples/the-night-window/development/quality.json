@@ -1,0 +1,49 @@
+{
+  "draft_sha256": "eab9a7f7dacbe0d133556af01a9721e260f9bbff2e2cd3978e76d788c766041d",
+  "coverage": "full-draft",
+  "verdict": "READY",
+  "summary": "Complete revised two-woman short; choices force refund, canceled renewal and missed route. Q-01\u2013Q-04 repaired; small prop/neatness risks disclosed. Single-agent self-review only.",
+  "findings": [
+    {
+      "id": "Q-01",
+      "severity": "high",
+      "scene_id": "S01/S07",
+      "problem": "Renewal cost unclear",
+      "disposition": "repaired",
+      "verification": "PAY TO RENEW and renewal card removal"
+    },
+    {
+      "id": "Q-02",
+      "severity": "medium",
+      "scene_id": "S05",
+      "problem": "Supplier pressure vague",
+      "disposition": "repaired",
+      "verification": "Explicit possible account freeze"
+    },
+    {
+      "id": "Q-03",
+      "severity": "high",
+      "scene_id": "S06",
+      "problem": "Waiver purpose unclear",
+      "disposition": "repaired",
+      "verification": "Lost booking claim and purchase-price-only initials"
+    },
+    {
+      "id": "Q-04",
+      "severity": "medium",
+      "scene_id": "S01/S07",
+      "problem": "Overfull terminal text",
+      "disposition": "repaired; final stable rebuild warning-free",
+      "verification": "Shorter dialogue and sentence-case correction; see verification.md"
+    },
+    {
+      "id": "Q-05",
+      "severity": "low",
+      "scene_id": "S08",
+      "problem": "Final relabeling potentially too neat",
+      "disposition": "remaining limitation",
+      "verification": "Independent read pending"
+    }
+  ],
+  "accepted_risks": []
+}

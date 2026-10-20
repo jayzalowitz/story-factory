@@ -1,0 +1,5 @@
+> Historical writing-agent report from the original local run. Verdicts describe that review, not a relocated runtime workflow receipt. Later second-agent notes are in reader_review.md; relocated build evidence is in verification.md.
+
+# Package review
+Verdict: PASS
+Fifteen module sources plus assembly, sixteen reader-specific pitches, all explicitly short scope. Actual ending and both losses match S07/S08. Physical showcase maps to S03/S06/S07. Character independence maps to S04/S05/S06. Tone maps to stool/fee beats S02 and practical dialogue. No promised restored route, funded lease or wider scandal appears. Director/producer targets are useful search profiles rather than unverified claims about real individuals; casting remains open. Awards/festival/distribution modules honestly describe dependencies, not outcomes. Finance is unbudgeted scope, no numerical guarantee. Co-production and platform mismatches are disclosed in their pitches. No outreach or fabricated footage, reviews, contacts or attachments. This proportionate package is complete for a short demonstration, not proof of feature-scale execution.

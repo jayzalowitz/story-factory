@@ -1,6 +1,7 @@
 # Makefile — Build system for Story Project
 # Supports: latexmk + xelatex, or tectonic
 
+PACKAGE_ENTRY ?= studio_package.tex
 OUTDIR = output
 AUXDIR = $(OUTDIR)/aux
 LATEXMK := $(shell command -v latexmk 2>/dev/null)
@@ -38,9 +39,9 @@ $(OUTDIR)/screenplay.pdf: screenplay/main_screenplay.tex screenplay/*.tex common
 # ============================================================
 package: $(OUTDIR)/studio-package.pdf
 
-$(OUTDIR)/studio-package.pdf: package/studio_package.tex package/*.tex common/*.tex
-	$(call build_tex,package,studio_package.tex)
-	@mv $(OUTDIR)/studio_package.pdf $(OUTDIR)/studio-package.pdf 2>/dev/null || true
+$(OUTDIR)/studio-package.pdf: package/$(PACKAGE_ENTRY) package/*.tex common/*.tex
+	$(call build_tex,package,$(PACKAGE_ENTRY))
+	@mv $(OUTDIR)/$(basename $(PACKAGE_ENTRY)).pdf $(OUTDIR)/studio-package.pdf 2>/dev/null || true
 
 # ============================================================
 # ONE-PAGERS

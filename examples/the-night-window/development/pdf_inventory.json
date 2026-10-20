@@ -1,0 +1,79 @@
+{
+  "scope": "Relocated original-short demonstration build; not runtime workflow state",
+  "builder": "make -B all; make -B package after appendix reader-note update",
+  "measurement": "Poppler pdfinfo",
+  "pdfs": {
+    "actor-pitch.pdf": {
+      "pages": 1,
+      "sha256": "6aecf65243975784cec7ac0a7ca56760af550fbe4ab7a4ce87405c8fc6f6095e"
+    },
+    "awards-pitch.pdf": {
+      "pages": 1,
+      "sha256": "5065583df2c58ec09af304b7c247392f0bc33d9aedf5548c7197974bd6bf9128"
+    },
+    "coproduction-pitch.pdf": {
+      "pages": 1,
+      "sha256": "a9a0eb4bc91cd23e90361cda90aa07be0a4e220b37500ce0bd1ffcb082294246"
+    },
+    "craft-pitch.pdf": {
+      "pages": 1,
+      "sha256": "fc068a7441e11ed578fd142b47c5f14a2822b7fbb6be5eb71c695ff98833a8d2"
+    },
+    "cultural-partnership-pitch.pdf": {
+      "pages": 1,
+      "sha256": "bc1295dbcd065188ead7f91247fa69613cd0d26e37ddcbe26b739c7dd6fdfb96"
+    },
+    "director-pitch.pdf": {
+      "pages": 1,
+      "sha256": "3b78a39d54fd0146da0cf849fa1d47431ec9d29c60303d3dd9a99609ca866580"
+    },
+    "distributor-pitch.pdf": {
+      "pages": 1,
+      "sha256": "fe225922805abf7b58b0cb2471ff3a763ad7c34604ae18040a4829aaeb5982d0"
+    },
+    "exhibitor-pitch.pdf": {
+      "pages": 1,
+      "sha256": "c4291d7f838a31b26f1a428b880cdd7c5c6b16fb53451f2bee49596ae8624dee"
+    },
+    "festival-pitch.pdf": {
+      "pages": 1,
+      "sha256": "44d5fb7c11000ae00cae0ecf4f2002e29d1e7c19cb0e1d441732495f44f188fb"
+    },
+    "financier-pitch.pdf": {
+      "pages": 1,
+      "sha256": "ce686f8279f9a7a9a71b3547baa65ecc009ec18f44d9f8be559518c0e7ef8c8e"
+    },
+    "one-pager.pdf": {
+      "pages": 1,
+      "sha256": "c4e1b78efcb3f650a3309ccb5898089c9451582f347d557eb2db78a9d8490a9b"
+    },
+    "press-pitch.pdf": {
+      "pages": 1,
+      "sha256": "c445310045f2be7d4390dfe61e68580f31d9f0054313f5f1b87dac14029d9b41"
+    },
+    "producer-pitch.pdf": {
+      "pages": 1,
+      "sha256": "294f53fc0de51887ddff4c508178d835f22bf13bf39364631870d11720d60e40"
+    },
+    "public-funder-pitch.pdf": {
+      "pages": 1,
+      "sha256": "103eeb9b0cf7e1e58ff2c6b6b0f91f48d9a6bada19e2ebd9457a39c4eb242f47"
+    },
+    "screenplay.pdf": {
+      "pages": 10,
+      "sha256": "d993c5342494e7e4eaf4721f1f8c5453643e9c475cd41283945c0e2db80e89c7"
+    },
+    "streamer-pitch.pdf": {
+      "pages": 1,
+      "sha256": "ff866f2198dba798de2a8bcffc4bc3ed743e100fea0979686b053190986f2e1e"
+    },
+    "studio-package.pdf": {
+      "pages": 17,
+      "sha256": "2c35b0ebea800d72b379276db9dd4a7562b9eee42ad32ff9fa5f28823bac51fa"
+    },
+    "talent-rep-pitch.pdf": {
+      "pages": 1,
+      "sha256": "0f0acdda79a2e8a4bebe15d4eb32c5a5ae930f29a7daa3476980187cfea09165"
+    }
+  }
+}

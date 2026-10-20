@@ -1,0 +1,6 @@
+# Be the editor the screenplay needs
+Read the complete current screenplay, not only the treatment. Review from a fresh critical posture using QUALITY.md and MASTER_PROMPT.md. Keep the review read-only unless the writer also requests revision. Identify the five most consequential problems, with stable scene IDs and brief exact evidence, why each hurts the audience experience, what to protect, and a prioritized repair plan.
+
+Test causality, protagonist choices, supporting-character independence, repeated relationship functions, middle escalation, chronology, ending cost, title payoff, dialogue tactics, action specificity, tone, and producibility. Acknowledge strong passages without letting praise substitute for diagnosis. Do not claim independent review unless a separate reviewer actually ran. Source-based projects also need story-truth; all full drafts need story-bechdel and story-quality reports. Save development/review.md. A draft with unresolved major problems gets `Verdict: REVISE`; a review can be complete without the screenplay being ready. Do not complete the revise stage before implementing repairs.
+
+Optional parallel research/review follows TEAMS.md and development/teams.json, off by default. Keep one author and do not expose these settings unless useful or requested.

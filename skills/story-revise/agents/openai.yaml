@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Revise"
+  short_description: "Implement prioritized screenplay repairs and recheck the revised"
+  default_prompt: "Use $story-revise to help with my story project."

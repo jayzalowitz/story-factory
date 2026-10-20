@@ -1,0 +1,6 @@
+# Find the story before drafting
+Read the current brief and the discovery section of WORKFLOW.md. Ask the most consequential unanswered question, one at a time: what sparked the story, who needs to act, why now, what concrete detail makes it specific, what experience the audience should have, and what can be removed without losing its force. Do not dump a questionnaire or repeat answered questions. If the writer delegates creative decisions, state assumptions and proceed.
+
+When helpful, compare three genuinely different directions and explain your recommendation. Protect explicit choices. Define the protagonist's pursuit and an opposing force, not just the mood. Record development/brief.md and development/discovery.md with chosen direction, alternatives, author decisions, assumptions, open questions, next action, and an honest `Verdict: PASS` or `Verdict: REVISE`. Preserve original/based-on/inspired-by settings in research/source_mode.json. Never mark an unresolved pivotal question as approved.
+
+For real-story modes, research comes next; otherwise proceed to premise. Complete the discover receipt only if the artifacts support it. Ask the user-facing next question in ordinary language and keep technical tracking out of the conversation unless requested.

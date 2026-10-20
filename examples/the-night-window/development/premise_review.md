@@ -1,0 +1,4 @@
+# Premise / scope review
+Verdict: PASS
+Hold to a two-performer short. Contained version: a battery record, two deadlines, an irreversible correction. Ambitious version: a network-wide parts scandal and cooperative organizing; rejected because this brief needs an encounter whose consequences are visible tonight. Audience promise: competence becomes a negotiation over who pays for someone else's shortcut. Central relationship is commercial distrust becoming bounded solidarity, not instant friendship.
+Risks: Q-01 abstraction of contract; test with visible terms and serial rubbing. Q-02 easy moral victory; make refund cancel renewal and route cutoff expire. Q-03 interchangeable voices; Mae categorizes objects, Inez measures time and labor. Ending hypothesis is a signed correction and no rescue. No claim that a worthy premise guarantees effective pages.

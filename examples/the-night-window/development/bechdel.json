@@ -1,0 +1,21 @@
+{
+  "draft_sha256": "eab9a7f7dacbe0d133556af01a9721e260f9bbff2e2cd3978e76d788c766041d",
+  "coverage": "full-draft",
+  "status": "PASS",
+  "summary": "Explicitly named women Mae and Inez directly negotiate battery repair, refund terms and independent work goals.",
+  "evidence": [
+    {
+      "scene_id": "S03",
+      "women": [
+        "Mae",
+        "Inez"
+      ],
+      "exchange": "INEZ: Can you put a new one in? MAE: Not until morning. INEZ: Morning is what I'm trying to buy.",
+      "non_man_topic": "Replacement battery availability and route deadline",
+      "notes": "Direct mutual exchange; women explicitly identified S01."
+    }
+  ],
+  "limitations": [
+    "Narrow representation diagnostic only; no quality certificate or filmed performance assessment."
+  ]
+}

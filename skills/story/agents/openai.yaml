@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story"
+  short_description: "Choose the next Story Factory command for a story project or exp"
+  default_prompt: "Use $story to help with my story project."

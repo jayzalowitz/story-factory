@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Research"
+  short_description: "Research a based-on or inspired-by true story using source-led n"
+  default_prompt: "Use $story-research to help with my story project."

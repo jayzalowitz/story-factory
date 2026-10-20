@@ -1,64 +1,49 @@
 # Story Factory
 
-### You bring the idea. We help you find the story.
+**Bring an idea or a screenplay. Leave with a stronger story and the materials you choose.**
 
-A character you cannot stop thinking about. An image from a dream. A family story. A half-finished screenplay.
+A writing room for you and your AI assistant: explore the idea, develop characters, build scenes, write the script, question what is weak, revise, and prepare it for other people to read. You stay the author. Your creative decisions govern.
 
-Story Factory gives you a thoughtful way to develop that spark with an AI writing assistant: ask better questions, find the heart of the story, write a draft, and make it stronger. You stay the author. You choose what belongs.
+**[Start here: the illustrated, step-by-step website](https://jayzalowitz.github.io/story-factory/)** — including help choosing an AI assistant and getting set up. No coding experience required.
 
-**You do not need to know how to code to begin.** You can start with a normal AI conversation. The complete project also includes tools for organizing files and making polished PDFs, when you are ready.
+## Your first session
 
-## Start with one conversation
+1. Choose a writing assistant that can work with files: **Claude Code** or **Codex**. The website explains accounts, plans, apps, and opening a project folder. You only need one. Story Factory is free; your chosen AI service has its own usage limits and possible charges.
+2. [Download this project](https://github.com/jayzalowitz/story-factory/archive/refs/heads/main.zip) and unzip it. Open the resulting folder in your assistant.
+3. Paste this message:
 
-Open the AI assistant you already use and paste this:
+> Set up Story Factory for me in this folder using its install.py. I am new to this: explain anything I must do in plain language. Check Python is available first. Install the project skills for my current assistant, then tell me how to reopen this folder if needed. Help me create a separate story project without overwriting anything. My starting idea is: [your idea]. Ask one useful question at a time. I will choose which final files I want. Do not publish or send my work.
 
-> I want to develop a story with you using the Story Factory approach. My starting idea is: **[describe your idea in a sentence or two]**.
->
-> Begin as a thoughtful story editor. Ask me one useful question at a time. Help me find who the story follows, what they want, what stands in the way, and why we should care. Explore a few directions before we choose one. Then help me build the characters, outline, draft, and revisions in that order. Challenge weak choices kindly and specifically. Keep my creative decisions intact. Do not rush into writing the whole screenplay.
+Once the commands appear, type **`/story` in Claude Code** or **`$story` in Codex**. These are messages to your assistant, not commands you need to type into a computer terminal. Codex also offers a skill picker (`/skills`).
 
-That is enough to begin. A rough idea is welcome. “I know the feeling, but not the plot” is a useful starting point too.
+Already have a script? Ask `/story-studio` (Claude) or `$story-studio` (Codex) to read it, explain the strongest improvements, and let you choose what to change. It preserves your original and records your decisions.
 
-For more guidance, follow the [writing guide](WRITING_GUIDE.md). For the more detailed instructions behind the process, see the [full writing prompt](MASTER_PROMPT.md).
+## Choose what you want to make
 
-## How the process works
+You can stop at an idea, outline, draft, or revision. Every final document is optional: a screenplay; any of the 15 development-package sections; and any of 16 reader-specific pitches. For example:
 
-**First, find the story.** Talk through the idea, explore different directions, and decide whose story it is. Work out what makes it worth telling and how ambitious it should be.
+> I only need a screenplay, a synopsis, character descriptions, and an actor pitch. Leave out budgets, awards, and the other pitches.
 
-**Then, build and write it.** Develop people who want different things. Shape scenes where their choices have consequences. Make an outline, then write the actual screenplay.
+The assistant records your choices and builds only those PDFs. A full selection produces 18 PDFs: a screenplay, one assembled studio package, and 16 pitches. See [all the choices](docs/PACKAGE.md).
 
-**Finally, make it stronger and ready to share.** Read the whole draft critically. Fix the big problems before polishing individual lines. When the story is ready, create the materials that explain it to other people.
+The process includes honest story review, continuity, character agency, a scene-evidenced Bechdel assessment, and checks of the actual PDFs. A passing test or an attractive document does not guarantee a great film. Dry wit and restrained writing are available creative choices, not a forced style for every story.
 
-There are eight steps behind this process: discovery, premise, structure, draft, revision, presentation materials, final checks, and handoff. Each step leaves something useful to build on. You can return to an earlier step when the story changes.
+## Real stories and real choices
 
-## What you can create
+Choose original fiction, based on a true story, or inspired by true events. The source-based paths add research, a record of claims and sources, clear distinctions between facts and invented scenes, and a final audit against the script. They do not provide legal clearance or permission to use someone else's material.
 
-Start small, or work toward a complete film project:
+Most people can stay in one conversation. Optional helper teams for research and review are tucked into [Advanced settings](docs/ADVANCED.md); they are off by default and never require a second subscription or a new API service.
 
-- **A clear story idea:** a title, a compelling one-sentence description, and a sense of the ending.
-- **Characters and an outline:** who these people are, what they want, and how the story unfolds.
-- **A complete screenplay:** followed by honest feedback and meaningful revisions.
-- **A story guide:** a reference for the characters, setting, timeline, and important details.
-- **A presentation package:** a synopsis, a longer story summary, creative direction, and production considerations.
-- **Short pitches for different readers:** an actor, director, producer, potential funder, and others. The full template includes 16 versions.
+## See what finished work looks like
 
-These are drafts and development tools. They do not guarantee representation, financing, casting, sales, or awards. Proposed actors and partners remain ideas until they actually agree to participate.
+[The Letter to the Father](examples/the-letter-to-the-father/README.md) is the feature project from which this process was extracted: a measured 106-page screenplay, 45-page studio package, and 16 pitches. Its original brief and development critique are preserved as historical guidance. These are development examples; proposed casting, budgets, financing and awards language are illustrative. They are not confirmed attachments, research certification, or sales claims.
 
-## What you need
+The feature predates these commands. It shows the class of output the toolkit is designed to support, rather than proving one command recreates that quality. [The Night Window](examples/the-night-window/README.md) is a newly written short demonstration with a 10-page screenplay, a 17-page package, and sixteen one-page pitches, produced and checked on this agent host. New examples and [worked sessions](examples/WALKTHROUGH.md) show how to use the system.
 
-An idea, some curiosity, and an AI assistant you are comfortable using. The public introduction and its prompt builder need no account of their own. Your chosen AI service may require an account and may charge for use.
+## Prefer an ordinary chat?
 
-Story Factory is a guide and a set of templates. It is not a service that automatically writes a movie after you click a button. Your AI assistant helps with the writing; your taste, decisions, and revisions give the story its identity.
+Use the [full writing prompt](MASTER_PROMPT.md) or [short writing guide](WRITING_GUIDE.md) in ChatGPT, Claude, Grok, or another chat assistant. You can develop the story that way. The installed commands, saved progress, helper teams, and verified PDF production require a compatible assistant with file/tool access. We do not claim a native Grok integration.
 
-If you want the assistant to save organized files, track the full process, and make PDFs, use the complete project with a coding assistant or ask someone to help with the [optional setup](docs/SETUP.md). You can let the assistant handle the commands.
+[Beginner setup](docs/START_HERE.md) · [All 18 commands and examples](docs/COMMANDS.md) · [Setup for a helper](docs/SETUP.md) · [Full process](WORKFLOW.md) · [Where this began](docs/ORIGIN.md)
 
-## A few good habits
-
-Keep a copy of your work as you go. Ask for specific criticism, not just encouragement. Check facts when you write about real people or events. Make sure you have permission to use material that belongs to someone else. Read the final work yourself before sharing it.
-
-The approach is inspired by gstack's habit of exploring an idea, challenging the plan, building carefully, and reviewing the result. This is an independent adaptation for storytelling. You do not need gstack installed.
-
----
-
-**The website:** [Preview and publishing guide](docs/site/README.md).
-
-**For helpers and contributors:** [Setup and commands](docs/SETUP.md) · [The full process](WORKFLOW.md) · [Contributing](CONTRIBUTING.md) · [Where this began](docs/ORIGIN.md)
+The working pattern is inspired by [Garry Tan's gstack](https://github.com/garrytan/gstack): explore, challenge, build, review, verify, and hand off. This is an independent storytelling toolkit; gstack is not required. Story Factory never contacts talent, submits scripts, or publishes your work merely because you ask it to write.
