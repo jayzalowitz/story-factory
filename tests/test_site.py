@@ -24,24 +24,27 @@ class PublicSiteTests(unittest.TestCase):
         self.doc = Document(self.text)
 
     def test_links_assets_and_fragments_resolve_inside_public_artifact(self):
-        ids = [attrs['id'] for _, attrs in self.doc.elements if 'id' in attrs]
-        self.assertEqual(len(ids), len(set(ids)), 'duplicate IDs break deep links and labels')
-        for tag, attrs in self.doc.elements:
-            for attribute in ['href', 'src']:
-                if attribute not in attrs:
-                    continue
-                value = attrs[attribute]
-                if value.startswith('#'):
-                    self.assertIn(value[1:], ids)
-                else:
+        for filename in ['index.html', 'guide.html']:
+            doc = Document((SITE / filename).read_text())
+            ids = [attrs['id'] for _, attrs in doc.elements if 'id' in attrs]
+            self.assertEqual(len(ids), len(set(ids)), 'duplicate IDs break deep links and labels')
+            for tag, attrs in doc.elements:
+                for attribute in ['href', 'src']:
+                    if attribute not in attrs:
+                        continue
+                    value = attrs[attribute]
                     if value.startswith('https://'):
                         self.assertEqual(attribute, 'href', 'external navigation is allowed, remote assets are not')
                         self.assertIn(value.split('/')[2], {'github.com', 'code.claude.com', 'learn.chatgpt.com', 'grok.com', 'developers.openai.com', 'platform.claude.com'})
                         continue
                     self.assertNotIn('://', value, 'remote assets are not allowed')
-                    target = (SITE / value).resolve()
+                    relative, _, fragment = value.partition('#')
+                    target = (SITE / (relative or filename)).resolve()
                     self.assertTrue(target.is_relative_to(SITE.resolve()))
                     self.assertTrue(target.is_file(), str(target))
+                    if fragment:
+                        target_ids = {a['id'] for _, a in Document(target.read_text()).elements if 'id' in a}
+                        self.assertIn(fragment, target_ids, value)
         for asset in re.findall(r"url\(['\"]?([^)'\"]+)", (SITE / 'style.css').read_text()):
             self.assertTrue((SITE / asset).is_file(), asset)
 
@@ -69,7 +72,7 @@ class PublicSiteTests(unittest.TestCase):
 
     def test_publication_contains_only_reviewed_public_files(self):
         allowed = {
-            'index.html', 'style.css', 'app.js', 'story-starter.txt', '.nojekyll',
+            'index.html', 'guide.html', 'style.css', 'app.js', 'story-starter.txt', '.nojekyll',
             'assets/Tinos-Regular.ttf', 'assets/Tinos-Italic.ttf', 'assets/Arimo-Regular.ttf',
             'assets/LICENSE.txt', 'assets/favicon.svg',
             'assets/ledger-room-screenplay.png', 'assets/ledger-room-package.png',

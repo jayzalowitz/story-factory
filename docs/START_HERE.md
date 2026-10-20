@@ -18,7 +18,7 @@ Choose whichever you already use or feel comfortable with. You only need one. Pr
 
 ## 2. Download and open the project
 
-Use the versioned [download](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.3/story-factory-0.2.0-preview.3.zip). Unzip it in a place you can find, such as Documents. GitHub is the place the project files are stored; you do not need a GitHub account to download this public project.
+Use the versioned [download](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.4/story-factory-0.2.0-preview.4.zip). Unzip it in a place you can find, such as Documents. GitHub is the place the project files are stored; you do not need a GitHub account to download this public project.
 
 Open your assistant and choose the unzipped folder as its project folder. That gives it the files it needs. Keep your future screenplay in a separate folder; the assistant will create it. Downloading this public toolkit does not make your private screenplay public.
 

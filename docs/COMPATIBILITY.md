@@ -1,6 +1,6 @@
 # Compatibility: observed, not assumed
 
-Current preview: 0.2.0-preview.3. Initial creative/PDF evidence originated in preview.1; later bounded resume and memory probes are separate observations. File installation, process completion, editorial fidelity and human usability are different claims.
+Current preview: 0.2.0-preview.4. The deeper documentation layer adds no new native-host compatibility claim. Initial creative/PDF evidence originated in preview.1; later bounded resume and memory probes are separate observations. File installation, process completion, editorial fidelity and human usability are different claims.
 
 | Path | Observed evidence | Remaining limit |
 |---|---|---|

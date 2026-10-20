@@ -1,6 +1,6 @@
 # Preview build: completed work and remaining limits
 
-Version 0.2.0-preview.3 is a working preview; initial evidence originated in preview.1, with the same guided quality process for beginners and experienced writers. It does not guarantee artistic success.
+Version 0.2.0-preview.4 is a working preview; initial evidence originated in preview.1, with the same guided quality process for beginners and experienced writers. It does not guarantee artistic success.
 
 | Approved work | Delivered | Remaining limit |
 |---|---|---|
@@ -16,3 +16,5 @@ Version 0.2.0-preview.3 is a working preview; initial evidence originated in pre
 Start with [the beginner guide](START_HERE.md). Evidence: [validation](VALIDATION.md), [compatibility](COMPATIBILITY.md), [simulations](SIMULATED_USABILITY.md), [team trial](TEAM_TRIAL.md), and [memory pilot](GBRAIN_PILOT.md).
 
 The [full conversation audit](CHAT_GOALS_AUDIT.md) maps the original and later requests to current evidence and records the three repaired defects.
+
+For readers who want to go further, the [complete guide](DEEP_DIVE.md) adds twelve topics, worked choices, all 31 optional materials and the actual feature revision case. The website guide uses independent native deep links, and README offers seven optional deeper paths.
