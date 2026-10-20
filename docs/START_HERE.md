@@ -14,7 +14,7 @@ Choose whichever you already use or feel comfortable with. You only need one. Pr
 
 ## 2. Download and open the project
 
-Open [Story Factory on GitHub](https://github.com/jayzalowitz/story-factory), choose the green **Code** button, then **Download ZIP**. Or use the direct [download](https://github.com/jayzalowitz/story-factory/archive/refs/heads/main.zip). Unzip it in a place you can find, such as Documents. GitHub is the place the project files are stored; you do not need a GitHub account to download this public project.
+Use the versioned [download](https://github.com/jayzalowitz/story-factory/releases/download/v0.2.0-preview.1/story-factory-0.2.0-preview.1.zip). Unzip it in a place you can find, such as Documents. GitHub is the place the project files are stored; you do not need a GitHub account to download this public project.
 
 Open your assistant and choose the unzipped folder as its project folder. That gives it the files it needs. Keep your future screenplay in a separate folder; the assistant will create it. Downloading this public toolkit does not make your private screenplay public.
 
@@ -26,11 +26,13 @@ Paste:
 
 The setup uses Python, a common small program already on many computers. If missing, your assistant should help you obtain it from [python.org](https://www.python.org/downloads/). Do not paste passwords or payment information into the conversation. The installer stays inside the chosen project by default.
 
-If the app asks to approve reading files or running the local installer, inspect the request and approve the intended setup. If a command is missing afterward, reopen the session in the same folder and ask the assistant to check the installation. In Codex, also try the skill picker (`/skills`).
+If the app asks to approve reading files or running the local installer, approve reading and saving in this chosen folder and running its included installer. The assistant should explain system-tool installation separately. If a command is missing afterward, reopen the session in the same folder and ask the assistant to check the installation. In Codex, also try the skill picker (`/skills`).
 
 ## 4. Start writing
 
 In Claude Code type `/story-new`; in Codex type `$story-new`. Add your idea and a title if you have one. Say whether it is invented, based on a true story, or inspired by something real. The assistant creates a new folder and tells you to open it for the writing sessions.
+
+If you have a book, memoir, article, play or another source, use `story-import` then `story-adapt` instead of treating it as a blank idea. The assistant preserves your original and asks which parts matter most. Adaptation permission and factual accuracy are separate checks.
 
 Then use `/story-office-hours` or `$story-office-hours`. A sentence, a feeling, or a half-formed character is enough. Answer the questions, choose a direction, and ask the assistant to explain any unfamiliar film-development term. Bring an existing screenplay through `story-studio` instead.
 
@@ -38,7 +40,7 @@ Then use `/story-office-hours` or `$story-office-hours`. A sentence, a feeling, 
 
 Ask `story-run` to continue through the agreed scope. It develops the premise, characters, outline, actual scenes, review and revisions. You can intervene at any point. Decide which suggestions to accept; studio mode keeps a decision record. For a full feature this takes sustained writing and revision, often across several sessions. It is not a one-click quality guarantee.
 
-Tell the assistant which [materials](PACKAGE.md) you want. You can leave out every pitch and simply make the script. For true-story work, inspect the research and what remains uncertain before accepting factual claims. Read and revise the screenplay before investing in packaging.
+Tell the assistant which [materials](PACKAGE.md) you want. For example: “Make only the screenplay and a synopsis. Leave out every other section and pitch.” You can leave out every pitch and simply make the script. For true-story work, inspect the research and what remains uncertain before accepting factual claims. Read and revise the screenplay before investing in packaging.
 
 ## 6. Make, inspect and receive your files
 
@@ -47,3 +49,5 @@ Use `story-check`. The assistant checks the sources and builds your selected PDF
 Have it inspect dialogue pages, page breaks, the package, and every selected pitch. A pitch must fit one readable page. Use `story-handoff` for editable sources, PDFs, actual page counts, known limitations, and a clear next step. Open the PDFs yourself before sending them.
 
 To return later, reopen the **story's folder** and use `story-resume`. Keep a backup of the folder. If usage runs out, ask the assistant to save your current decisions and next action; resume after your allowance resets. No need to understand advanced helper teams to do any of this.
+
+The assistant owns the quality work: full-draft critique, meaningful repairs, continuity/source checks, aligned selected materials and actual PDF inspection. You make creative choices; you do not need to manage a review pipeline. If setup is unclear, use `story-setup`.

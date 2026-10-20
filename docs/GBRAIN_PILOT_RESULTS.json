@@ -1,0 +1,348 @@
+{
+  "upstream_revision": "51e7ba94a3ebe96062a9fef14d7072373e85c324",
+  "upstream_version": "0.60.322.0",
+  "runtime": "Bun 1.4.3",
+  "engine": "local PGLite",
+  "embedding": "disabled",
+  "automatic_writeback": "off",
+  "native_assistant_activation": "not_tested",
+  "usage": "unknown",
+  "records": [
+    {
+      "arguments": [
+        "config",
+        "set",
+        "memory.auto_writeback",
+        "off"
+      ],
+      "exit_code": 0,
+      "result": "Setting recorded successfully."
+    },
+    {
+      "arguments": [
+        "config",
+        "set",
+        "search.mode",
+        "conservative"
+      ],
+      "exit_code": 0,
+      "result": "Setting recorded successfully."
+    },
+    {
+      "arguments": [
+        "remember",
+        "Fictional Glass Orchard: approved ending is amber-orbit-7319, the bridge stays closed.",
+        "--entity",
+        "projects/glass-orchard",
+        "--provenance",
+        "Explicit fictional pilot decision D1, 2026-10-20; source development/decisions.md D1; no real people.",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "id": "1",
+        "status": "inserted",
+        "state": "committed"
+      },
+      "notices": [
+        {
+          "code": "degraded_dedup",
+          "kind": "info",
+          "why": "No embedding provider is configured, so remember detects only exact duplicates; a near-duplicate phrasing of an existing fact inserts a second fact. Recall first when unsure whether a fact is already saved.",
+          "contract_version": 1
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "recall",
+        "projects/glass-orchard",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "total": 1,
+        "facts": [
+          {
+            "id": 1,
+            "fact": "Fictional Glass Orchard: approved ending is amber-orbit-7319, the bridge stays closed.",
+            "kind": "fact",
+            "entity_slug": "projects/glass-orchard",
+            "visibility": "world",
+            "notability": "medium",
+            "valid_from": "2026-10-20T09:29:43.396Z",
+            "valid_until": null,
+            "expired_at": null,
+            "superseded_by": null,
+            "consolidated_at": null,
+            "consolidated_into": null,
+            "source": "Explicit fictional pilot decision D1, 2026-10-20; source development/decisions.md D1; no real people.",
+            "source_session": null,
+            "confidence": 1,
+            "effective_confidence": 1,
+            "created_at": "2026-10-20T09:29:45.454Z"
+          }
+        ]
+      }
+    },
+    {
+      "arguments": [
+        "remember",
+        "Fictional Glass Orchard: approved ending is amber-orbit-7319, the bridge opens at dawn.",
+        "--entity",
+        "projects/glass-orchard",
+        "--replaces",
+        "1",
+        "--provenance",
+        "Explicit fictional correction D2 supersedes D1; development/decisions.md D2; 2026-10-20.",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "id": "2",
+        "status": "superseded",
+        "state": "committed",
+        "superseded_fact_id": "1",
+        "replaced_by_caller": true
+      },
+      "notices": [
+        {
+          "code": "degraded_dedup",
+          "kind": "info",
+          "why": "No embedding provider is configured, so remember detects only exact duplicates; a near-duplicate phrasing of an existing fact inserts a second fact. Recall first when unsure whether a fact is already saved.",
+          "contract_version": 1
+        }
+      ]
+    },
+    {
+      "arguments": [
+        "recall",
+        "projects/glass-orchard",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "total": 1,
+        "facts": [
+          {
+            "id": 2,
+            "fact": "Fictional Glass Orchard: approved ending is amber-orbit-7319, the bridge opens at dawn.",
+            "kind": "fact",
+            "entity_slug": "projects/glass-orchard",
+            "visibility": "world",
+            "notability": "medium",
+            "valid_from": "2026-10-20T09:30:11.484Z",
+            "valid_until": null,
+            "expired_at": null,
+            "superseded_by": null,
+            "consolidated_at": null,
+            "consolidated_into": null,
+            "source": "Explicit fictional correction D2 supersedes D1; development/decisions.md D2; 2026-10-20.",
+            "source_session": null,
+            "confidence": 1,
+            "effective_confidence": 1,
+            "created_at": "2026-10-20T09:30:12.439Z"
+          }
+        ]
+      }
+    },
+    {
+      "arguments": [
+        "recall",
+        "projects/copper-harbor",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "total": 0,
+        "facts": []
+      }
+    },
+    {
+      "arguments": [
+        "recall",
+        "projects/glass-orchard",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "total": 1,
+        "facts": [
+          {
+            "id": 2,
+            "fact": "Fictional Glass Orchard: approved ending is amber-orbit-7319, the bridge opens at dawn.",
+            "kind": "fact",
+            "entity_slug": "projects/glass-orchard",
+            "visibility": "world",
+            "notability": "medium",
+            "valid_from": "2026-10-20T09:30:11.484Z",
+            "valid_until": null,
+            "expired_at": null,
+            "superseded_by": null,
+            "consolidated_at": null,
+            "consolidated_into": null,
+            "source": "Explicit fictional correction D2 supersedes D1; development/decisions.md D2; 2026-10-20.",
+            "source_session": null,
+            "confidence": 1,
+            "effective_confidence": 1,
+            "created_at": "2026-10-20T09:30:12.439Z"
+          }
+        ]
+      },
+      "execution_group": "two_parallel_cli_reads"
+    },
+    {
+      "arguments": [
+        "recall",
+        "projects/glass-orchard",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "total": 1,
+        "facts": [
+          {
+            "id": 2,
+            "fact": "Fictional Glass Orchard: approved ending is amber-orbit-7319, the bridge opens at dawn.",
+            "kind": "fact",
+            "entity_slug": "projects/glass-orchard",
+            "visibility": "world",
+            "notability": "medium",
+            "valid_from": "2026-10-20T09:30:11.484Z",
+            "valid_until": null,
+            "expired_at": null,
+            "superseded_by": null,
+            "consolidated_at": null,
+            "consolidated_into": null,
+            "source": "Explicit fictional correction D2 supersedes D1; development/decisions.md D2; 2026-10-20.",
+            "source_session": null,
+            "confidence": 1,
+            "effective_confidence": 1,
+            "created_at": "2026-10-20T09:30:12.439Z"
+          }
+        ]
+      },
+      "execution_group": "two_parallel_cli_reads"
+    },
+    {
+      "arguments": [
+        "forget",
+        "2",
+        "--reason",
+        "Fictional pilot finished; withdraw approved ending.",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "id": "2",
+        "state": "committed",
+        "expired": true
+      }
+    },
+    {
+      "arguments": [
+        "recall",
+        "projects/glass-orchard",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "total": 0,
+        "facts": []
+      }
+    },
+    {
+      "arguments": [
+        "recall",
+        "projects/glass-orchard",
+        "--json"
+      ],
+      "brain": "separate_fresh_brain",
+      "exit_code": 0,
+      "result": {
+        "facts": [],
+        "total": 0
+      }
+    },
+    {
+      "brain": "second",
+      "arguments": [
+        "remember",
+        "Fictional separate-production marker copper-lantern-8246.",
+        "--entity",
+        "projects/separate-production",
+        "--provenance",
+        "Explicit fictional isolation test only, 2026-10-20.",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "id": "1",
+        "status": "inserted",
+        "state": "committed"
+      }
+    },
+    {
+      "brain": "second",
+      "arguments": [
+        "recall",
+        "projects/separate-production",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "total": 1,
+        "facts": [
+          {
+            "id": 1,
+            "fact": "Fictional separate-production marker copper-lantern-8246.",
+            "kind": "fact",
+            "entity_slug": "projects/separate-production",
+            "visibility": "world",
+            "notability": "medium",
+            "valid_from": "2026-10-20T09:32:14.039Z",
+            "valid_until": null,
+            "expired_at": null,
+            "superseded_by": null,
+            "consolidated_at": null,
+            "consolidated_into": null,
+            "source": "Explicit fictional isolation test only, 2026-10-20.",
+            "source_session": null,
+            "confidence": 1,
+            "effective_confidence": 1,
+            "created_at": "2026-10-20T09:32:14.805Z"
+          }
+        ]
+      }
+    },
+    {
+      "brain": "first",
+      "arguments": [
+        "recall",
+        "projects/separate-production",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "total": 0,
+        "facts": []
+      }
+    },
+    {
+      "brain": "second",
+      "arguments": [
+        "forget",
+        "1",
+        "--reason",
+        "Fictional isolation pilot cleanup.",
+        "--json"
+      ],
+      "exit_code": 0,
+      "result": {
+        "id": "1",
+        "state": "committed",
+        "expired": true
+      }
+    }
+  ]
+}

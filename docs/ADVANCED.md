@@ -24,4 +24,10 @@ Workers receive bounded assignments and separate notes folders. They do not edit
 
 ## Optional memory, investigated separately
 
-[GBrain assessment](GBRAIN.md) explains a possible future connection for approved decisions and continuity across sessions. Nothing is installed or enabled. The project folder already supports resuming without it; this is not part of first-time setup.
+[GBrain assessment](GBRAIN.md) explains a possible future connection for approved decisions and continuity across sessions. A [bounded fictional pilot](GBRAIN_PILOT.md) demonstrated the local decision lifecycle; no adapter or user assistant connection is enabled. The project folder already supports resuming without it; this is not part of first-time setup.
+
+## Checking advanced settings
+
+The assistant can run `python3 scripts/team_controls.py settings`, `plan`, and `activity` to check settings, the planned assignments, and actual recorded launches. Ask-first approval is tied to the exact plan; a changed plan needs new approval. The checker rejects excessive counts, unknown tasks, overlapping notes folders, nested delegation, and new paid services. It validates records rather than intercepting provider tools, so it cannot enforce a dollar limit or prove a claimed launch happened. Actual usage remains unknown unless the provider reports it. Details and record fields are in [TEAMS.md](../skills/story/references/TEAMS.md#validate-the-plan-and-the-activity-record).
+
+The bounded [local memory pilot](GBRAIN_PILOT.md) demonstrates useful CLI operations without embeddings or model calls; automatic native-host memory activation is still deferred. Use team_controls.py preflight/activity checks before and after actual helper work. These validate records and limits; they are not an interceptor for native tool calls.

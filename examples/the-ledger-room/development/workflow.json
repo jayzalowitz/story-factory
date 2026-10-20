@@ -1,0 +1,126 @@
+{
+  "schema": 2,
+  "completed": {
+    "discover": {
+      "files": {
+        "development/brief.md": "b28ed75f2dafc0f5040ab592e118c611ed4d5aec8dcc272540ed5ebd7e419a1f",
+        "development/discovery.md": "0b6a2711b7d786cfb55b0f1b9177355e460b41eb6a3a9b8c011fa489d3f220e6",
+        "research/source_mode.json": "b778055e0241de6c44d93d3580b42d5042b6d1134a8cdccf170e67c3474bfca5",
+        "development/preferences.json": "f69aecf16f6fd7b1d8f9143f7304fab35497ca9e3a2b17c2f065b2115f18c9d2"
+      },
+      "evidence": "Specific original premise, stakes and scope filled; no factual source claimed.",
+      "time": "2026-10-20T10:08:13.571116+00:00"
+    },
+    "premise": {
+      "files": {
+        "development/story_bible.md": "e27cc6e52b4b9d7ad3178921de440f467874bf4a6737c707485988cae3764d2b",
+        "development/premise_review.md": "f994f65dde85b7eb38865aabb00c2fd8bba8c55362ee2b96ef43bdf890354269"
+      },
+      "evidence": "Contained six-site engine and costly custody ending established.",
+      "time": "2026-10-20T10:08:13.735542+00:00"
+    },
+    "structure": {
+      "files": {
+        "development/outline.md": "c5223bbbb51ab83d334bf2910ca0b59c4d584e35893028a864f9e63837589b5c",
+        "development/scene_map.md": "b34d98c8334afac33da7659e11233d5b41e1746246c9b222dfe7694fb141df8b",
+        "development/continuity.md": "3baa79ef88908562072409292147f1ab3cfafa3e9fbbc21dd4fec71c5a3928f6",
+        "development/structure_review.md": "039a0f73629d25a8028750bf0f4c527af0befd64aa4b5f6fae7de142f1f5fd3a"
+      },
+      "evidence": "Actual54-scene causality and continuity updated after one focused repair; lower page bound measured.",
+      "time": "2026-10-20T10:08:13.941839+00:00"
+    },
+    "draft": {
+      "files": {
+        "screenplay/act1.tex": "67b746609c7b6b6b20e934209424dbefd1b37c91d75eabf638ee98586429b5ca",
+        "screenplay/act2.tex": "6cb1d13fe0ef9dedcaec839a44c7fb88a24291e3967ae7e0cded8065a0e14510",
+        "screenplay/act3.tex": "1e8b3172bf9b9ea764eecc06ff2b9e8226f02d479c33d6a3645aa1f9a5832dc9",
+        "screenplay/act4.tex": "41d4e22055e138f2dd540a3a86e0742895538ba4fbeb9404a73c71fcdda33f97",
+        "screenplay/act5.tex": "b08ccedac45558042a5adc1bc6d490ec4a289b9b91e5c9fe7cc94f9487451036",
+        "screenplay/act6.tex": "2f821e8499fff8fe4c058ff83d6213578739707afab275c6b68f9b41a1c3ef3f",
+        "screenplay/main_screenplay.tex": "276d99ba103d2083d27968eaa97e5717d0246a976c42a4c853468dfcc9612902",
+        "screenplay/title_page.tex": "b58de1d7cccd477f9ff8c2fbbfd948602a9e468f90fd600a5049c1016b42f199",
+        "development/draft_report.md": "5923af629bfe968f54e1c71af30203115ddc171a004d332668f6e25afccaeba3"
+      },
+      "evidence": "All54 actual scenes complete; first draft frozen; revised screenplay90 dramatic pages.",
+      "time": "2026-10-20T10:08:14.053758+00:00"
+    },
+    "revise": {
+      "files": {
+        "development/review.md": "5899c3ac9235ed576c02cc5c5c7cf76b383ac5d962d34d67c0b3ac7f570bb7b0",
+        "development/revision_log.md": "93a7adf2b54b9ad82fa21efec9d555a1209dbe5e128d1af0b09928ec36ed8453",
+        "development/quality_report.md": "fb7593896c1d9d3701af4aba2a8a4261abb0861e576ba86241e21397c09a7a25",
+        "development/bechdel_report.md": "4e8ae930a13559c3896847af924339eb2bbd1c780a8db82ed182a9cfd85ab998",
+        "development/quality.json": "28199743d03dde17a84056f16487ee5ca5735b597818ca2948e14733bbee1b6a",
+        "development/bechdel.json": "09d57f20fd883b98776323b50caf75b40f9299f5b40c6615025df484bc4292ba"
+      },
+      "evidence": "Full self-diagnosis, one focused repair, bounded independent findings and current quality/Bechdel receipts; voice limits disclosed.",
+      "time": "2026-10-20T10:08:14.216781+00:00"
+    },
+    "package": {
+      "files": {
+        "development/package_review.md": "c4a25195a67ea461a4e8642e812be39e3d0f6c5181af34a47548fd32249a9aef",
+        "package/studio_package.tex": "093deb442b934c2c7782a468770e4e13a7f010984c0f6ac1d70b6f833d2252ba",
+        "package/logline_synopsis.tex": "7dc4f6964d2eaadc3b60437ff9448f93c112e8028f15ad30a1ac674f62b8f0df",
+        "package/treatment.tex": "f69002a4b8c6cc169bbc64c54bed28b009a2fc52a7074597b390a2003b5e6b59",
+        "package/character_breakdowns.tex": "bcf90c9ce7d4a7122318cd81a1f13a37333c8ff1c907631e3aaf7e454bcdba17",
+        "package/tone_visual_world.tex": "f1ec4c1a0261df08ecdac48d994608c3555ac2e6c6628ec19d5103cab85c9297",
+        "package/comps_and_positioning.tex": "ea9f76f5e81b261d9a3763f77e1bcad72f5ed6518b73e78eef6d97d6f37ba1a8",
+        "package/casting_notes.tex": "be40b2d4ce968dad07c292c831e943a3305a5daf411553b3ade2a48cd6f013df",
+        "package/director_targets.tex": "1ca1c1bcb99c967c3c2bd845926ce939800e22a5fd99e82ba5fdd020481b4cdb",
+        "package/producer_targets.tex": "34b4d559ae0f05e13b66229f44df4b14eb61d0f90ccf0c987fadcc76f459e499",
+        "package/awards_strategy.tex": "6f86a981554d2dbe426150178f224f365202d34d99cc98f114a913cf26bf99b0",
+        "package/festival_strategy.tex": "b16d5b8e86ccedaa622de04d3507bc901382718ddfdb71138c1edc58d4ff6661",
+        "package/budget_and_scope.tex": "f81319168306dc7cadede7ae27885e8fb84fb73b3ce1afed3ccdc0cf7f57a45c",
+        "package/scene_showcase.tex": "4a6dccc42babeef81eb757c4a5167abb7c83b8cb97fc735fe0372edce4f97d78",
+        "package/marketing_blurb.tex": "67bea0d5c25391c7945d0937e0f685c11b5f480454944e17603f0a6c67be346b",
+        "package/poster_taglines.tex": "209fbf12789fc9aab8d01c6135a04bac1e53fd7e015a7c30a00026fa6780e226",
+        "package/appendix.tex": "4cd5ad42235ebf5f1eb24b98039dc5b86bd1a2aa373b164752670c7ab6ba06c4",
+        "one_pagers/one_pager.tex": "38beed4b2bfc14db31b42dcd847e64e31521748e56195a148e71642365f0f9be",
+        "one_pagers/actor_pitch.tex": "ef23f4831ebdee89712baae3314cf97724d7199ddd4dcae8e5d93d5a4ef8cd50",
+        "one_pagers/director_pitch.tex": "23cb30e69ae983649525159c052e1ace5f282ed1598d06077b3706513de5e79b",
+        "one_pagers/financier_pitch.tex": "9371d4fb72a2e41d4c4bc39035dc0fdb7e8e985a3ee8ce975fe81006889f5aef",
+        "one_pagers/producer_pitch.tex": "f0508abc5c5611d288755136b472b98be5ca81c41c229c78f2dbbdede1a8013c",
+        "one_pagers/distributor_pitch.tex": "bd57c8caca0f960a21814622b9e652ea5fe420954b6741f1c194d85bd6667106",
+        "one_pagers/streamer_pitch.tex": "2ccaf592c888fb2ad7e5a90564da45668d1c429c7433e2dc1b12482106812e0d",
+        "one_pagers/festival_pitch.tex": "ad099e5e2a7a1321ba9e70e18a497bf99de1df29e19ef1a5fbd7c4983082673a",
+        "one_pagers/awards_pitch.tex": "b23d4f16f3fca29699774e675bcaddf2f2bca006e3ee61a04e3388ed23b0ac9a",
+        "one_pagers/coproduction_pitch.tex": "143230d738c8adc15399021df5259a91f1f906d124b5c4e1b3ef3cb6666c8e3a",
+        "one_pagers/public_funder_pitch.tex": "39dd84360a0ea9092b9e4f2538b89b63ec24e47233ab7a161e6948c2c7e2c3a7",
+        "one_pagers/talent_rep_pitch.tex": "83d35f8234cd1ee5d9b545d64d058f4df83a7dcb54716e5a2f46f9bed2af1258",
+        "one_pagers/exhibitor_pitch.tex": "66480c376c81d946e459c048e8dbd042c5a4521fe826de6403df94b86d879111",
+        "one_pagers/cultural_partnership_pitch.tex": "74470b26d29147a21d6daeae3b9bdcddd1709e1ffd7ac5f010cc99df7009b8d4",
+        "one_pagers/press_pitch.tex": "dce39e5cc72c8be3026bbab9582ea1e6081704020c54bd43dd7b619d532371ff",
+        "one_pagers/craft_pitch.tex": "24009d1e429fc2fde0752895012657d9b161285f3ba6dd9e7d9d539177be4a06",
+        "development/package_options.json": "120776190dfd4395bd437f1e021d7d55df2f10bd5f5b97839f534048371f2dec"
+      },
+      "evidence": "15 modules and16 distinct pitches derive from revised screenplay; search profiles and commercial gaps labeled.",
+      "time": "2026-10-20T10:08:14.431304+00:00"
+    },
+    "verify": {
+      "files": {
+        "development/verification.md": "034ab9a68d9c728c2c3b88b83e25b291756597cfe33a34a0c9b65b64faa70e10",
+        "development/build.json": "e6089f681b90f46516d1b96022bb20afe057ca9f3f4bf0e3d3a390caec21bcc2",
+        "development/visual_review.json": "d8a99a3be44276b23f347ba0b4bd043cea7b371c432b86a34007bb40fdc58fc9",
+        "common/colors.tex": "169fac572f30286c3d1779413eddb97f23f9ff03faccca2e1d66aeecf219f79a",
+        "common/metadata.tex": "ae297a8692ed465d489e665b991bf411c4dcca587d54bfd011da8395750174c8",
+        "common/preamble.tex": "79d34acae25fb0da6241834cd6c88dd8b0e35c0a0d373ec0de7bf969d706db68",
+        "common/screenplay_macros.tex": "0f3cf62e589d8e518f528430b6dfc9dea97b52af7d5ec9c3e2f42f12542e696c",
+        "common/studio_package_macros.tex": "06fada7d7371a19fc095948bc80f819b7d145a448db98085edf22937c8f02b41",
+        "common/typography.tex": "1cdcb9e73c8b665077a5af5d4173dce364d01790f1b18bdc21fd6cd583d39f65",
+        "Makefile": "78488a1eb86e0a2345cb4d171dfde1be4ad67dbe3f9bbae25ff2de9347367092",
+        "latexmkrc": "6e1b746ca0fa251e1c90f6adf39a9a4a7b8ea1047813d135f4197be8ffb2d9c3"
+      },
+      "evidence": "18 actualPDFs measured127 physical pages, everypage rendered/inspected, package spill fixed; fingerprint/hash-bound receipts current.",
+      "time": "2026-10-20T10:09:15.088960+00:00"
+    },
+    "handoff": {
+      "files": {
+        "README.md": "dc89f22540601c25f0f5f977cbe8a6d2c679859167f428e3139c5219d694e9c5",
+        "development/status.md": "cfe1f2cb6081d574784102e2bbf05bd172103cbaa0e0a63932739cdca81d9454",
+        "development/handoff.md": "da6d3e43b2d6fc66980efc4863b81f0a84a2fb7cae35488bcca19b3c8b6e2925"
+      },
+      "evidence": "Local demonstration, actual inventory and remaining creative/production limits documented; no publication or outreach.",
+      "time": "2026-10-20T10:09:15.304522+00:00"
+    }
+  }
+}

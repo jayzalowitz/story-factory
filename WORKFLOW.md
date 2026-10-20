@@ -91,3 +91,9 @@ Final verification requires a real development/build.json receipt from `python3 
 ## Optional teams
 
 One assistant is the normal path. Read TEAMS.md and development/teams.json before delegation. Teams are off by default; ask/auto modes permit bounded native research or review when supported by the actual session and account limits. Keep advanced settings out of ordinary onboarding. One coordinator owns the script; workers return findings in separate folders. Unavailable teams fall back to honest sequential checks.
+
+## Adaptation and inspected delivery
+
+For non-screenplay source material, story-import preserves the supplied file and story-adapt establishes reading coverage, fidelity decisions and scene traceability before drafting. Adaptation is independent of the original/based-on/inspired-by factual mode. Adapted projects carry adaptation/project.json; revision and verification require current full-draft adaptation evidence. Changed sources, map or draft invalidate that review.
+
+Use DELIVERY.md for the default quality standard, even when the writer only says “help me make this.” Before handoff, inspect every selected PDF page and save actual hashes, inspected page numbers, observations and verdicts in development/visual_review.json. scripts/delivery.py prepares only selected, current PDFs and editable print inputs with a manifest; it excludes private source originals and never publishes or sends.

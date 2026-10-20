@@ -5,6 +5,9 @@ In Claude Code type `/name`; in Codex type `$name` or choose it with `/skills`. 
 | Command | What it does |
 |---|---|
 | `story` | Choose the next Story Factory command for a story project or explain the command suite. |
+| `story-setup` | Check setup and explain missing requirements. |
+| `story-import` | Preserve and extract existing writing and source documents. |
+| `story-adapt` | Adapt a novel, memoir, article, play or other source into cinematic scenes. |
 | `story-new` | Create a fresh film-writing project with templates and skills for Claude Code and Codex. |
 | `story-office-hours` | Explore a story seed through a focused conversation before outlining or drafting. |
 | `story-research` | Research a based-on or inspired-by true story using source-led native subagent work. |
@@ -36,3 +39,5 @@ In Claude Code type `/name`; in Codex type `$name` or choose it with `/skills`. 
 ```
 
 Codex equivalents start with `$`, such as `$story-studio Read my existing screenplay…`. `story-run` coordinates the stages; individual commands let you work on one problem. Research/review helpers are optional, off by default. See the [complete walkthrough](../examples/WALKTHROUGH.md), [studio decision session](../examples/STUDIO_SESSION.md), [quality examples](../examples/quality/README.md), and [advanced controls](ADVANCED.md).
+
+Adaptation example: `/story-adapt Adapt my novella into a contained feature. Preserve the ending and dry humor; ask before combining characters.` In Codex, use `$story-adapt`. See [adaptation](ADAPTATION.md). Quality checks are automatic in a full run; beginners need not know every command.

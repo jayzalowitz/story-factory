@@ -32,3 +32,9 @@ research/private/
 
 # Generated outputs in worked examples
 **/output/
+
+# Private imported originals, generated delivery and release artifacts
+sources/private/
+**/sources/private/
+delivery/
+dist/

@@ -2,7 +2,7 @@
 
 Story Factory already remembers your project through its files: the brief, story bible, outline, continuity notes, research ledger, review decisions, and progress receipts. You can reopen the folder and use `story-resume` without another service.
 
-[GBrain](https://github.com/garrytan/gbrain) could add a useful second layer when a story runs across many conversations, assistants, or related projects. Our recommendation is an **optional advanced connection**, beginning with explicitly saved decisions and local keyword search. It should never become a requirement for starting a story. This is an investigation and proposed design; Story Factory does not currently install, connect, or write to GBrain.
+[GBrain](https://github.com/garrytan/gbrain) could add a useful second layer when a story runs across many conversations, assistants, or related projects. Our recommendation is an **optional advanced connection**, beginning with explicitly saved decisions and local keyword search. It should never become a requirement for starting a story. The initial assessment below is followed by a [bounded local pilot](GBRAIN_PILOT.md). Story Factory still does not automatically install, connect, or write to GBrain for a writer.
 
 ## What it could help you remember
 
@@ -58,3 +58,5 @@ Keep today's onboarding simple. If memory becomes useful, first run a separate, 
 ## Review record
 
 Reviewed the official repository, memory-only tutorial, both host guides and plugin manifests, setup guide, memory boundaries, and brains/sources architecture. Snapshot: `51e7ba94a3ebe96062a9fef14d7072373e85c324`, manifest version `0.60.322.0`. Read-only inspection; no code reused, software installed, credentials changed, external processor enabled, or live integration claimed. Links above pin the reviewed revision; current upstream behavior may differ.
+
+Later evidence: local keyless save/recall/correction/withdrawal and separate-brain routing were tested. See [pilot results](GBRAIN_PILOT_RESULTS.json). Native Claude/Codex memory activation and shared-server writes remain unverified, so the automatic adapter remains deferred.

@@ -1,0 +1,23 @@
+{
+  "frozen_first_draft": {
+    "act1.tex": "67b746609c7b6b6b20e934209424dbefd1b37c91d75eabf638ee98586429b5ca",
+    "act2.tex": "db444b8746f3f35edea0a713dea9badcf678d8605876317bf72c0b44c7e2476d",
+    "act3.tex": "6f4e7b39152e3fe71794c7b0003ac2e46b8b58f1341375b0ba84cd47008f4580",
+    "act4.tex": "ec301d013e14c53c0f8a459a1fe5cfb1d8de3530ebc4724afcc1fb84f9da8880",
+    "act5.tex": "ba8412ada06f5fb88327f79f4ae5c3a209c380e50ff71b1a35a5ba8c15d0cfe7",
+    "act6.tex": "b097fe1fda45f632d71fb999e4c90664dbc09310c261321b88315f34a8362ff2"
+  },
+  "final_sources": {
+    "act1.tex": "67b746609c7b6b6b20e934209424dbefd1b37c91d75eabf638ee98586429b5ca",
+    "act2.tex": "6cb1d13fe0ef9dedcaec839a44c7fb88a24291e3967ae7e0cded8065a0e14510",
+    "act3.tex": "1e8b3172bf9b9ea764eecc06ff2b9e8226f02d479c33d6a3645aa1f9a5832dc9",
+    "act4.tex": "41d4e22055e138f2dd540a3a86e0742895538ba4fbeb9404a73c71fcdda33f97",
+    "act5.tex": "b08ccedac45558042a5adc1bc6d490ec4a289b9b91e5c9fe7cc94f9487451036",
+    "act6.tex": "2f821e8499fff8fe4c058ff83d6213578739707afab275c6b68f9b41a1c3ef3f"
+  },
+  "final_six_file_aggregate_sha256": "8c76be6273e4c3b43f9a534d774ce997c32b6811e928072bbe803958ed14d7a0",
+  "reader_targeted_subset_aggregate_sha256": "afe4e9ffbf4df0b5611364401ec82a74aa505f7bfe539c2a4421228e6bc85575",
+  "scope": "independent_review.md records first-draft full read and only the listed revised subset; final source differs after the generic S10 carton example and downstream microcontinuity corrections. This is not a whole-final-draft independent READY receipt. Parent separately inspected S33,S45,S46,S47 clock/seal continuity.",
+  "host_model": "Codex hosting assistant; specific inherited model identifier/override is not exposed to this worker",
+  "usage_cost": "unknown; no external model calls or subagents by author worker"
+}

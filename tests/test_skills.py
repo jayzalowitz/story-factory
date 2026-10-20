@@ -20,7 +20,7 @@ class SkillTests(unittest.TestCase):
  def install(self,*extra):
   return subprocess.run([sys.executable,str(ROOT/'install.py'),'--project',str(self.root/'project'),*extra],capture_output=True,text=True)
  def test_host_entries_and_references_are_discoverable(self):
-  catalog=json.loads((ROOT/'COMMANDS.json').read_text());self.assertEqual(len(catalog),18)
+  catalog=json.loads((ROOT/'COMMANDS.json').read_text());self.assertEqual(len(catalog),21)
   for item in catalog:
    folder=ROOT/'skills'/item['name'];text=(folder/'SKILL.md').read_text()
    self.assertIn(f"name: {item['name']}\n",text)
@@ -96,6 +96,14 @@ class SkillTests(unittest.TestCase):
   bechdel={'draft_sha256':fingerprint,'coverage':'full-draft','status':'PASS','summary':'Supposed qualifying exchange.','evidence':[{'women':['Mara','Mara'],'scene_id':'S1','exchange':'Mara speaks twice.','non_man_topic':'The recording'}]}
   (root/'development/quality.json').write_text(json.dumps(quality));(root/'development/bechdel.json').write_text(json.dumps(bechdel))
   self.assertTrue(any('two named women' in p for p in checks.quality_problems(root)))
+ def test_writer_page_cap_rejects_overrun_and_invalid_limit(self):
+  folder=self.root/'development';folder.mkdir()
+  prefs=folder/'preferences.json'
+  prefs.write_text(json.dumps({'screenplay_max_pages':3}))
+  self.assertTrue(checks.output_limit_problems(self.root,{'screenplay.pdf':{'pages':5}}))
+  self.assertEqual(checks.output_limit_problems(self.root,{'screenplay.pdf':{'pages':3}}),[])
+  prefs.write_text(json.dumps({'screenplay_max_pages':True}))
+  self.assertTrue(checks.output_limit_problems(self.root,{'screenplay.pdf':{'pages':1}}))
  def test_verified_claims_cannot_use_missing_or_synthetic_sources(self):
   root=self.root;(root/'research').mkdir()
   (root/'research/source_mode.json').write_text('{"mode":"based-on"}')

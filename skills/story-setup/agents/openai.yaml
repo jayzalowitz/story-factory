@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Setup"
+  short_description: "Check setup and explain missing tools in plain language before a"
+  default_prompt: "Use $story-setup to help with my story project."

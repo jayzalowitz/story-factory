@@ -18,7 +18,7 @@ STAGES={
  'draft':(['screenplay/**/*.tex','development/draft_report.md'],'development/draft_report.md'),
  'revise':(['development/review.md','development/revision_log.md','development/quality_report.md','development/bechdel_report.md','development/quality.json','development/bechdel.json'],'development/review.md'),
  'package':(['package/*.tex','one_pagers/*.tex','development/package_review.md'],'development/package_review.md'),
- 'verify':(['development/verification.md','development/build.json','common/*.tex','Makefile','latexmkrc'],'development/verification.md'),
+ 'verify':(['development/verification.md','development/build.json','development/visual_review.json','common/*.tex','Makefile','latexmkrc'],'development/verification.md'),
  'handoff':(['README.md','development/status.md','development/handoff.md'],'development/handoff.md'),
 }
 COMMANDS={'discover':'story-office-hours','research':'story-research','premise':'story-premise','structure':'story-outline','draft':'story-draft','revise':'story-revise','package':'story-package','verify':'story-check','handoff':'story-handoff'}
@@ -64,7 +64,18 @@ def artifacts(stage):
   truth=ROOT/'research/truth_report.md'
   if truth.exists() and not re.search(r'^Verdict:\s*PASS\s*$',truth.read_text(),re.M):problems.append('Research truth review needs a truthful PASS or more research')
  if stage in ['revise','verify']:problems+=quality_problems(ROOT)
- if stage=='verify':problems+=truth_problems(ROOT,require_draft=True)+build_problems(ROOT)
+ if stage in ['revise','verify'] and (ROOT/'adaptation/project.json').exists():
+  from adaptation import problems as adaptation_problems
+  problems+=adaptation_problems(ROOT,final=True)
+  for name in ['adaptation/project.json','adaptation/review.json']:
+   path=ROOT/name
+   if path.is_file():files[name]=hashlib.sha256(path.read_bytes()).hexdigest()
+ if stage=='verify':
+  problems+=truth_problems(ROOT,require_draft=True)+build_problems(ROOT)
+  if (ROOT/'development/build.json').is_file():
+   from delivery import visual_problems
+   problems+=visual_problems(ROOT)
+
  return files,problems
 
 

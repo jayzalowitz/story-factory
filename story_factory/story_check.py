@@ -145,6 +145,20 @@ def truth_problems(root, require_draft=False):
     return errors
 
 
+def output_limit_problems(root, outputs):
+    prefs=root/'development/preferences.json'
+    if not prefs.is_file():return []
+    data=json.loads(prefs.read_text())
+    if not isinstance(data,dict):return ['development/preferences.json must be an object']
+    limit=data.get('screenplay_max_pages')
+    if limit is None or 'screenplay.pdf' not in outputs:return []
+    if type(limit) is not int or not 1 <= limit <= 1000:return ['screenplay_max_pages must be an integer from 1 to 1000 or null']
+    record=outputs.get('screenplay.pdf')
+    if record and (type(record.get('pages')) is not int or record['pages']>limit):
+        return [f"Screenplay exceeds the writer's {limit}-page physical PDF limit; revise layout/content honestly, never pad or shrink unreadably"]
+    return []
+
+
 def build_problems(root):
     root=root.resolve()
     path=root/'development/build.json'
@@ -160,7 +174,7 @@ def build_problems(root):
         if not path.exists() or hashlib.sha256(path.read_bytes()).hexdigest()!=record.get('sha256'):
             errors.append(f'Missing or changed PDF: {name}')
         if name in PITCHES and record.get('pages')!=1:errors.append(f'{name} is not one page')
-    return errors
+    return errors+output_limit_problems(root,data.get('outputs',{}))
 
 
 def build(root):
@@ -182,6 +196,8 @@ def build(root):
         count=int(re.search(r'^Pages:\s+(\d+)',info,re.M).group(1))
         if name in PITCHES and count!=1:raise ValueError(f'{name}: expected 1 page, got {count}')
         outputs[path.name]={'pages':count,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+    limits=output_limit_problems(root,outputs)
+    if limits:raise ValueError('\n'.join(limits))
     if print_fingerprint(root)!=before:raise ValueError('Sources changed during build; rerun against stable files')
     (root/'development').mkdir(exist_ok=True)
     (root/'development/build.json').write_text(json.dumps({'source_sha256':before,'outputs':outputs},indent=2)+'\n')

@@ -4,6 +4,8 @@ Bring an existing script and work through the improvements that matter most, one
 
 Claude example: `/story-studio Read my current screenplay and help me choose the best improvements before rewriting.` Codex example: ask the installed `story` skill to `run story-studio on my current draft`. Follow the installed host entrypoint's supported syntax. See the toolkit's `examples/STUDIO_SESSION.md` for an illustrative meeting.
 
+For supplied FDX, Fountain, Word, PDF, Markdown, or plain-text files, first use `story-import` and `IMPORTING.md` to preserve the original and identify extraction limits. If the material is a novel, play, article, memoir, or other non-screenplay source, route to adaptation development before treating it as a screenplay diagnosis. Importing does not establish permission to publish an adaptation.
+
 ## Read first; protect the film's identity
 
 Read `COMMON.md`, the relevant craft requirements in `MASTER_PROMPT.md`, `QUALITY.md`, the existing project brief and creative instructions, current workflow status, and any earlier decisions. For source-based work also read `RESEARCH.md`, source mode, research ledger, departures, and truth review. Inspect the user's actual script files and read the complete current script before presenting a full-script diagnosis. If the supplied file cannot be fully read or extracted, state the missing portion and obtain a readable version; do not present a partial read as complete.

@@ -19,6 +19,10 @@ A new project is created by the toolkit's story_factory/new_story.py. Existing p
 
 - [TEAMS.md](TEAMS.md): optional native research/review teams and fine-grained limits. Keep these controls out of ordinary onboarding; default is one assistant.
 
+- [DELIVERY.md](DELIVERY.md): the default quality and inspected-delivery standard, carried by the assistant even for first-time writers.
+- [IMPORTING.md](IMPORTING.md): preserving and extracting supplied documents.
+- [ADAPTATION.md](ADAPTATION.md): non-screenplay source material, fidelity and cinematic transformation.
+
 ## Track work honestly
 
 On entry, inspect development/status.md and run workflow status if available. Stage commands may do exploratory work out of order when explicitly requested, but completion receipts advance only when their prerequisites and artifacts are valid. If accepted documents change, reopen the earliest changed stage with a concrete reason and revalidate preserved work in order. Do not discard writing just to make the tracker clean.

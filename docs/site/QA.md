@@ -56,4 +56,4 @@ Documentation coverage: README provides the plain-language entry and starter con
 
 ## Current public-toolkit expansion
 
-The user later authorized making the entire toolkit public. The current site has eight chapters, beginner account/app setup, all18commands, optional deliverable choices, a reviewed feature gallery and collapsed off-default helper settings. Current checks and limitations are in [VALIDATION.md](../VALIDATION.md). Earlier counts/private restrictions above describe the first iteration only. Public delivery is verified separately after deployment.
+The user later authorized making the entire toolkit public. The current site has eight chapters, beginner account/app setup, all 21 commands, optional deliverable choices, a reviewed feature gallery and collapsed off-default helper settings. Current checks and limitations are in [VALIDATION.md](../VALIDATION.md). Earlier counts/private restrictions above describe the first iteration only. Public delivery is verified separately after deployment.

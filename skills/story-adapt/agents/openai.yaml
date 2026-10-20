@@ -1,0 +1,4 @@
+interface:
+  display_name: "Story Adapt"
+  short_description: "Develop a screenplay from a novel, memoir, article, play, or oth"
+  default_prompt: "Use $story-adapt to help with my story project."

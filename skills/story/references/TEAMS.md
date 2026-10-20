@@ -23,3 +23,24 @@ Keep one coordinating author. Workers read a fixed draft fingerprint and write o
 Before spawning, write development/team_plan.json: selected mode, capability observed, draft fingerprint, objective, worker names/tasks/output paths, total worker cap (including nested), round/source limits, privacy restrictions, usage visibility, and stopping rule. Each assignment forbids further delegation. Give workers only necessary context; no need to duplicate private source material across tasks. Source/claim verification remains with the coordinator.
 
 Afterward, write development/team_report.md with actual workers/rounds, files returned, disagreements, sources inspected, findings accepted/deferred, usage observed or unavailable, and unresolved limits. Multiple agreeing reports do not outvote contradictory evidence. If the screenplay changes, stale reviews must be repeated or explicitly scoped to the old draft. Do not fabricate workers, consensus or success. Team operation never authorizes outreach, purchases, publication or casting claims.
+
+## Validate the plan and the activity record
+
+Use the bundled standard-library helper before creating any team:
+
+```sh
+python3 scripts/team_controls.py settings
+python3 scripts/team_controls.py plan
+```
+
+`settings` returns the canonical settings SHA-256; put it in `team_plan.json` as `settings_sha256`. A plan records `objective`, `draft_fingerprint`, `capability` (`native_available`, actual `observed_tool`, `observed_at`, current `session_id`), and `workers`. Every worker records a unique `name`, allowed `task`, `rounds`, `source_limit`, disjoint `output_path` beneath `development/workers/`, `allow_nested:false` and `script_write:false`. Off mode permits only an empty workers list. A successful plan check returns `plan_sha256`.
+
+In ask mode, wait for writer approval of that exact plan before launch. Record it in `development/team_activity.json` under `approval` with `approved:true`, timezone-bearing `approved_at`, the `plan_sha256`, and a plain-language `evidence` pointer to the actual approval. Save that same approval object separately as `development/team_approval.json`, then run `python3 scripts/team_controls.py authorize --session CURRENT_SESSION_ID` before launching. Auto mode also uses this preflight to reject a plan from another session; off mode returns sequential. Changing the plan requires new approval. Never manufacture approval from a broad request to write a story.
+
+After running native helpers, record the exact `plan_sha256` and `launches` list. Each actual launch records `worker`, `round`, `native_launch_id`, timezone-bearing `launched_at`, `sources_inspected`, `nested_launches:0`, `script_writes:false` and `new_paid_services:false`. An unused team has an empty launches list. Record provider usage only when observed; otherwise leave `usage` absent or `"unknown"`. Validate it:
+
+```sh
+python3 scripts/team_controls.py activity
+```
+
+This checks supplied records and rejects settings, plan and activity inconsistencies. It does not intercept host tools, verify the truth of claimed activity, enforce a dollar budget, or authorize a launch. Check current exposed capability again in a new session. The coordinator must honor these limits while operating and preserve actual native launch evidence. A failed check means stop further helpers, correct the record/settings with the writer when needed, and continue sequentially. Never hide an accidental out-of-policy launch by rewriting it as compliant.
